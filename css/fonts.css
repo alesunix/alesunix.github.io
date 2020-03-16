@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+#* {box-sizing: border-box;}
+body {margin: 0;}
+.post {
+  width: 60%;
+  margin: 30px auto 0;
+}
+img {
+  #width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.post-container {
+  width: 100%;
+  padding: 30px;
+}
+h8 {
+  margin: 15px 0;
+  font-family: 'cambria', serif;
+  font-size: 23px;
+  #text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  #text-shadow: #000 1px 1px 1px;
+}
+h6 {
+font-size:20px;
+font-weight:700;
+font-family:'cambria', serif;
+color:#006;
+text-align:right;
+#text-transform:uppercase;
+text-shadow:1px -1px 2px #fff;
+margin: revert;
+}
+h7 {
+font-size:20px;
+font-weight:700;
+font-family:'cambria', serif;
+color:#006;
+#text-align:right;
+#text-transform:uppercase;
+text-shadow:1px -1px 2px #fff;
+margin: revert;
+}
+h4 {
+  margin: 15px 0;
+  #font-family: 'cambria', serif;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #D71920;
+  #text-shadow: #000 1px 1px 1px;
+}
+h5 {
+  margin: 15px 0;
+  font-family: 'cambria', serif;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #006;
+  #text-shadow: #000 1px 1px 1px;
+}
+h2 {
+  margin: 15px 0;
+  font-family: 'cambria', serif;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #006;
+  #text-shadow: #000 1px 1px 1px;
+}
+@media all and (max-width: 700px) and (min-width: 0px){
+h2 {
+font-size: 20px;
+}
+h2 small{
+font-size: 14px;
+}
+}
+h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #006;
+  font-family: 'cambria', serif;
+  #font-style: italic;
+  letter-spacing: 3.4px;
+  text-align: center;
+}
+h3 a {
+  color: #c2a77a;
+}
+
+.post-info {
+  padding-top: 35px;
+}
+
+@font-face{
+font-family: 'cambria';
+src: url('../fonts/cambria.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Gill Sans Extra Condensed RUS B Bold';
+src: url('../fonts/Gill Sans Extra Condensed RUS B Bold.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'OPTIJake AntiqueBlack';
+src: url('../fonts/OPTIJake AntiqueBlack.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'LehmannC';
+src: url('../fonts/LehmannC.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Geometos';
+src: url('../fonts/Geometos.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Aetherius';
+src: url('../fonts/Aetherius.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Mga';
+src: url('../fonts/Mga.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Neighbor';
+src: url('../fonts/Neighbor.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Ethnocentric';
+src: url('../fonts/Ethnocentric.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'TypeHelvetica';
+src: url('../fonts/TypeHelvetica.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Kremlin Alexander';
+src: url('../fonts/Kremlin Alexander.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Electrolize';
+src: url('../fonts/Electrolize.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'DEAD SECRETARY Cyr';
+src: url('../fonts/DEAD SECRETARY Cyr.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Simpleness';
+src: url('../fonts/Simpleness.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Superheterodyne Regular';
+src: url('../fonts/Superheterodyne Regular.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'LIBRARY3AMsoft';
+src: url('../fonts/LIBRARY3AMsoft.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Newfont2';
+src: url('../fonts/Newfont2.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Thunderbird Becker XCND Cyrilli';
+src: url('../fonts/Thunderbird Becker XCND Cyrilli.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Tzimizce';
+src: url('../fonts/Tzimizce.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Dynamo';
+src: url('../fonts/Dynamo.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'AnnaITC';
+src: url('../fonts/AnnaITC.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Augustus';
+src: url('../fonts/Augustus.otf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'FavoritTrafC';
+src: url('../fonts/FavoritTrafC.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'BebasNeue Bold';
+src: url('../fonts/BebasNeue Bold.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'BebasNeue Book';
+src: url('../fonts/BebasNeue Book.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'BebasNeue Light';
+src: url('../fonts/BebasNeue Light.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'BebasNeue Regular';
+src: url('../fonts/BebasNeue Regular.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'BebasNeue Thin';
+src: url('../fonts/BebasNeue Thin.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Montserrat-Regular';
+src: url('../fonts/Montserrat-Regular.ttf');
+font-style: normal; 
+font-weight: normal; 
+}

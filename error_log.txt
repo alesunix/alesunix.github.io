@@ -1,0 +1,11 @@
+[05-Nov-2019 03:07:47 UTC] PHP Notice:  Undefined variable: footmenu in I:\home\complete-trade.ru\www\template\info.inc.php on line 89
+[05-Nov-2019 03:07:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in I:\home\complete-trade.ru\www\func.inc.php on line 22
+[05-Nov-2019 03:39:28 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\complete-trade.ru\www\config.inc.php on line 53
+[05-Nov-2019 10:09:54 UTC] PHP Warning:  include_once(I:\home\complete-trade.ru\www/template/info2.inc.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in I:\home\complete-trade.ru\www\index.php on line 63
+[05-Nov-2019 10:09:54 UTC] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'I:\home\complete-trade.ru\www/template/info2.inc.php' for inclusion (include_path='.;C:\php\pear') in I:\home\complete-trade.ru\www\index.php on line 63
+[05-Nov-2019 10:13:32 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\complete-trade.ru\www\content\index.inc.php on line 9
+[05-Nov-2019 10:13:55 UTC] PHP Parse error:  syntax error, unexpected '<' in I:\home\complete-trade.ru\www\content\GALLERY.inc.php on line 2
+[05-Nov-2019 10:14:33 UTC] PHP Notice:  Undefined variable: title in I:\home\complete-trade.ru\www\content\GALLERY.inc.php on line 6
+[05-Nov-2019 10:14:33 UTC] PHP Notice:  Undefined variable: keywords in I:\home\complete-trade.ru\www\content\GALLERY.inc.php on line 8
+[05-Nov-2019 10:14:33 UTC] PHP Notice:  Undefined variable: description in I:\home\complete-trade.ru\www\content\GALLERY.inc.php on line 9
+[18-Nov-2019 08:23:53 UTC] PHP Parse error:  syntax error, unexpected T_STRING in I:\home\complete-trade.ru\www\config.inc.php on line 14

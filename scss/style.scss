@@ -1,0 +1,68 @@
+@import "compass/css3";
+
+$yellow: #e8c63d;
+
+body{
+  background: #ddd;
+}
+
+*{
+  box-sizing: border-box;
+  color: #333;
+}
+
+.hover-fold{
+  background: $yellow;
+  border: 5px white solid;
+  height: 310px;
+  margin: 10px auto;
+  @include perspective( 1500 );
+  position: relative;
+  width: 410px;
+  h2{
+    border-bottom: 1px solid #333;
+    margin: 0 40px;
+    padding: 110px 0 2px;
+  }
+  .top{
+    height: 50%;
+    @include transition(all .5s ease-out);
+    @include transform( rotateX(0deg) );
+    @include transform-origin( 0, 100% );
+    @include transform-style( preserve-3d );
+    position: absolute;
+    top:0px;
+    width: 100%;
+    z-index: 10;
+    .face{
+      @include backface-visibility( hidden );
+      position: absolute;
+    }
+  }
+  &:hover .top{
+    @include transform( rotateX(-180deg) );
+  }
+  .front{
+    background: url(https://dribbble.s3.amazonaws.com/users/21389/screenshots/963288/2ormore_shirt.png);
+    height: 100%; /*has to be 100% of .top */
+    width: 100%;
+  }
+  .back{
+    background: $yellow;
+    height: 100%; /*has to be 100% of .top */
+    padding: 0 40px;
+    @include transform( rotateX(180deg) );
+    width: 100%;
+    p{
+      margin: 0;
+    }
+  }
+  .bottom{
+    background: url(https://dribbble.s3.amazonaws.com/users/21389/screenshots/963288/2ormore_shirt.png) bottom;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 0;
+  }
+}
