@@ -1,6 +1,0 @@
-<form action="/download/font/12670" method="post" id="temp-file-download-font-form" accept-charset="UTF-8"><div><div class="captcha"><input type="hidden" name="captcha_sid" value="72189797" />
-<input type="hidden" name="captcha_token" value="bc716efd2e95dbe5653f0b03ad454619" />
-<input type="hidden" name="captcha_response" value="Google no captcha" />
-<div class="g-recaptcha" data-sitekey="6LfBoFcUAAAAAHhf5gDvAGboIPEywad4gJAdbrzx" data-theme="light" data-type="image"></div></div><input type="submit" id="edit-submit" name="op" value="Скачать" class="form-submit button primary" /><input type="hidden" name="form_build_id" value="form-pSxZq3zvndpjU5hyphzyuIKzRbFiJpnLjMSLcT8Tz9w" />
-<input type="hidden" name="form_id" value="temp_file_download_font_form" />
-</div></form>
