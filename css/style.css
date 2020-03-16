@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+
+}
+
+.hover-fold {
+  background: #e6e6e6;
+  border: 5px #f7f7f7 solid;
+  height: 235px;
+  #margin: 10px auto;
+  -moz-perspective: 1500;
+  -webkit-perspective: 1500;
+  perspective: 1500;
+  position: relative;
+  width: 310px;
+}
+.hover-fold h2 {
+  border-bottom: 1px solid #333;
+  margin: 0 40px;
+  padding: 55px 0 2px;
+}
+.hover-fold .top {
+  height: 50%;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+.hover-fold .top .face {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.hover-fold:hover .top {
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+.hover-fold .back {
+	  color: #006;
+  background: #e6e6e6;
+  height: 100%;
+  /*has to be 100% of .top */
+  padding: 0 40px;
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  width: 100%;
+}
+.hover-fold .back p {
+  margin: -25px;
+}
+.hover-fold .front {
+  background: url(../i/portfolio.jpg);
+  height: 100%;
+  /*has to be 100% of .top */
+  width: 100%;
+}
+.hover-fold .bottom {
+  background:  url(../i/portfolio.jpg) bottom;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+.hover-fold .front1 {
+  background: url(../i/about_me.jpg);
+  height: 100%;
+  /*has to be 100% of .top */
+  width: 100%;
+}
+.hover-fold .bottom1 {
+  background:  url(../i/about_me.jpg) bottom;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+.hover-fold .front2 {
+  background: url(../i/features.jpg);
+  height: 100%;
+  /*has to be 100% of .top */
+  width: 100%;
+}
+.hover-fold .bottom2 {
+  background:  url(../i/features.jpg) bottom;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}.hover-fold .front3 {
+  background: url(../i/blog.jpg);
+  height: 100%;
+  /*has to be 100% of .top */
+  width: 100%;
+}
+.hover-fold .bottom3 {
+  background:  url(../i/blog.jpg) bottom;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+.form-search {  /* форма с boxtuffs.com */
+  position: relative;
+  display: inline-block;
+  border: 1px solid #747474;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px #575555, 0 1px 0 #FFF;
+  background-image: linear-gradient(#BCBCBC, #EBEBEB);
+}
+.form-search:before {  /* рамка вокруг формы */
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  border-radius: 5px;
+  background: linear-gradient(#D3D3D3, #CACACA 50%, #A9A9A9 50%, #9B9B9B);
+}
+.form-search:focus-within {  /* изменение формы при фокусе */
+  box-shadow: inset 0 1px 1px #46575b, 0 1px 0 #FFF;
+  background: linear-gradient(#9CC2CA, #DFECEF);
+}
+.form-search input[type="search"] {  /* поле поиска */
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0 0 0 6px;
+  background: transparent;
+  font: 13px Helvetica, Arial, sans-serif;
+  color: #6E7074;
+  text-shadow: 0 1px 0 #FFF;
+  transition: all .2s ease-out;
+}
+.form-search:focus-within input[type="search"],  /* изменение поля поиска при фокусе */
+.form-search input[type="search"]:focus {
+  width: 160px;
+  color: #25464D;
+}
+.form-search input[type="image"] {  /* картинка лупы */
+  padding: 0;
+  vertical-align: bottom;
+}

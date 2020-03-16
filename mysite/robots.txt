@@ -1,5 +1,0 @@
-User-agent: *
-Allow: / 
-Crawl-delay: 1
-Host: https://alesunix.github.io
-Sitemap: https://alesunix.github.io/sitemap.xml
