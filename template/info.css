@@ -33,10 +33,11 @@ body {
 }
 
 .well-inverse {
-	background-color: #000066;
+	background-color: #0d1d2f;
 	background-image: url(../i/fon.jpg);
 	background-size: cover;
 }
+
 .centered-pills { text-align:center; }
 .centered-pills ul.nav-pills { display:inline-block; }
 .centered-pills li { display:inline; }
