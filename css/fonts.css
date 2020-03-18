@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&amp;subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
 #* {box-sizing: border-box;}
 body {margin: 0;}
 .post {
@@ -99,19 +99,19 @@ h3 a {
 
 @font-face{
 font-family: 'cambria';
-src: url('../fonts/cambria.html');
+src: url('../fonts/cambria.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Gill Sans Extra Condensed RUS B Bold';
-src: url('../fonts/Gill%20Sans%20Extra%20Condensed%20RUS%20B%20Bold.otf');
+src: url('../fonts/Gill Sans Extra Condensed RUS B Bold.otf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'OPTIJake AntiqueBlack';
-src: url('../fonts/OPTIJake%20AntiqueBlack.ttf');
+src: url('../fonts/OPTIJake AntiqueBlack.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -147,7 +147,7 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'Ethnocentric';
-src: url('../fonts/Ethnocentric.html');
+src: url('../fonts/Ethnocentric.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -159,7 +159,7 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'Kremlin Alexander';
-src: url('../fonts/Kremlin%20Alexander.otf');
+src: url('../fonts/Kremlin Alexander.otf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -171,7 +171,7 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'DEAD SECRETARY Cyr';
-src: url('../fonts/DEAD%20SECRETARY%20Cyr.ttf');
+src: url('../fonts/DEAD SECRETARY Cyr.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -183,7 +183,7 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'Superheterodyne Regular';
-src: url('../fonts/Superheterodyne%20Regular.otf');
+src: url('../fonts/Superheterodyne Regular.otf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -201,7 +201,7 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'Thunderbird Becker XCND Cyrilli';
-src: url('../fonts/Thunderbird%20Becker%20XCND%20Cyrilli.otf');
+src: url('../fonts/Thunderbird Becker XCND Cyrilli.otf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -237,31 +237,31 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'BebasNeue Bold';
-src: url('../fonts/BebasNeue%20Bold.ttf');
+src: url('../fonts/BebasNeue Bold.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Book';
-src: url('../fonts/BebasNeue%20Book.ttf');
+src: url('../fonts/BebasNeue Book.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Light';
-src: url('../fonts/BebasNeue%20Light.ttf');
+src: url('../fonts/BebasNeue Light.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Regular';
-src: url('../fonts/BebasNeue%20Regular.ttf');
+src: url('../fonts/BebasNeue Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Thin';
-src: url('../fonts/BebasNeue%20Thin.ttf');
+src: url('../fonts/BebasNeue Thin.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
