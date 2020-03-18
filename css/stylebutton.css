@@ -40,10 +40,10 @@ body {margin: 60px auto;} .buttons {display: -webkit-flex; display: -ms-flexbox;
 /* Common style */
 .butFrame {
   position: relative;
-  overflow: hidden;
-  margin: 5px;
-  width: 24%;
-  background: #1111119e;
+  /*! overflow: hidden; */
+  /*! margin: 5px; */
+  width: 20%;
+  /*! background: #1111119e; */
   font-family: inherit;
   font-size: 1em;
   text-align: center;
@@ -55,7 +55,7 @@ body {margin: 60px auto;} .buttons {display: -webkit-flex; display: -ms-flexbox;
   display: block;
   max-width: 100%;
   opacity: 0.8;
-  position: absolute;
+  /*! position: absolute; */
 }
 
 .buttons > .butHeading {
