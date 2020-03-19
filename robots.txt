@@ -1,5 +1,5 @@
 User-agent: *
-Allow: / 
+#Allow: / 
 Disallow: /projects
 Crawl-delay: 1
 Host: https://alesunix.github.io
