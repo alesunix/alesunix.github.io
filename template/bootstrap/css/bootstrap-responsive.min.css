@@ -820,7 +820,8 @@
   margin-left:0;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
-  box-sizing:border-box
+  box-sizing:border-box;
+  padding: 0px;
  }
  .span12,
  .row-fluid .span12 {
@@ -1059,10 +1060,10 @@
  .nav-collapse,
  .nav-collapse.collapse {
   height:0;
-  overflow:hidden
+  overflow:hidden;
  }
  .navbar .btn-navbar {
-  display:block;
+  \#display:block;
   width: 100%;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
  }
