@@ -1,6 +1,6 @@
 User-agent: *
 #Allow: / 
-Disallow: /projects
+Disallow: /projects/
 Crawl-delay: 1
 Host: https://alesunix.github.io
 Sitemap: https://alesunix.github.io/sitemap.xml
