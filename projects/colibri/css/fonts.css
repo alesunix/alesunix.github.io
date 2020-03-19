@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&amp;subset=latin,cyrillic);
+h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #222222;
+  text-align: center;
+}
+.post-detail, .post {
+  font-family: 'Arimo', sans-serif;
+}
+.post-detail {
+  width: 30%;
+  margin: 0 auto 10px;
+  text-align: center;
+  }
+.post-info {
+  color: #be9656;
+  font-style: italic;
+  position: relative;
+  display: block;
+  font-size: 13px;
+}
+.post-info:before {
+  content: "";
+  border-bottom: 1px solid #be9656;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+.post-info span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+}

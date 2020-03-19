@@ -1,0 +1,48 @@
+
+#dva,
+#dva #dvaF {  /* все картинки будут той же высоты, что первая */
+  position: relative;
+  height: auto;
+  z-index: 2;
+}
+#dva a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#dva img {
+  /* можно прописать max-width и max-height */
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+#dva strong {  /* стиль текста, его помещать не обязательно строго снизу */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 96%;
+  height: 1%;
+  padding: 2%;
+  background: rgba(83, 137, 171, 0.26);
+}
+#dva div {  /* расположение кнопок */
+  position: absolute;
+  top: 90%;
+  right: 1em;
+  z-index: 3;
+}
+#dva button {  /* стиль кнопок */
+  //height: .8em;
+  //width: .8em;
+  //padding: 0;
+  //border: none;
+  border-radius: 60% 10%;
+}
+#dva button:nth-of-type(1) {
+  opacity: 0.4;
+}
