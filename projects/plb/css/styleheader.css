@@ -1,0 +1,39 @@
+.headerstyle {
+-webkit-justify-content: center;
+-ms-flex-pack: justify;
+justify-content: space-evenly;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: flex-start;
+-ms-flex-align: start;
+align-items: center;
+}
+.tabstyle {
+position: relative;
+overflow: visible;
+#margin: 5px;
+#width: 45%;
+#background: #1111119e;
+font-family: inherit;
+font-size: 1em;
+text-align: center;
+cursor: pointer;
+}
+/* MEDIA QUERIES */
+@media all and (max-width: 950px) and (min-width: 701px){
+.tabstyle {
+    display:block;
+    width:47%;
+  }
+}
+@media all and (max-width: 700px) and (min-width: 0px){
+.tabstyle {
+    display: block;
+    width:100%;
+	text-align: center;
+  }
+}
