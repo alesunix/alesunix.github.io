@@ -1,5 +1,5 @@
 User-agent: *
 Allow: / 
 Crawl-delay: 1
-Host: https://alesunix.github.io/projects/plb/index.html
+Host: https://alesunix.github.io/projects/plb
 Sitemap: https://alesunix.github.io/projects/plb/sitemap.xml
