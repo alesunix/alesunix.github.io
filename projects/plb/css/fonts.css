@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&amp;subset=latin,cyrillic);
 #* {box-sizing: border-box;}
 body {margin: 0;}
 .post {
@@ -83,7 +83,7 @@ font-size: 14px;
 h3 {
   font-size: 25px;
   margin: 0;
-  color: #006;
+  color: #b8c4a0;
   font-family: 'cambria', serif;
   #font-style: italic;
   letter-spacing: 3.4px;
@@ -99,175 +99,175 @@ h3 a {
 
 @font-face{
 font-family: 'cambria';
-src: url('../fonts/cambria.ttf');
+src: url('../fonts/cambria.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Gill Sans Extra Condensed RUS B Bold';
-src: url('../fonts/Gill Sans Extra Condensed RUS B Bold.otf');
+src: url('../fonts/Gill%20Sans%20Extra%20Condensed%20RUS%20B%20Bold.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'OPTIJake AntiqueBlack';
-src: url('../fonts/OPTIJake AntiqueBlack.ttf');
+src: url('../fonts/OPTIJake%20AntiqueBlack.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'LehmannC';
-src: url('../fonts/LehmannC.otf');
+src: url('../fonts/LehmannC.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Geometos';
-src: url('../fonts/Geometos.ttf');
+src: url('../fonts/Geometos.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Aetherius';
-src: url('../fonts/Aetherius.ttf');
+src: url('../fonts/Aetherius.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Mga';
-src: url('../fonts/Mga.ttf');
+src: url('../fonts/Mga.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Neighbor';
-src: url('../fonts/Neighbor.ttf');
+src: url('../fonts/Neighbor.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Ethnocentric';
-src: url('../fonts/Ethnocentric.ttf');
+src: url('../fonts/Ethnocentric.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'TypeHelvetica';
-src: url('../fonts/TypeHelvetica.otf');
+src: url('../fonts/TypeHelvetica.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Kremlin Alexander';
-src: url('../fonts/Kremlin Alexander.otf');
+src: url('../fonts/Kremlin%20Alexander.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Electrolize';
-src: url('../fonts/Electrolize.ttf');
+src: url('../fonts/Electrolize.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'DEAD SECRETARY Cyr';
-src: url('../fonts/DEAD SECRETARY Cyr.ttf');
+src: url('../fonts/DEAD%20SECRETARY%20Cyr.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Simpleness';
-src: url('../fonts/Simpleness.ttf');
+src: url('../fonts/Simpleness.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Superheterodyne Regular';
-src: url('../fonts/Superheterodyne Regular.otf');
+src: url('../fonts/Superheterodyne%20Regular.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'LIBRARY3AMsoft';
-src: url('../fonts/LIBRARY3AMsoft.otf');
+src: url('../fonts/LIBRARY3AMsoft.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Newfont2';
-src: url('../fonts/Newfont2.otf');
+src: url('../fonts/Newfont2.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Thunderbird Becker XCND Cyrilli';
-src: url('../fonts/Thunderbird Becker XCND Cyrilli.otf');
+src: url('../fonts/Thunderbird%20Becker%20XCND%20Cyrilli.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Tzimizce';
-src: url('../fonts/Tzimizce.otf');
+src: url('../fonts/Tzimizce.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Dynamo';
-src: url('../fonts/Dynamo.otf');
+src: url('../fonts/Dynamo.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'AnnaITC';
-src: url('../fonts/AnnaITC.otf');
+src: url('../fonts/AnnaITC.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Augustus';
-src: url('../fonts/Augustus.otf');
+src: url('../fonts/Augustus.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'FavoritTrafC';
-src: url('../fonts/FavoritTrafC.ttf');
+src: url('../fonts/FavoritTrafC.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Bold';
-src: url('../fonts/BebasNeue Bold.ttf');
+src: url('../fonts/BebasNeue%20Bold.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Book';
-src: url('../fonts/BebasNeue Book.ttf');
+src: url('../fonts/BebasNeue%20Book.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Light';
-src: url('../fonts/BebasNeue Light.ttf');
+src: url('../fonts/BebasNeue%20Light.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Regular';
-src: url('../fonts/BebasNeue Regular.ttf');
+src: url('../fonts/BebasNeue%20Regular.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'BebasNeue Thin';
-src: url('../fonts/BebasNeue Thin.ttf');
+src: url('../fonts/BebasNeue%20Thin.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'Montserrat-Regular';
-src: url('../fonts/Montserrat-Regular.ttf');
+src: url('../fonts/Montserrat-Regular.html');
 font-style: normal; 
 font-weight: normal; 
 }
