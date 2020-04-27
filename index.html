@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- Mirrored from alesunix.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 09:58:58 GMT -->
+<!-- Mirrored from alesunix.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Apr 2020 07:12:35 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 
@@ -31,6 +31,7 @@
 	 <link rel="stylesheet" href="css/owl.carousel.css">
 	 <link rel="stylesheet" href="css/owl.theme.green.css">	 	 
 	 <link rel="stylesheet" href="css/fonts.css"> 
+	 <link rel="stylesheet" href="css/Slider.css"> 
 </head>
 <body>
 
@@ -151,7 +152,85 @@ alesunix@gmail.com <br>
       </div>
     </div>
 </div>
-<br><br><br><br><br><br></article><!--/span-->
+<!-- Cлайдер ---------------------------------------------------------------------------------------------------------------->
+<left>
+<div id="dva">
+<a href="#1"id="dvaF"><img src="i/slide/start.png" alt="Порядок разработки"/></a>
+<a href="#1"><img src="i/slide/1.png" alt="Подготовка"/></a>
+<a href="#1"><img src="i/slide/2.png" alt="Проектирование"/></a>
+<a href="#1"><img src="i/slide/3.png" alt="Дизайн"/></a>
+<a href="#1"><img src="i/slide/4.png" alt="Кодирование"/></a>
+<a href="#1"><img src="i/slide/5.png" alt="Тестирование"/></a>
+<a href="#1"><img src="i/slide/6.png" alt="Внедрение"/></a>
+
+  <div>
+    <button type="button" value="0">1</button>
+    <button type="button" value="1">2</button>
+    <button type="button" value="2">3</button>
+	<button type="button" value="3">4</button>
+	<button type="button" value="4">5</button>
+	<button type="button" value="5">6</button>
+	<button type="button" value="6">7</button>
+  </div>
+</div>
+</left>
+
+<script>
+window.requestAnimationFrame = (function () { // для поддержки requestAnimationFrame всеми браузерами
+        return window.requestAnimationFrame ||
+               function (callback) {
+                   return window.setTimeout(callback, 1000 / 60);
+               };
+})();
+// функция слайдера
+function slider(f, img, button, V, Vo) {
+  var iii = 0,
+      start = null,
+      clear = 0;
+  function step(time) {
+    if (start === null) start = time;
+    var progress = time - start;
+    if (progress > V) {
+      start = null;
+      for (var i=0; i<img.length; i++) {
+        img[i].style.zIndex = "0";
+        button[i].style.opacity = "1";
+      }
+      img[iii].style.zIndex = "1";
+      iii = ((iii != (img.length - 1)) ? (iii + 1) : 0);
+      img[iii].style.zIndex = "2";
+      img[iii].style.opacity = "0";
+      button[iii].style.opacity = ".4";
+    } else if(img[iii].style.opacity != "") {
+      img[iii].style.opacity = ((progress/Vo < 1) ? (progress/Vo) : 1);
+    }
+    if(clear != "0" && progress > Vo) {} else {requestAnimationFrame(step);}
+  }
+  requestAnimationFrame(step);
+  f.onmouseenter = function() { if(clear == "0") clear = "1"; }  // при наведении на слайдер
+  f.onmouseleave = function() { if(clear == "1") {clear = "0"; requestAnimationFrame(step);} }  // курсор убран со слайдера
+  for (var j=0; j<button.length; j++) {  // при нажатии кнопок
+    button[j].onclick = function() {
+      clear = "2";
+      for (var i=0; i<img.length; i++) {
+        img[i].style.zIndex = "0";
+      }
+      img[this.value].style.zIndex = "2";
+      img[this.value].style.opacity = "1";
+      for (var k=0; k<button.length; k++) {
+        button[k].style.opacity = ((button[k] == this) ? '.4' : '1');
+      }
+    }
+  }
+}
+// вызов функции слайдера
+ var f = document.getElementById('dva'),
+    a = f.getElementsByTagName('a'),
+    button = f.getElementsByTagName('div')[0].getElementsByTagName('button');
+  slider(f, a, button, '5000', '1000');
+</script>
+<!-- Cлайдер ---------------------------------------------------------------------------------------------------------------->
+</article><!--/span-->
 <!--/Установка новостей-->
 
 <aside class="span3">
@@ -279,8 +358,6 @@ _tmr.push({id: "3166597", type: "pageView", start: (new Date()).getTime()});
 </div></noscript>
 <!-- //Rating Mail.ru counter -->
 <br>
-<a href="http://www.vsego.ru/" target="_blank" title="Каталог сайтов Всего.RU">Каталог сайтов</a>
-<br>
 <!-- Top100 (Kraken) Counter -->
 <script>
     (function (w, d, c) {
@@ -355,5 +432,5 @@ $(function() {
 });
 	</script>
 </body>
-<!-- Mirrored from alesunix.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 09:59:05 GMT -->
+<!-- Mirrored from alesunix.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Apr 2020 07:12:44 GMT -->
 </html>
