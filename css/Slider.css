@@ -9,9 +9,9 @@
   display: block;
   position: absolute;
   top: 0%;
-  left: 27.5%;
+  left: 10%;
   height: 100%;
-  width: 45%;
+  width: 80%;
   color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
 }
@@ -32,8 +32,8 @@
 }
 #dva div {  /* расположение кнопок */
   position: absolute;
-  top: 0%;
-  right: 36em;
+  top: 1%;
+  right: 14em;
   z-index: 3;
 }
 #dva button {  /* стиль кнопок */
@@ -56,5 +56,11 @@
   width: 100%;
   color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#dva div {  /* расположение кнопок */
+  position: absolute;
+  top: 1%;
+  right: 50em;
+  z-index: 3;
 }
 	}
