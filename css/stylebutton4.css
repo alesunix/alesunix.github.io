@@ -175,7 +175,7 @@
 }
 .butFrame4 p {
   #padding: 10px 2.5em;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0, 20px, 0);

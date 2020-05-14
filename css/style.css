@@ -170,3 +170,83 @@
   padding: 0;
   vertical-align: bottom;
 }
+
+
+
+/*Увеличение изображения при наведении курсора мыши на миниатюру*/
+.ienlarger {
+  float: left;
+  clear: none; /* Можно установить left или right по необходимости */
+  #padding-bottom: 5px; /* Расстояние между миниатюрами. Лучше не трогать данное поле */
+  #padding-right: 5px; /* Расстояние между миниатюрами и окружающим текстом */
+  margin: 20px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  border: 1px solid #FFC411;
+
+}
+}
+
+.ienlarger a { 
+  display:block;
+  text-decoration: none;
+/* Если добавить правило cursor:default;, то отключится курсор в виде руки */
+}
+
+.ienlarger a:hover{ /* Не надо изменять тип позиционирования */
+   position:relative;
+}
+
+.ienlarger span img {
+  border: 1px solid #FFFFFF; /* Добавляем рамку вокруг изображения */
+  margin-bottom: 8px; /* /Сдвигаем текст вниз от изображения */
+}
+
+.ienlarger a span {  /* Для большого изображения и названия */
+  position: absolute;
+  display:none;
+  color: #1A1A1A; /* Текст названия */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px; /* Размер шрифта названия */
+  background-color: #ffe082;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 13px;
+  padding-left: 3px;
+  
+
+border-radius: 5px;
+border: 1px solid #ebebeb;
+#width: 640px;
+#height: 640px;
+box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.ienlarger img { /* Для IE, чтобы не было рамки вокруг ссылки */
+border-width: 0;
+}
+
+.ienlarger a:hover span { 
+  display:block;
+  top: 50px; /* Большое изображение выскакивает вверх на 50px от миниатюры */
+  left: -80px; /* Большое изображение выскакивает влево на 90px от миниатюры */
+  z-index: 100;
+
+/* Если добавить правило cursor:default;, то отключится курсор в виде руки на большом изображении */
+}
+
+.resize_thumb {
+  width: 250px; /* Вводим нужный размер миниатюры здесь */
+  height : 200px;
+}
+@media all and (max-width: 700px) and (min-width: 0px){
+	.ienlarger {
+  margin: 3px;
+}
+	.resize_thumb {
+  width: 140px; /* Вводим нужный размер миниатюры здесь */
+  height : auto;
+}
+	
+}

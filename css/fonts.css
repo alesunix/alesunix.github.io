@@ -7,7 +7,7 @@ body {margin: 0;}
 }
 img {
   #width: 100%;
-  max-width: 100%;
+  #max-width: 100%;
   height: auto;
 }
 .post-container {
@@ -16,11 +16,13 @@ img {
 }
 h8 {
   margin: 15px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  #font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 23px;
   #text-align: center;
   letter-spacing: 1px;
-  color: #fff;
+  color: #ff871d;
+  font-weight: 700;
+  text-transform: uppercase;
   #text-shadow: #000 1px 1px 1px;
 }
 h6 {
@@ -34,23 +36,32 @@ text-shadow:1px -1px 2px #fff;
 margin: revert;
 }
 h7 {
-font-size:18px;
+font-size:16px;
 font-weight:300;
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-color:#0d1d2f;
+color:#c8c8c8;
 #text-align:right;
 #text-transform:uppercase;
-text-shadow:1px -1px 2px #fff;
+#text-shadow:1px -1px 2px #000;
 margin: revert;
+}
+h3 {
+  font-size: 29px;
+  margin: 0;
+  color: #c8c8c8;
+  font-family: 'TrixieWebPro-Light W07 Regular';
+  #font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
 }
 h4 {
   margin: 15px 0;
-  #font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 23px;
   letter-spacing: 1px;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #D71920;
+  color: #c8c8c8;
   #text-shadow: #000 1px 1px 1px;
 }
 h5 {
@@ -60,7 +71,7 @@ h5 {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #006;
+  color: #c8c8c8;
   #text-shadow: #000 1px 1px 1px;
 }
 h2 {
@@ -69,26 +80,35 @@ h2 {
   font-size: 35px;
   text-align: center;
   letter-spacing: 1px;
-  color: #006;
+  color: #0d1d2f;
   #text-shadow: #000 1px 1px 1px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
+	h8 {
+  margin: 15px 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  #text-align: center;
+  letter-spacing: 1px;
+  color: #ffc30f;
+  font-weight: 700;
+  text-transform: uppercase;
+  #text-shadow: #000 1px 1px 1px;
+}
 h2 {
 font-size: 20px;
 }
 h2 small{
 font-size: 14px;
 }
-}
 h3 {
   font-size: 25px;
-  margin: 0;
-  color: #006;
-  font-family: 'TrixieWebPro-Light W07 Regular', serif;
-  #font-style: italic;
-  letter-spacing: 3.4px;
-  text-align: center;
 }
+h4 {
+  font-size: 15px;
+}
+}
+
 h3 a {
   color: #c2a77a;
 }
@@ -98,14 +118,14 @@ h3 a {
 }
 
 @font-face{
-font-family: 'cambria';
-src: url('../fonts/cambria.html');
+font-family: 'president_normal';
+src: url('../fonts/president_normal.html');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
-font-family: 'Avenir-Light';
-src: url('../fonts/Avenir-Light.ttf');
+font-family: 'torhok_italic';
+src: url('../fonts/torhok_italic.html');
 font-style: normal; 
 font-weight: normal; 
 }

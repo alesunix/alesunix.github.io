@@ -1,23 +1,4 @@
-	
-a.btn {
-	margin-top: 30px;
-width: 95%;
-padding: 5px 3px;
-  position: relative;
-  #top: 50%; 
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  #text-transform: uppercase;
-  color: #000;
-  border-radius: 20px;
-  #background: #e2525c;
-  background-image: linear-gradient(to bottom,#fff0,#ffffff8f);
-  background-color: #f5f5f500;
-}
+
 	.modalDialog {
 		overflow: auto;
 		position: fixed;
@@ -81,31 +62,7 @@ text-shadow: 1px -1px 2px #fff;
  
 	.close:hover { background: #00d9ff; }
 	@media all and (max-width: 700px) and (min-width: 0px){
+  
 
-  .butFrame {
-    display:block;
-    width:100%;
-  }
-  a.btn {
-	margin-top: 10px;
-width: 80%;
-padding: 5px 3px;
-position: inherit;
-#top: 50%;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-font-weight: 700;
-text-align: center;
-text-decoration: none;
-#text-transform: uppercase;
-color: #000;
-border-radius: 20px;
-#background: #e2525c;
-background-image: linear-gradient(to bottom,#fff0,#ffffff8f);
-background-color: #f5f5f500;
-}
-.btn {
-    display: contents;
-}
 
 }
