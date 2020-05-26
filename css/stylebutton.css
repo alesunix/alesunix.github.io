@@ -293,7 +293,7 @@ a.button23:before {
 		padding: 2em;
 	}
 .btn {
-    display: contents;
+    #display: contents;
 }
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
 	align-content: center;

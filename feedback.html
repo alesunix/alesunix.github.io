@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- Mirrored from alesunix.github.io/Features.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 May 2020 05:49:22 GMT -->
+<!-- Mirrored from alesunix.github.io/feedback.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 May 2020 05:49:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 
 <meta name="google-site-verification" content="KPeQz2YtFu0JeC5_bMtDVkJezTmv7YngOxLkJYR9Djg" />
 <meta name="yandex-verification" content="058d18e1faa5d134" />
 <meta charset="utf-8" />
-<title>Code</title>
+<title>Обратная связь</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Бишкек, Кыргызстан, Алиев, Ильяс, Code">
-<meta name="description" content="На этой странице будет публиковаться исходный код интересных и необходимых фичей.">
+<meta name="keywords" content="Обратная связь">
+<meta name="description" content="Обратная связь">
 <link rel="stylesheet" href="template/bootstrap/css/bootstrap.min.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="template/info.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="template/bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen, projection">
@@ -43,7 +43,7 @@
 </a>
 <div class="nav-collapse collapse">
 <ul class="nav pull-right">
-<li><a href="index-2.html" title="">ГЛАВНАЯ</a></li><li><a href="Portfolio.html" title="">ПОРТФОЛИО</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li><a href="feedback.html" title="">ОБРАТНАЯ СВЯЗЬ</a></li><li><a href="Contacts.html" title="">КОНТАКТЫ</a></li><!--google переводчик
+<li><a href="index-2.html" title="">ГЛАВНАЯ</a></li><li><a href="Portfolio.html" title="">ПОРТФОЛИО</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li class="active"><a href="feedback.html" title="">ОБРАТНАЯ СВЯЗЬ</a></li><li><a href="Contacts.html" title="">КОНТАКТЫ</a></li><!--google переводчик
 <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
 new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
@@ -59,7 +59,7 @@ new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'e
 <!--content-->
 <section class="content container-fluid">
 
-<div class="share42init pull-right" data-url="https://alesunix.github.io/Features.html" data-title="Code"></div>
+<div class="share42init pull-right" data-url="https://alesunix.github.io/feedback.html" data-title="Обратная связь"></div>
 <h2 class="muted">
 
 <div class="headerstyle">
@@ -87,76 +87,95 @@ alesunix@gmail.com <br>
 </h2>
 <div class="row-fluid">
 <article class="span9 well well-large well-inverse">
-<h1><center>Code</center></h1>
+<h1><center>Обратная связь</center></h1>
 <div class='well'>
 <div class='diwell'>
-<center>
-<h4>
+<div class="tabl">
+<div class="tab">
+<h5 id="connect">Отправить сообщение</h5>
+<script type="text/javascript">
+	function form_validator(form)
+	{
+        if (form.name.value == '')
+		{
+			alert('Пожалуйста, укажите Ваше имя.');
+			form.name.focus();
+			return false;
+		}
+        if (form.email.value == '')
+		{
+			alert('Пожалуйста, укажите Ваш email адрес.');
+			form.email.focus();
+			return false;
+		}
+		        if (form.subject.value == '')
+		{
+			alert('Пожалуйста, укажите тему сообщения.');
+			form.subject.focus();
+			return false;
+		}
+		        if (form.text.value == '')
+		{
+			alert('Вы не заполнили текст сообщения.');
+			form.text.focus();
+			return false;
+		}
+        if (confirm('Проверьте ваши данные перед отправкой, чтобы мы могли с вами связаться. Всё верно?'))
+			form.nospam.value='6672bc830eb00269232e941773187590';
+		else
+			return false;
 
-</h4>
-</center>
-
+		return true;
+	}
+</script>
+<noscript><p class="error">JavaScript в браузере отключён. Отправка не сработает.</p></noscript>
+<form action="#connect" method="post" onsubmit="return form_validator(this);">
+	<div class="row-fluid">
+		<div class="span6">
+			<div class="control-group">
+				<label>Имя:</label>
+				<div class="controls">
+					<input type="text" name="name" class="span10" value="">
+				</div>
+			</div>		
+			<div class="control-group">
+				<label>E-mail:</label>
+				<div class="controls">
+					<input type="text" name="email" class="span10" value="">
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="control-group">
+				<label>Тема письма:</label>
+				<div class="controls">
+					<input type="text" name="subject" class="span10" value="">
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="">
+			<div class="control-group">
+				<label class="control-label" for="page-parent">Сообщение:</label>
+				<div class="controls">
+					<textarea name="text" class="span11" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+		<p>
+			<input type="hidden" name="nospam" value="">
+			<input type="submit" name="send" class="btn" value="Отправить" title="Отправить сообщение">
+		</p>
+	
+</form>
+</div> </div class="tabl">
 </div>
-</div class='well'></article><!--/span-->
+</div></article><!--/span-->
 <!--/Установка новостей-->
 
 <aside class="span3">
 <!--/Блоки-->
-<div class='well'>
-<div class='diwell'>
-<h3> CONTENT  </h3>
-<hr>
-<div class="buttons2">
-    <div class="butFrame2"><a href="Portfolio.html"><img src="#" />	  
-		  <div class="hover-fold">
-  <h2>Портфолио</h2>
-  <div class="top">
-    <div class="front face">   </div>
-    <div class="back face">
-      <p> Здесь выкладывается список моих работ. Разработки сайтов и программ. </p>
-    </div></div> 
-  <div class="bottom"></div> </a>
-</div></div>
-	
-    <div class="butFrame2"><a href="About_me.html"><img src="#" />		  
-		  <div class="hover-fold">
-  <h2>Обо мне</h2>
-  <div class="top">
-    <div class="front1 face">   </div>
-    <div class="back face">
-      <p> На этой странице я буду по мере возможности рассказывать о себе, о своих интересах, увлечениях. Свою биографию. В общем все, что смогу рассказать о себе.</p>
-    </div></div> 
-  <div class="bottom1"></div> </a>
-</div></div>
-
-    <div class="butFrame2"><a href="Features.html"><img src="#" />		  
-		  <div class="hover-fold">
-  <h2>Фичи</h2>
-  <div class="top">
-    <div class="front2 face"></div>
-    <div class="back face">
-      <p> На этой странице будет публиковаться исходный код интересных и необходимых фичей. </p>
-    </div></div> 
-  <div class="bottom2"></div> </a>
-</div></div>
-
-    <div class="butFrame2"><a href="Blog.html"><img src="#" />
-		  <div class="hover-fold">
-  <h2>Блог</h2>
-  <div class="top">
-    <div class="front3 face"></div>
-    <div class="back face">
-      <p>У многих из нас есть одно или несколько увлечений. </p>
-    </div></div> 
-  <div class="bottom3"></div> </a>
-</div></div>
-</div>
-
-
-
-
-</div class='well'>
-</div class='diwell'><!--/Коментарии-->
+<!--/Коментарии-->
 </aside><!--/span-->
 
 </div><!--/row-->
@@ -175,7 +194,7 @@ color: #fff;
 <div class="navbar centered-pills">
 <nav class="navbar-inner">
 <ul class="nav-pills" style="margin:5px 0 0 0;">
-<li><a href="index-2.html" title="">ГЛАВНАЯ</a></li><li><a href="Portfolio.html" title="">ПОРТФОЛИО</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li><a href="feedback.html" title="">ОБРАТНАЯ СВЯЗЬ</a></li><li><a href="CONTACTS-2.html" title="">КОНТАКТЫ</a></li></ul>
+<li><a href="index-2.html" title="">ГЛАВНАЯ</a></li><li><a href="Portfolio.html" title="">ПОРТФОЛИО</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li class="active"><a href="feedback.html" title="">ОБРАТНАЯ СВЯЗЬ</a></li><li><a href="CONTACTS-2.html" title="">КОНТАКТЫ</a></li></ul>
 </nav>
 </div>
 
@@ -317,5 +336,5 @@ $(function() {
 });
 	</script>
 </body>
-<!-- Mirrored from alesunix.github.io/Features.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 May 2020 05:49:22 GMT -->
+<!-- Mirrored from alesunix.github.io/feedback.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 May 2020 05:49:22 GMT -->
 </html>
