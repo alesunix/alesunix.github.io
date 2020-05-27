@@ -1,19 +1,15 @@
-/* FOR CODEPEN PRESENTATION ONLY */
-
-body {margin: 60px auto;} .buttons {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
-
-/* PASTE BELOW IN CSS */
+body {margin: 60px auto;} 
+.buttons {
+display: flex; 
+align-items: flex-start;
+}
 
 .buttons * {
   transition: all .5s ease;
 }
 
 .buttons {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
