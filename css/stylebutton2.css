@@ -1,6 +1,6 @@
 /* FOR CODEPEN PRESENTATION ONLY */
 
-.buttons2 {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
+.buttons2 { display: flex; align-items: flex-start;}
 
 /* PASTE BELOW IN CSS */
 
@@ -9,11 +9,7 @@
 }
 
 .buttons2 {
-  -webkit-justify-content: center;
-  -ms-flex-pack: justify;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
