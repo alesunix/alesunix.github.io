@@ -1,8 +1,7 @@
-/* FOR CODEPEN PRESENTATION ONLY */
-
-.buttons2 { display: flex; align-items: flex-start;}
-
-/* PASTE BELOW IN CSS */
+.buttons2 {
+display: flex; 
+align-items: flex-start;
+}
 
 .buttons2 * {
   transition: all .5s ease;
@@ -13,27 +12,6 @@
   flex-wrap: wrap;
 }
 
-/* .butWrap {
-  position: relative;
-  list-style: none;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;  
-  -ms-flex-wrap: wrap;  
-  flex-wrap: wrap;
-  -webkit-align-content: flex-end;
-  -ms-align-content: end;
-  align-content: flex-end;
-  width: 100%;
-} */
-
-/* Common style */
 .butFrame2 {
   position: relative;
   overflow: hidden;
