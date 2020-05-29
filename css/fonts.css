@@ -118,32 +118,14 @@ h3 a {
 }
 
 @font-face{
-font-family: 'president_normal';
-src: url('../fonts/president_normal.html');
+font-family: 'OpenSans-Regular';
+src: url('../fonts/OpenSans-Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
-font-family: 'torhok_italic';
-src: url('../fonts/torhok_italic.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'FedraSansPro-Normal';
-src: url('../fonts/FedraSansPro-Normal.ttf');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'MuseoSlab-300';
-src: url('../fonts/MuseoSlab-300.ttf');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'ProximaNovaA-Light';
-src: url('../fonts/ProximaNovaA-Light.ttf');
+font-family: 'PTSans-Regular';
+src: url('../fonts/PTSans-Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
@@ -154,8 +136,8 @@ font-style: normal;
 font-weight: normal; 
 }
 @font-face{
-font-family: 'URW Clarendon W01 Medium';
-src: url('../fonts/URW%20Clarendon%20W01%20Medium.ttf');
+font-family: 'ShareTechMono-Regular';
+src: url('../fonts/ShareTechMono-Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
 }

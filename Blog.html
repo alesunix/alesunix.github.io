@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- Mirrored from alesunix.github.io/Blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 May 2020 07:39:38 GMT -->
+<!-- Mirrored from alesunix.github.io/Blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 06:48:48 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 
@@ -29,6 +29,9 @@
 	 <link rel="stylesheet" href="css/styleModal.css">	 
 	 <link rel="stylesheet" href="css/fonts.css"> 
 	 <link rel="stylesheet" href="css/Slider.css"> 
+	 <link rel="stylesheet" type="text/css" href="css/slick.css">
+     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	 <link rel="stylesheet" href="css/about-me.css"> 
 </head>
 <body>
 
@@ -251,7 +254,10 @@ alesunix@gmail.com <br>
 <!--/Блоки-->
 <div class="tabl">
 <div class="tab">
-<h3> CONTENT  </h3>
+<center>
+<div class="container"><a class="btn" href="https://api.whatsapp.com/send?phone=996559101255" target="_blank">Связаться</a></div>
+</center>
+<h3> _ _ _ </h3>
 </div class="tabl">
 </div class="tab">
 <br>
@@ -404,13 +410,6 @@ _tmr.push({id: "3166597", type: "pageView", start: (new Date()).getTime()});
 </b>
 </footer>
 <!--/footer -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-45405429-7');
-</script>
 
 <!-- Le javascript
 ================================================== -->
@@ -418,8 +417,17 @@ _tmr.push({id: "3166597", type: "pageView", start: (new Date()).getTime()});
 <script src="../ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
-<script src="js/Slider.js"></script>
-		<script>
+<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".slider__wrapper").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+		autoplay: true,
+        infinite: true
+      });
+    });
+</script>
+<script>
 $(document).ready(function(){
 			$('#button_contacts').click(function(){
 				// собираем данные с формы
@@ -443,31 +451,16 @@ $(document).ready(function(){
 				});
 			});
 		});
-	</script>
-
-		<script>				
-$(function() {
-	$(".owl-carousel").owlCarousel({
-		nav:true,
-		loop:true,
-		autoplay: true,
-		autoplayTimeout: 2000,
-		smartSpeed: 1000,
-		responsiveClass:true,
-		responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:2,
-        },
-        1000:{
-            items:9,
-        }		
-    }
-	});
+</script>
+<script>
+	$(".mail-btn").on("click touchstart", function () {
+    $(this).addClass("fly");
+    that = this
+    setTimeout(function() {
+        $(that).removeClass("fly");
+    }, 5400)
 });
-	</script>
+</script>
 </body>
-<!-- Mirrored from alesunix.github.io/Blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 May 2020 07:39:39 GMT -->
+<!-- Mirrored from alesunix.github.io/Blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 May 2020 06:48:49 GMT -->
 </html>
