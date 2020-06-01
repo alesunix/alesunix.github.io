@@ -70,13 +70,13 @@
   margin: -25px;
 }
 .hover-fold .front {
-  background: url(../i/portfolio.jpg);
+  background: url(/i/portfolio.jpg);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom {
-  background:  url(../i/portfolio.jpg) bottom;
+  background:  url(/i/portfolio.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -84,13 +84,13 @@
   z-index: 0;
 }
 .hover-fold .front1 {
-  background: url(../i/about_me.jpg);
+  background: url(/i/about_me.jpg);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom1 {
-  background:  url(../i/about_me.jpg) bottom;
+  background:  url(/i/about_me.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -98,26 +98,26 @@
   z-index: 0;
 }
 .hover-fold .front2 {
-  background: url(../i/Reviews.jpg);
+  background: url(/i/Reviews.jpg);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom2 {
-  background:  url(../i/Reviews.jpg) bottom;
+  background:  url(/i/Reviews.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
   width: 100%;
   z-index: 0;
 }.hover-fold .front3 {
-  background: url(../i/blog.jpg);
+  background: url(/i/blog.jpg);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom3 {
-  background:  url(../i/blog.jpg) bottom;
+  background:  url(/i/blog.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -241,6 +241,8 @@ border-width: 0;
 /*-------------------- Мобильная версия -----------------------------*/
 
 @media all and (max-width: 700px) and (min-width: 0px){
+	.hover-fold h2 {
+margin-left: -80px;
 	.ienlarger {
   margin: 3px;
 }
