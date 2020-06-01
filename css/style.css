@@ -98,13 +98,13 @@
   z-index: 0;
 }
 .hover-fold .front2 {
-  background: url(../i/features.jpg);
+  background: url(../i/Reviews.jpg);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom2 {
-  background:  url(../i/features.jpg) bottom;
+  background:  url(../i/Reviews.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -182,8 +182,10 @@
   margin: 20px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   border: 1px solid #FFC411;
-
+transition: transform .2s; /* Animation */
 }
+.ienlarger:hover {
+    transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .ienlarger a { 
@@ -213,13 +215,9 @@
   padding-top: 3px;
   padding-right: 3px;
   padding-bottom: 13px;
-  padding-left: 3px;
-  
-
+  padding-left: 3px;  
 border-radius: 5px;
 border: 1px solid #ebebeb;
-#width: 640px;
-#height: 640px;
 box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
@@ -228,11 +226,10 @@ border-width: 0;
 }
 
 .ienlarger a:hover span { 
-  display:block;
+  #display:block;
   top: 50px; /* Большое изображение выскакивает вверх на 50px от миниатюры */
   left: -80px; /* Большое изображение выскакивает влево на 90px от миниатюры */
   z-index: 100;
-
 /* Если добавить правило cursor:default;, то отключится курсор в виде руки на большом изображении */
 }
 
@@ -240,13 +237,18 @@ border-width: 0;
   width: 250px; /* Вводим нужный размер миниатюры здесь */
   height : 200px;
 }
+
+/*-------------------- Мобильная версия -----------------------------*/
+
 @media all and (max-width: 700px) and (min-width: 0px){
 	.ienlarger {
   margin: 3px;
 }
 	.resize_thumb {
   width: 140px; /* Вводим нужный размер миниатюры здесь */
-  height : auto;
+  height : 100px;
 }
-	
+.ienlarger a:hover span { 
+  display:none;
+}
 }
