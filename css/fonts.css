@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&amp;subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
 #* {box-sizing: border-box;}
 body {margin: 0;}
 .post {
@@ -28,7 +28,6 @@ h8 {
 h6 {
 font-size:20px;
 font-weight:700;
-font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 color:#006;
 text-align:right;
 #text-transform:uppercase;
@@ -38,7 +37,6 @@ margin: revert;
 h7 {
 font-size:16px;
 font-weight:300;
-font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 color:#c8c8c8;
 #text-align:right;
 #text-transform:uppercase;
@@ -49,14 +47,12 @@ h3 {
   font-size: 29px;
   margin: 0;
   color: #c8c8c8;
-  font-family: 'TrixieWebPro-Light W07 Regular';
   #font-style: italic;
   letter-spacing: 1px;
   text-align: center;
 }
 h4 {
   margin: 15px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 23px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -66,7 +62,6 @@ h4 {
 }
 h5 {
   margin: 15px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   text-align: center;
   letter-spacing: 1px;
@@ -76,7 +71,6 @@ h5 {
 }
 h2 {
   margin: 15px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 35px;
   text-align: center;
   letter-spacing: 1px;
@@ -86,7 +80,6 @@ h2 {
 @media all and (max-width: 700px) and (min-width: 0px){
 	h8 {
   margin: 15px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   #text-align: center;
   letter-spacing: 1px;
@@ -131,13 +124,19 @@ font-weight: normal;
 }
 @font-face{
 font-family: 'TrixieWebPro-Light W07 Regular';
-src: url('../fonts/TrixieWebPro-Light%20W07%20Regular.ttf');
+src: url('../fonts/TrixieWebPro-Light W07 Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
 font-family: 'ShareTechMono-Regular';
 src: url('../fonts/ShareTechMono-Regular.ttf');
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: 'Montserrat-Light';
+src: url('../fonts/Montserrat-Light.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
