@@ -73,7 +73,7 @@ h2 {
   margin: 15px 0;
   font-size: 35px;
   text-align: center;
-  letter-spacing: 1px;
+  #letter-spacing: 1px;
   color: #0d1d2f;
   #text-shadow: #000 1px 1px 1px;
 }
