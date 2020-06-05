@@ -185,7 +185,7 @@
 /* HOVER STYLES */
 
 .butFrame3:hover img {
-  opacity: 0.4;
+  #opacity: 0.4;
 }
 
 .butFrame3:hover .butTextWrap::before,
