@@ -135,7 +135,7 @@
 /* EFFECT */
 
 .butFrame3 img {
-  opacity: 0.9;
+  opacity: 9;
   transition: opacity 0.35s;
   width: 100%;
   height: auto;
