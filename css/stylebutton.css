@@ -709,6 +709,7 @@ a.button23:before {
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
 	align-content: center;
 display: block;
+background-image: url(/i/fon.jpg);
 }
   .butFrame {
     display:block;
