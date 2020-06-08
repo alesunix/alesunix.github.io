@@ -4,8 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://alesunix.github.io/</loc>
@@ -29,11 +27,6 @@
 </url>
 <url>
   <loc>https://alesunix.github.io/Contacts.html</loc>
-  <lastmod>2020-06-04T09:42:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://alesunix.github.io/index.html</loc>
   <lastmod>2020-06-04T09:42:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
