@@ -709,7 +709,8 @@ a.button23:before {
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
 	align-content: center;
 display: block;
-background-image: url(/i/minifon.png);
+#background-image: url(/i/minifon.png);
+background: repeating-linear-gradient(50deg, #63869540, #63869540 5px, #1e2529 5px, #1e2529 10px);
 }
   .butFrame {
     display:block;
