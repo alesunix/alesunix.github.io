@@ -709,7 +709,7 @@ a.button23:before {
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
 	align-content: center;
 display: block;
-background-image: url(/i/fon.png);
+background-image: url(/i/minifon.png);
 }
   .butFrame {
     display:block;
