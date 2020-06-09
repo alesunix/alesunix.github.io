@@ -26,10 +26,10 @@
 		width: 90%;
 		position: relative;
 		margin: 10% auto;
-		padding: 5px 20px 13px 20px;
+		padding: 3px 3px 3px 3px;
 		border-radius: 10px;
 		color: #000;
-		font-size: 14px;
+		font-size: 10px;
 		background: #fff;
 		#background: -moz-linear-gradient(#fff, #999);
 		#background: -webkit-linear-gradient(#fff, #999);
@@ -40,16 +40,16 @@
 
 margin: 0 0 50px 0;
 font-size: 14px;
-text-shadow: 1px -1px 2px #fff;
+#text-shadow: 1px -1px 2px #fff;
 		opacity: .9;
 		background: #f90000;
 		color: #FFFFFF;
-		line-height: 35px;
+		line-height: 45px;
 		position: absolute;
 		right: -30px;
 		text-align: center;
 		top: 0px;
-		width: 84px;
+		width: 54px;
 		text-decoration: none;
 		font-weight: bold;
 		-webkit-border-radius: 12px;
@@ -60,7 +60,7 @@ text-shadow: 1px -1px 2px #fff;
 		box-shadow: 1px 1px 3px #000;
 	}
  
-	.close:hover { background: #00d9ff; }
+	.close:hover { background: #146788; }
 	@media all and (max-width: 700px) and (min-width: 0px){
   
 
