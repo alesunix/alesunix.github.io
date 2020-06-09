@@ -22,7 +22,7 @@
 	}
  
 	.modalDialog > div {
-		#display: flex;
+		display: flex;
 		width: 90%;
 		position: relative;
 		margin: 10% auto;
@@ -46,7 +46,7 @@ font-size: 14px;
 		color: #FFFFFF;
 		line-height: 45px;
 		position: absolute;
-		right: -30px;
+		right: -1px;
 		text-align: center;
 		top: 0px;
 		width: 54px;
