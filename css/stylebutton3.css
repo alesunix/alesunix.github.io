@@ -6,6 +6,7 @@
 
 .buttons3 * {
   transition: all .5s ease;
+  color: #fff;
 }
 
 .buttons3 {
@@ -123,7 +124,7 @@
 .butFrame3 .butHeading,
 .butFrame3 p {
   margin: 0;
-  color: #0d1d2f;
+  #color: #0d1d2f;
 }
 
 .butFrame3 p {
