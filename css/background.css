@@ -10,8 +10,6 @@ line-height: 25px;
 }
 
 .mainblock {
-  background: none;
-  margin: 90px auto; 
   position: absolute;  
 }
 .mylayer1 {
@@ -62,11 +60,6 @@ line-height: 25px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 	.mainblock {
-  background: none;
-  margin: 20px auto;
-  #width: 1800px;
-  #height: 700px;
-  position: absolute;
   overflow: hidden;
 }
 .textales {
