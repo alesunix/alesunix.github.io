@@ -12,7 +12,7 @@ line-height: 25px;
 .mainblock {
   background: none;
   margin: 90px auto; 
-  position: absolute;
+  position: absolute;  
 }
 .mylayer1 {
   width: 550px;
@@ -47,22 +47,18 @@ line-height: 25px;
 }
 .mylayer1 {
   background: linear-gradient(to bottom, rgba(229,243,12,0), rgba(243,61,12,0.4), rgba(12,99,243,0));
-  overflow: hidden;
 }
  
 .mylayer2 {
   background: linear-gradient(to bottom, rgba(30,60,55,0.2), rgba(75,40,125,0.5), rgba(60,20,80,0.6),rgba(0,0,0,0));
-  overflow: hidden;
 }
  
 .mylayer3 { 
   background: linear-gradient(to top, rgba(212, 157, 82, 0.33), rgba(195, 145, 78, 0.16), rgb(207, 152, 80));
-  overflow: hidden;
 }
  
 .mylayer4 { 
   background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(91, 128, 144, 0.46), rgba(91, 128, 144, 0.75));
-  overflow: hidden;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 	.mainblock {
@@ -71,24 +67,7 @@ line-height: 25px;
   #width: 1800px;
   #height: 700px;
   position: absolute;
-}
-.mylayer1 {
-  background: linear-gradient(to bottom, rgba(229,243,12,0), rgba(243,61,12,0.4), rgba(12,99,243,0));
-
-}
- 
-.mylayer2 {
-  background: linear-gradient(to bottom, rgba(30,60,55,0.2), rgba(75,40,125,0.5), rgba(60,20,80,0.6),rgba(0,0,0,0));
-
-}
- 
-.mylayer3 { 
-  background: linear-gradient(to top, rgba(212, 157, 82, 0.33), rgba(195, 145, 78, 0.16), rgb(207, 152, 80));
-
-}
-.mylayer4 { 
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(91, 128, 144, 0.46), rgba(91, 128, 144, 0.75));
-
+  overflow: hidden;
 }
 .textales {
 font-size: 14px;
