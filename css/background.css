@@ -64,6 +64,12 @@ line-height: 25px;
 	.mainblock {
   background: none;
   margin: 20px auto;
+  #width: 1800px;
+  #height: 700px;
+  position: absolute;
+}
+.mylayer4 { 
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(91, 128, 144, 0.46), rgba(91, 128, 144, 0.75));
   position: absolute;
 }
 .textales {
