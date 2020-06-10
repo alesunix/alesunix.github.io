@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  #margin: 200px auto 0 auto;
+  padding: 10px;
 }
 
 @-webkit-keyframes top {
