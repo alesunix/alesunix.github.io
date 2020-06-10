@@ -26,7 +26,7 @@ overflow: visible;
 font-family: inherit;
 font-size: 1em;
 text-align: center;
-cursor: pointer;
+#cursor: pointer;
 }
 
 .diwell {
@@ -47,7 +47,6 @@ width: 40%;
 font-family: inherit;
 font-size: 1em;
 text-align: left;
-cursor: pointer;
 }
 
 /* MEDIA QUERIES */

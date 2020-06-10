@@ -458,7 +458,7 @@ align-items: flex-start;
   #font-family: inherit;
   font-size: 1em;
   text-align: center;
-  cursor: pointer;
+  #cursor: pointer;
 }
 
 .butFrame img {
