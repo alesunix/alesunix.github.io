@@ -47,7 +47,7 @@ left: 2px;
   transform: skew(-45deg, 0deg);
 }
 .mylayer1 {
-  background: linear-gradient(to bottom, rgba(229,243,12,0), rgba(91, 128, 144, 0.58), rgba(12,99,243,0));
+  background: linear-gradient(to bottom, rgba(12, 189, 243, 0), rgba(91, 128, 144, 0.58), rgba(12,99,243,0));
 }
  
 .mylayer2 {
