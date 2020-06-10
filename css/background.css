@@ -63,9 +63,7 @@ line-height: 25px;
 @media all and (max-width: 700px) and (min-width: 0px){
 	.mainblock {
   background: none;
-  margin: 250px auto;
-  width: 1800px;
-  height: 700px;
+  margin: 20px auto;
   position: absolute;
 }
 .textales {
