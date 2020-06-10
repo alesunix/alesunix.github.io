@@ -11,6 +11,9 @@ line-height: 25px;
 
 .mainblock {
   position: absolute;  
+  overflow: hidden;
+  right: 2px;
+left: 2px;
 }
 .mylayer1 {
   width: 550px;
@@ -40,15 +43,15 @@ line-height: 25px;
   width: 350px;
   height: 300px;
   float: left;
-  margin: -22% 0% 0% -10%;
+  margin: -1% 0% 0% -10%;
   transform: skew(-45deg, 0deg);
 }
 .mylayer1 {
-  background: linear-gradient(to bottom, rgba(229,243,12,0), rgba(243,61,12,0.4), rgba(12,99,243,0));
+  background: linear-gradient(to bottom, rgba(229,243,12,0), rgba(91, 128, 144, 0.58), rgba(12,99,243,0));
 }
  
 .mylayer2 {
-  background: linear-gradient(to bottom, rgba(30,60,55,0.2), rgba(75,40,125,0.5), rgba(60,20,80,0.6),rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(30,60,55,0.2), rgba(75,40,125,0.5), rgba(0, 127, 172, 0.62),rgba(0,0,0,0));
 }
  
 .mylayer3 { 
@@ -56,11 +59,38 @@ line-height: 25px;
 }
  
 .mylayer4 { 
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(91, 128, 144, 0.46), rgba(91, 128, 144, 0.75));
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(160, 180, 189, 0.46), rgb(230, 231, 233));
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 	.mainblock {
   overflow: hidden;
+}
+.mylayer1 {
+  width: 100%;
+height: 600px;
+margin: 0;
+transform: none;
+}
+ 
+.mylayer2 {
+  width: 100%;
+height: 600px;
+margin: 0;
+transform: none;
+}
+ 
+.mylayer3 { 
+width: 0;
+  height: 0;
+  margin: -0;
+  transform: none;
+}
+ 
+.mylayer4 { 
+width: 0;
+  height: 0;
+  margin: -0;
+  transform: none;
 }
 .textales {
 font-size: 14px;
