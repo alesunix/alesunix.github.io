@@ -75,6 +75,8 @@ transform: none;
 height: 600px;
 margin: 0;
 transform: none;
+z-index: -999;
+position: absolute;
 }
  
 .mylayer3 { 
