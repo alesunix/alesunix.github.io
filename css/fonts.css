@@ -78,7 +78,10 @@ h2 {
   #text-shadow: #000 1px 1px 1px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
-	h8 {
+h1{
+margin: 25px 0;	
+}
+h8 {
   margin: 15px 0;
   font-size: 14px;
   #text-align: center;
