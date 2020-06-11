@@ -71,6 +71,7 @@ text-align: left;
     display: block;
     width:100%;
 	text-align: center;
+	padding-top: 5px;
   }
   .headerstyle {
 position: absolute;
