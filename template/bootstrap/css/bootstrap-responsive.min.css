@@ -824,6 +824,7 @@
   box-sizing:border-box;
   padding: 0px;
   background-size: inherit;
+  margin-top: 45px;
  }
  .span12,
  .row-fluid .span12 {
