@@ -111,26 +111,26 @@ h3 a {
 }
 
 @font-face{
-font-family: 'OpenSans-Regular';
-src: url('../fonts/OpenSans-Regular.ttf');
+font-family: 'Montserrat-Regular';
+src: url('../fonts/Montserrat-Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
-font-family: 'PTSans-Regular';
-src: url('../fonts/PTSans-Regular.ttf');
+font-family: 'Montserrat-Bold';
+src: url('../fonts/Montserrat-Bold.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
-font-family: 'TrixieWebPro-Light W07 Regular';
-src: url('../fonts/TrixieWebPro-Light W07 Regular.ttf');
+font-family: 'Montserrat-Medium';
+src: url('../fonts/Montserrat-Medium.ttf');
 font-style: normal; 
 font-weight: normal; 
 }
 @font-face{
-font-family: 'ShareTechMono-Regular';
-src: url('../fonts/ShareTechMono-Regular.ttf');
+font-family: 'Montserrat-SemiBold';
+src: url('../fonts/Montserrat-SemiBold.ttf');
 font-style: normal; 
 font-weight: normal; 
 }

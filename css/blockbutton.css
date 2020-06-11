@@ -283,13 +283,15 @@ text-shadow:0 -1px 0 rgba(0,0,0,.3)
 .pcv_button.silver:hover{background:#d2d2d2}
 
 .portfolio-items li div.caption h3,.portfolio-items li div.caption2 h3,.portfolio-items li div.caption3 h3,.portfolio-items li div.caption4 h3,.portfolio-items li div.caption5 h3,.portfolio-items li div.caption6 h3,.portfolio-items li div.caption7 h3,.portfolio-items li div.caption8 h3,.portfolio-items li div.caption9 h3,.portfolio-items li div.caption10 h3,.portfolio-items li div.caption11 h3,.portfolio-items li div.caption12 h3,.portfolio-items li div.caption13 h3,.portfolio-items li div.caption14 h3,.portfolio-items li div.caption15 h3 {
-font-weight:700;
-font-size:16px;
-text-transform:uppercase;
-padding-bottom:5px;
-margin-bottom:10px;
-border-bottom:1px solid #628694;
-text-shadow:1px 1px 1px #303857;
+font-weight: 700;
+font-size: 20px;
+text-transform: uppercase;
+padding-bottom: 5px;
+margin-bottom: 10px;
+border-bottom: 1px solid #628694;
+text-shadow: 1px 1px 1px #1e2529;
+font-family: 'Montserrat-Bold';
+margin-top: 20px;
 }
 
 .portfolio-items li div.caption,.portfolio-items li div.caption2,.portfolio-items li div.caption3,.portfolio-items li div.caption4,.portfolio-items li div.caption5,.portfolio-items li div.caption6,.portfolio-items li div.caption7,.portfolio-items li div.caption8,.portfolio-items li div.caption9,.portfolio-items li div.caption10,.portfolio-items li div.caption11,.portfolio-items li div.caption12,.portfolio-items li div.caption13,.portfolio-items li div.caption14,.portfolio-items li div.caption15 {
@@ -716,4 +718,14 @@ filter:alpha(opacity=80);
     font-size: 12px;
     padding: 10px;
 	line-height: 15px;
+}
+.portfolio-items li div.caption h3,.portfolio-items li div.caption2 h3,.portfolio-items li div.caption3 h3,.portfolio-items li div.caption4 h3,.portfolio-items li div.caption5 h3,.portfolio-items li div.caption6 h3,.portfolio-items li div.caption7 h3,.portfolio-items li div.caption8 h3,.portfolio-items li div.caption9 h3,.portfolio-items li div.caption10 h3,.portfolio-items li div.caption11 h3,.portfolio-items li div.caption12 h3,.portfolio-items li div.caption13 h3,.portfolio-items li div.caption14 h3,.portfolio-items li div.caption15 h3 {
+font-weight:700;
+font-size:16px;
+text-transform:uppercase;
+padding-bottom:5px;
+margin-bottom:10px;
+border-bottom:1px solid #628694;
+text-shadow: 1px 1px 1px #1e2529;
+margin-top: 0px;
 }
