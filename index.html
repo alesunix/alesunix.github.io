@@ -420,9 +420,15 @@ alt=""/></a><script>(function(d,s){d.getElementById("licntD73C").src=
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/TweenLite.min.js" type="text/javascript"></script>
-<script src="js/EasePack.min.js" type="text/javascript"></script>
-<script src="js/demo.js" type="text/javascript"></script>
+
+<!--Animated-Background-->
+<script type="text/javascript">
+{
+if (screen.width > 480) document.write ('<script src="js/TweenLite.min.js" ></sc' + 'ript>');
+if (screen.width > 480) document.write ('<script src="js/EasePack.min.js"" ></sc' + 'ript>');
+if (screen.width > 480) document.write ('<script src="js/demo.js" ></sc' + 'ript>');
+}
+</script>
 <script type="text/javascript">
     $(document).on('ready', function() {
       $(".slider__wrapper").slick({
