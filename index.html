@@ -57,6 +57,7 @@
 <link rel="image_src" href="https://alesunix.github.io/i/Logo.png">
 
      <link rel="stylesheet" type="text/css" href="css/background.css" />
+	  <link rel="stylesheet" type="text/css" href="css/Animated-Background.css" />
 	 <link rel="stylesheet" type="text/css" href="css/style.css" />
 	 <link rel="stylesheet" type="text/css" href="css/blockbutton.css" />	 
 	 <link rel="stylesheet" type="text/css" href="css/styleheader.css" />
@@ -72,6 +73,11 @@
 	 <link rel="stylesheet" href="css/about-me.css"> 
 </head>
 <body>
+<!--Animated-Background-->
+      <div id="large-header" class="large-header">
+         <canvas id="demo-canvas"></canvas>
+      </div>
+<!--Animated-Background-->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0"></script>
 <!--header-->
@@ -414,6 +420,9 @@ alt=""/></a><script>(function(d,s){d.getElementById("licntD73C").src=
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/TweenLite.min.js" type="text/javascript"></script>
+<script src="js/EasePack.min.js" type="text/javascript"></script>
+<script src="js/demo.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).on('ready', function() {
       $(".slider__wrapper").slick({
