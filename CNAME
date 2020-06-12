@@ -1,1 +1,4 @@
-alesunix.ru
+type: CNAME
+host: www.alesunix.ru
+answer: alesunix.github.io
+TTL: 300
