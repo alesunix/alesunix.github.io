@@ -4,6 +4,12 @@
 	#min-height: 100vh;
 	#pading: 100px;
 }
+.h2{
+font-size: 16px;
+	margin-left: 10px;
+	text-align: left;
+	font-family: 'Montserrat-Medium';
+}
 .textales {
 position: relative;
 overflow: hidden;
