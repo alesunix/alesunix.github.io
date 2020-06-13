@@ -1,3 +1,9 @@
+.box2{
+	#position: relative;
+	#width: 100%;
+	#min-height: 100vh;
+	#pading: 100px;
+}
 .textales {
 position: relative;
 overflow: hidden;
