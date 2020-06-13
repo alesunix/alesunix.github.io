@@ -280,15 +280,18 @@ alesunix@gmail.com <br>
 
 <aside class="span3">
 <!--/Блоки-->
+<div class="box2">
 <div class="mainblock">
-    <div class="mylayer1"></div>
-    <div class="mylayer2"></div>  
-    <div class="mylayer3"></div>
-    <div class="mylayer4"></div>
+    <h2 class="text7"> <div class="mylayer1"></div></h2>
+    <h2 class="text8"><div class="mylayer2"></div>  </h2>
+    <h2 class="text9"><div class="mylayer3"></div></h2>
+    <h2 class="text10"><div class="mylayer4"></div></h2>
   </div>
+</div>
 
 <div class='tabl'>
 <div class="textales">
+<div class="box1">
 <hr>
 <b>Создание программного обеспечения осуществляется в несколько этапов:</b>
 <br><br>
@@ -300,7 +303,7 @@ alesunix@gmail.com <br>
 <b>&emsp;&emsp;• Внедрение </b>
 <br><br>
 
-<div class="box1">	
+	
 <h2 class="text1"> <b>Подготовка -</b> На данном этапе выполняется сбор и обработка требований. Планирование этапов работ, а также сроков и стоимости.</h2>
 <br>
 <h2 class="text2"> <b>Проектирование -</b> На этом этапе осуществляется получение технического задания, разработка спецификаций.</h2>
@@ -442,6 +445,21 @@ pin: true
 	.from(".text4", {x:innerWidth * 1})
 	.from(".text5", {x:innerWidth * 1})
 	.from(".text6", {x:innerWidth * 1})
+	
+	gsap.timeline({
+scrollTrigger: {
+trigger: ".box2",
+start: "center center",
+end: "bottom top",
+markers: true,
+scrub: true,
+pin: true
+}
+})
+.from(".text7", {x:innerWidth * 1})
+.from(".text8", {x:innerWidth * 1})
+.from(".text9", {x:innerWidth * 1})
+.from(".text10", {x:innerWidth * 1})
 </script>
 	
 <!--Animated-Background-->
