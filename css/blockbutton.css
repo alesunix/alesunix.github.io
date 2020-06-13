@@ -32,7 +32,7 @@ margin: 6px;
 .portfolio-items li img {
 display:block;
 width:301px;
-height:235px;
+height:229px;
 background:#d1d2d3;
 border:1px solid #fff;
 border-radius:5px;
@@ -314,7 +314,7 @@ line-height: 25px;
 
 .portfolio-items li:hover div.caption,.portfolio-items li:hover div.caption2,.portfolio-items li:hover div.caption3,.portfolio-items li:hover div.caption4,.portfolio-items li:hover div.caption5,.portfolio-items li:hover div.caption6,.portfolio-items li:hover div.caption7,.portfolio-items li:hover div.caption8,.portfolio-items li:hover div.caption9,.portfolio-items li:hover div.caption10,.portfolio-items li:hover div.caption11,.portfolio-items li:hover div.caption12,.portfolio-items li:hover div.caption13,.portfolio-items li:hover div.caption14,.portfolio-items li:hover div.caption15 {
 width:286px;
-height:220px;
+height:215px;
 opacity:1;
 filter:alpha(opacity=80);
 }
