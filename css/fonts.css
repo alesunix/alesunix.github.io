@@ -70,11 +70,12 @@ h5 {
   #text-shadow: #000 1px 1px 1px;
 }
 h2 {
-  margin: 15px 0;
-  font-size: 35px;
-  text-align: center;
+  font-family: 'Montserrat-Medium';
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: left;
   #letter-spacing: 1px;
-  color: #0d1d2f;
+  color: #c8c8c8;
   #text-shadow: #000 1px 1px 1px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
