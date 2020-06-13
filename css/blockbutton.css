@@ -641,8 +641,8 @@ border:1px solid #5448A4!important;
 .portfolio-items li div.caption9,.portfolio-items li div.caption12,.portfolio-items li div.caption13,.portfolio-items li div.caption14,.portfolio-items li div.caption15 {
 bottom:7px;
 right:7px;
-width:181px;
-height:130px;
+width:100%;
+height:100%;
 }
 
 .portfolio-items li:hover div.caption10,.portfolio-items li:hover div.caption11 {
