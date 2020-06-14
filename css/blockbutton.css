@@ -688,8 +688,8 @@ height: 100%;
 #padding: 2px;
 }
 .portfolio-items li:hover div.caption14 {
-width:96%;
-height:95%;
+width:97%;
+height:96%;
 opacity:1;
 border-radius: 5px;
 right: 3px;
@@ -697,8 +697,8 @@ bottom: 3px;
 filter:alpha(opacity=80);
 }
 .portfolio-items li {
-	width: 46%;
-	margin: 6px;
+	width: 48%;
+	margin: 2px;
 }
 .pcv_button {
     display: inline-block;
