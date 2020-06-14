@@ -697,7 +697,7 @@ bottom: 3px;
 filter:alpha(opacity=80);
 }
 .portfolio-items li {
-	display: contents;
+	#display: contents;
 	margin: 2px;
 }
 .pcv_button {
