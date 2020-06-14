@@ -53,6 +53,9 @@
  display:inherit!important
 }
 @media(min-width:768px) and (max-width:979px) {
+  .container-fluid{
+    margin-left: inherit;
+  }
  .hidden-desktop {
   display:inherit!important
  }
@@ -786,8 +789,9 @@
   margin-left:0px;
  }
  .container-fluid {
-  padding:0
-  margin-left: initial;
+  padding:0;
+  
+  margin-left: inherit;
  }
  .dl-horizontal dt {
   float:none;
@@ -1083,7 +1087,7 @@
  }
  .navbar .btn-navbar {
   display:block;
-  width: 20%;
+  width: 60px;
  }
  .navbar-static .navbar-inner {
   padding-right:10px;
