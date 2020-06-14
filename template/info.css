@@ -4,14 +4,17 @@ body {
 	#padding-bottom: 40px;
 }
 .footer{
-	background: #999;
-	color: #17232B;
-	height:400px;
+	background: #1e2529;
+	color: #fff;
+	height:150px;
 	position: relative;
 }
+.footer .footer-content{
+	border-bottom: 1px solid #blue;
+}
 .footer .footer-bottom{
-	background: #999;
-	color: #17232B;
+	background: #1d2225;
+	color: #fff;
 	height:50px;
 	width: 100%;
 	text-align: center;
