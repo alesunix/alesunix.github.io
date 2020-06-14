@@ -683,13 +683,13 @@ transition-delay:.2s;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 .portfolio-items li img {
-width: 181px;
-height: 140px;
-padding: 2px;
+width: 100%;
+height: 100%;
+#padding: 2px;
 }
 .portfolio-items li:hover div.caption14 {
-width:175px;
-height:135px;
+width:96%;
+height:95%;
 opacity:1;
 border-radius: 5px;
 right: 3px;
@@ -697,8 +697,8 @@ bottom: 3px;
 filter:alpha(opacity=80);
 }
 .portfolio-items li {
-	#display: contents;
-	margin: 2px;
+	width: 46%;
+	margin: 6px;
 }
 .pcv_button {
     display: inline-block;
