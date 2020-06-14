@@ -574,7 +574,7 @@
   *width:82.81973668743387%
  }
  .row-fluid .span9 {
-  width:74.30939226519337%;
+  width:100%;
   *width:74.25620077583166%
  }
  .row-fluid .span8 {
@@ -598,7 +598,7 @@
   *width:31.43852121782062%
  }
  .row-fluid .span3 {
-  width:22.92817679558011%;
+  width:100%;
   *width:22.87498530621841%
  }
  .row-fluid .span2 {
@@ -787,6 +787,7 @@
  }
  .container-fluid {
   padding:0
+  margin-left: initial;
  }
  .dl-horizontal dt {
   float:none;
