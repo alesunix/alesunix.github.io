@@ -355,28 +355,19 @@ alesunix@gmail.com <br>
 <div class="navbar centered-pills">
 <nav class="navbar-inner">
 <ul class="nav-pills" style="margin:5px 0 0 0;">
-<li class="active"><a href="index.html" title="">ГЛАВНАЯ</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li><a href="Contacts.html" title="">КОНТАКТЫ</a></li></ul>
+<?=GetMenuItems($this_page, $footmenu, $category)?>
+</ul>
 </nav>
 </div>
-	<div class="footer">
+<div class="footer">
 		<div class="footer-content">
-			<div class="footer-silection about">
-<small>
-<p class="pull-right">
-<b>Контакты:
-<br>Адрес: г. Бишкек
-<br>+996 (559) 10 12 55
-<br>alesunix@gmail.com
-<br><a href="https://www.facebook.com/alesunix" target="_blank">Facebook</a> &emsp; <a href="https://twitter.com/alesunix" target="_blank">Twitter</a></p>
-</div>
-<div class="footer-silection links">
+		<div class="footer-silection-left">
 Использование материалов <br>
 без письменного согласия<br>
 и ссылки на источник запрещено.<br>
 
-<sub>
 <!--LiveInternet counter--><a href="//www.liveinternet.ru/click"
-target="_blank"><img id="licnt9390" width="88" height="31" style="border:0" 
+target="_blank"><img id="licnt9390" width="88" height="31" style="border:0"
 title="LiveInternet: показано число просмотров и посетителей за 24 часа"
 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
 alt=""/></a><script>(function(d,s){d.getElementById("licnt9390").src=
@@ -385,7 +376,17 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt9390").src=
 (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
 ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
 (document,screen)</script><!--/LiveInternet-->
-</sub>
+</div>
+<div class="footer-silection-center">
+
+</div>
+<div class="footer-silection-right">
+Контакты:<br>
+Адрес: г. Бишкек<br>
++996 (559) 10 12 55<br>
+alesunix@gmail.com<br>
+<a href="https://www.facebook.com/alesunix" target="_blank"><img src="i/ic-facebook.svg"></a>
+<a href="https://twitter.com/alesunix" target="_blank"><img src="i/ic-twitter.svg"></a>
 </div>
 </div>
 <div class="footer-bottom">

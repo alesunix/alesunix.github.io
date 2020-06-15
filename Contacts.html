@@ -55,7 +55,7 @@ new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'e
 
 <div class="headerstyle">
 <div class="tabstyle"><a href="index.html">
-<img src="i/Logo.png" width="320" alt="alesunix" oncontextmenu="return false;"></a>
+<img src="i/Logo.png" width="320" alt="alesunix" oncontextmenu="return false;">
 
 </div>
 <div class="tabstyle">
@@ -177,36 +177,24 @@ alesunix@gmail.com <br>
 </section>
 <!--/content-->
 <!--footer-->
-<style>
-.footer-bg {
-#background-image: url(i/footer.png);
-#text-shadow: -1px 1px 1px #000;
-color: #fff;
-}
-</style>
 <footer class="container-fluid & footer-bg">
 <footer class="container-fluid">
 <div class="navbar centered-pills">
 <nav class="navbar-inner">
 <ul class="nav-pills" style="margin:5px 0 0 0;">
-<li><a href="index.html" title="">ГЛАВНАЯ</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li><a href="Contacts.html" title="">КОНТАКТЫ</a></li></ul>
+<?=GetMenuItems($this_page, $footmenu, $category)?>
+</ul>
 </nav>
 </div>
-<small>
-<p class="pull-right">
-<b>Контакты:
-<br>Адрес: г. Бишкек
-<br>+996 (559) 10 12 55
-<br>alesunix@gmail.com
-<br><a href="https://www.facebook.com/alesunix" target="_blank">developed by alesunix</a>
-</p>
+<div class="footer">
+		<div class="footer-content">
+		<div class="footer-silection-left">
 Использование материалов <br>
 без письменного согласия<br>
 и ссылки на источник запрещено.<br>
 
-<sub>
 <!--LiveInternet counter--><a href="//www.liveinternet.ru/click"
-target="_blank"><img id="licnt9390" width="88" height="31" style="border:0" 
+target="_blank"><img id="licnt9390" width="88" height="31" style="border:0"
 title="LiveInternet: показано число просмотров и посетителей за 24 часа"
 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
 alt=""/></a><script>(function(d,s){d.getElementById("licnt9390").src=
@@ -215,9 +203,23 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt9390").src=
 (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
 ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
 (document,screen)</script><!--/LiveInternet-->
+</div>
+<div class="footer-silection-center">
 
-</sub>
-</b>
+</div>
+<div class="footer-silection-right">
+Контакты:<br>
+Адрес: г. Бишкек<br>
++996 (559) 10 12 55<br>
+alesunix@gmail.com<br>
+<a href="https://www.facebook.com/alesunix" target="_blank"><img src="i/ic-facebook.svg"></a>
+<a href="https://twitter.com/alesunix" target="_blank"><img src="i/ic-twitter.svg"></a>
+</div>
+</div>
+<div class="footer-bottom">
+&copy; <script type="text/javascript">dt = new Date();document.write(dt.getFullYear());</script> alesunix.github.io | Designed by Alesunix 
+</div>
+</div>
 </footer>
 <!--/footer -->
 
