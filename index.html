@@ -256,7 +256,7 @@ alesunix@gmail.com <br>
 <!--/Установка новостей-->
 <aside class="span3">	
 <!--/Блоки-->
-<div class="box1">
+<div class="box">
 <div class="mainblock">
 	          <div class="mylayer1"></div>
 <h2 class="text2"><div class="mylayer2"></div></h2>
@@ -266,7 +266,7 @@ alesunix@gmail.com <br>
 
 <div class='tabl'>
 <div class="textales">
-<hr>	
+<hr><br><br>
 Создание программного обеспечения осуществляется в несколько этапов:
 <br><br>
 &emsp;&emsp;• Подготовка <br>
@@ -283,11 +283,12 @@ alesunix@gmail.com <br>
 <br><b>Кодирование -</b> Этот этап является последовательным процессом создания исходных кодов программы, тестирования и отладки программного обеспечения.</h2>
 <h2 class="text3"> <b>Тестирование -</b> Это процесс работы с программой на тестовых примерах с целью поиска и устранения ошибок в ней.
 <br><b>Внедрение -</b> Подготовка и передача программы, установка программного обеспечения, обучение пользователей, сопровождение.</h2>
+<br><br><hr>
 
-<hr>
+
 </div class="textales">
 </div class='tabl'>
-</div class="box1">	
+</div class="box">	
 	
 <div class="tabl">
 <div class="tab">
@@ -422,7 +423,7 @@ alesunix@gmail.com<br>
 <script type="text/javascript">
 		gsap.timeline({
 scrollTrigger: {
-trigger: ".box1",
+trigger: ".box",
 start: "center center",
 end: "bottom top",
 markers: false,
@@ -431,7 +432,7 @@ pin: true
 }
 })
 .from(".text1", {x:innerWidth * 1})
-	.from(".text2", {x:innerWidth * 1})
+	.from(".text2", {x:innerWidth * -1})
 	.from(".text3", {x:innerWidth * 1})
 </script>
 
