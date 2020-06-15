@@ -31,8 +31,8 @@ margin: 6px;
 
 .portfolio-items li img {
 display:block;
-width:301px;
-height:235px;
+width:100%;
+height:100%;
 background:#d1d2d3;
 border:1px solid #fff;
 border-radius:5px;
@@ -313,8 +313,8 @@ line-height: 25px;
 }
 
 .portfolio-items li:hover div.caption,.portfolio-items li:hover div.caption2,.portfolio-items li:hover div.caption3,.portfolio-items li:hover div.caption4,.portfolio-items li:hover div.caption5,.portfolio-items li:hover div.caption6,.portfolio-items li:hover div.caption7,.portfolio-items li:hover div.caption8,.portfolio-items li:hover div.caption9,.portfolio-items li:hover div.caption10,.portfolio-items li:hover div.caption11,.portfolio-items li:hover div.caption12,.portfolio-items li:hover div.caption13,.portfolio-items li:hover div.caption14,.portfolio-items li:hover div.caption15 {
-width:286px;
-height:220px;
+width:95%;
+height:94%;
 opacity:1;
 filter:alpha(opacity=80);
 }
@@ -641,8 +641,8 @@ border:1px solid #5448A4!important;
 .portfolio-items li div.caption9,.portfolio-items li div.caption12,.portfolio-items li div.caption13,.portfolio-items li div.caption14,.portfolio-items li div.caption15 {
 bottom:7px;
 right:7px;
-width:181px;
-height:130px;
+width:100%;
+height:100%;
 }
 
 .portfolio-items li:hover div.caption10,.portfolio-items li:hover div.caption11 {
@@ -682,14 +682,14 @@ transform:scale(1);
 transition-delay:.2s;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
-	.portfolio-items li img {
-width: 181px;
-height: 140px;
-padding: 2px;
+.portfolio-items li img {
+width: 100%;
+height: 100%;
+#padding: 2px;
 }
 .portfolio-items li:hover div.caption14 {
-width:175px;
-height:135px;
+width:97%;
+height:96%;
 opacity:1;
 border-radius: 5px;
 right: 3px;
@@ -697,6 +697,7 @@ bottom: 3px;
 filter:alpha(opacity=80);
 }
 .portfolio-items li {
+	width: 48%;
 	margin: 2px;
 }
 .pcv_button {
@@ -707,8 +708,8 @@ filter:alpha(opacity=80);
 .portfolio-items li div.caption14, .portfolio-items li div.caption15 {
     bottom: 7px;
     right: 7px;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
 .portfolio-items li div.caption14, .portfolio-items li div.caption15 {
     display: block;

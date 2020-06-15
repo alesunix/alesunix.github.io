@@ -70,11 +70,13 @@ h5 {
   #text-shadow: #000 1px 1px 1px;
 }
 h2 {
+  font-family: 'Montserrat-Medium';
+  font-weight: normal;
   margin: 15px 0;
-  font-size: 35px;
-  text-align: center;
+  font-size: 16px;
+  text-align: left;
   #letter-spacing: 1px;
-  color: #0d1d2f;
+  color: #c8c8c8;
   #text-shadow: #000 1px 1px 1px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
@@ -92,7 +94,7 @@ h8 {
   #text-shadow: #000 1px 1px 1px;
 }
 h2 {
-font-size: 20px;
+font-size: 14px;
 }
 h2 small{
 font-size: 14px;

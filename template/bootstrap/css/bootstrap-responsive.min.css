@@ -53,6 +53,9 @@
  display:inherit!important
 }
 @media(min-width:768px) and (max-width:979px) {
+  .container-fluid{
+    margin-left: inherit;
+  }
  .hidden-desktop {
   display:inherit!important
  }
@@ -549,7 +552,7 @@
   float:left;
   width:100%;
   min-height:30px;
-  margin-left:2.7624309392265194%;
+  margin-left:0%;
   *margin-left:2.709239449864817%;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -574,7 +577,7 @@
   *width:82.81973668743387%
  }
  .row-fluid .span9 {
-  width:74.30939226519337%;
+  width:100%;
   *width:74.25620077583166%
  }
  .row-fluid .span8 {
@@ -598,7 +601,7 @@
   *width:31.43852121782062%
  }
  .row-fluid .span3 {
-  width:22.92817679558011%;
+  width:100%;
   *width:22.87498530621841%
  }
  .row-fluid .span2 {
@@ -786,7 +789,9 @@
   margin-left:0px;
  }
  .container-fluid {
-  padding:0
+  padding:0;
+  
+  margin-left: inherit;
  }
  .dl-horizontal dt {
   float:none;
@@ -1082,7 +1087,7 @@
  }
  .navbar .btn-navbar {
   display:block;
-  width: 20%;
+  width: 60px;
  }
  .navbar-static .navbar-inner {
   padding-right:10px;
