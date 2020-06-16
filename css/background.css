@@ -1,4 +1,4 @@
-.box1{
+.box{
 	#position: relative;
 	#width: 100%;
 	#min-height: 100vh;
@@ -63,7 +63,7 @@ left: 2px;
 }
  
 .mylayer3 { 
-  background: linear-gradient(to top, rgba(212, 157, 82, 0.33), rgba(195, 145, 78, 0.16), rgb(207, 152, 80));
+  background: linear-gradient(to top, rgba(212, 157, 82, 0), rgba(195, 145, 78, 0.16), rgb(207, 152, 80));
 }
  
 .mylayer4 { 
