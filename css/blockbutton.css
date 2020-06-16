@@ -690,6 +690,12 @@ transform:scale(1);
 -ms-transition-delay:.2s;
 transition-delay:.2s;
 }
+@media all and (max-width: 1470px) and (min-width: 0px){
+	.portfolio-items li {
+	width: 24%;
+	margin: 2px;
+}
+}
 @media all and (max-width: 700px) and (min-width: 0px){
 .portfolio-items li img {
 width: 100%;
