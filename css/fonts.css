@@ -71,13 +71,14 @@ h5 {
 }
 h2 {
   font-family: 'Montserrat-Medium';
-  font-weight: normal;
-  margin: 15px 0;
-  font-size: 16px;
-  text-align: left;
-  #letter-spacing: 1px;
-  color: #c8c8c8;
-  #text-shadow: #000 1px 1px 1px;
+font-weight: normal;
+margin: 15px 0;
+font-size: 16px;
+text-align: left;
+letter-spacing: 0.5px;
+color: #c8c8c8;
+text-shadow: #000 1px 1px 1px;
+line-height: 24px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 h1{
