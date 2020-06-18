@@ -1,8 +1,10 @@
 .box{
-	#position: relative;
+	position: relative;
 	#width: 100%;
 	#min-height: 100vh;
 	#padding: 100px;
+	display: block;
+	#padding: 0px 0px 602px;
 }
 
 .textales {
@@ -43,7 +45,7 @@ left: 2px;
   width: 270px;
   height: 450px;
   float: left;
-  margin: 3% 0% 0% -42%;
+  margin: 6% 0% 0% -45%;
   transform: skew(-45deg, 0deg);
 }
  
@@ -51,7 +53,7 @@ left: 2px;
   width: 350px;
   height: 300px;
   float: left;
-  margin: -6% 0% 0% -10%;
+  margin: -3% 0% 0% -15%;
   transform: skew(-45deg, 0deg);
 }
 .mylayer1 {
