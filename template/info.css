@@ -70,14 +70,14 @@ font-size: 12px;
 
 .well-inverse {
 	background-color: #17232B;
-	background-image: url(/i/fon.png);
+	background-image: url(../i/fon.html);
 	background-size: cover;
 	background: repeating-linear-gradient(50deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 	.well-inverse {
 	background-size: cover;
-	#background-image: url(/i/fonmini.png);
+	#background-image: url(../i/fonmini.html);
 	background: repeating-linear-gradient(50deg, #63869540, #63869540 10px, #1e2529 10px, #1e2529 90px);
 }
 }
