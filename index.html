@@ -176,7 +176,7 @@ alesunix@gmail.com <br>
 
 <!-- Cлайдер ---------------------------------------------------------------------------------------------------------------->
 
-  <div class="slider">
+<div class="slider">
 <div class="slider__wrapper">
 <!-- 1.Cлайд ---------------------------------------------------------------------------------------------------------------->
 <div class="slider__item">
@@ -406,9 +406,6 @@ alesunix@gmail.com<br>
 	 <link rel="stylesheet" type="text/css" href="css/stylebutton4.css" />
 	 <link rel="stylesheet" href="css/styleModal.css">	 
 	 <link rel="stylesheet" href="css/fonts.css"> 
-	 <link rel="stylesheet" href="css/Slider.css"> 
-	 <link rel="stylesheet" type="text/css" href="css/slick.css">
-     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	 <link rel="stylesheet" href="css/about-me.css"> 
 	 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
@@ -462,9 +459,33 @@ pin: true,
 <script src="js/swiper.min.js"></script>
 <!-- Initialize Swiper -->
   <script>
+  var swiper = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+// now add mouseover and mouse out events on '.swiper-slide' elemnts to pause and resume the autoplay;
+$('.swiper-slide').on('mouseover', function() {
+  swiper.autoplay.stop();
+});
+
+$('.swiper-slide').on('mouseout', function() {
+  swiper.autoplay.start();
+});
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 10,
-      slidesPerView: 5,
+      slidesPerView: 4,
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
@@ -480,19 +501,9 @@ pin: true,
       }
     });
   </script>
+<!-- Swiper JS -->
 	
 
-	
-<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-    $(document).on('ready', function() {
-      $(".slider__wrapper").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-		autoplay: true,
-        infinite: true
-      });
-    });
-</script>
 <script>
 $(document).ready(function(){
 			$('#button_contacts').click(function(){

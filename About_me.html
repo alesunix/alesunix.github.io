@@ -328,9 +328,33 @@ alesunix@gmail.com<br>
 <script src="js/swiper.min.js"></script>
 <!-- Initialize Swiper -->
   <script>
+  var swiper = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+// now add mouseover and mouse out events on '.swiper-slide' elemnts to pause and resume the autoplay;
+$('.swiper-slide').on('mouseover', function() {
+  swiper.autoplay.stop();
+});
+
+$('.swiper-slide').on('mouseout', function() {
+  swiper.autoplay.start();
+});
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 10,
-      slidesPerView: 4,
+      slidesPerView: 5,
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
@@ -346,5 +370,6 @@ alesunix@gmail.com<br>
       }
     });
   </script>
+<!-- Swiper JS -->
 </body>
 </html>
