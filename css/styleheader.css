@@ -25,8 +25,10 @@ background: #1e2529; /* Цвет фона */
 .tabl {
 justify-content: center;
 flex-wrap: wrap;
-display: -webkit-flex;
+display: -webkit-box;
+display: -moz-box;
 display: -ms-flexbox;
+display: -webkit-flex;
 display: flex;
 align-items: center;
 }
