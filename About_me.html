@@ -182,8 +182,8 @@ title="Нажмите здесь, чтобы открыть документ">
 <img src="i/photo.jpg">
 </div>
 <div class="details">
-<b><em>"Самое инновационное решение сложной проблемы часто бывает самым простым. <br>
-Но любой, кто посвятил свое время большим идеям, знает, что простое и легкое - это две очень разные вещи."</em></b>
+<em>"Самое инновационное решение сложной проблемы часто бывает самым простым. <br>
+Но любой, кто посвятил свое время большим идеям, знает, что простое и легкое - это две очень разные вещи."</em>
 </div>
 </div>
 
@@ -325,16 +325,7 @@ alesunix@gmail.com<br>
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-    $(document).on('ready', function() {
-      $(".slider__wrapper").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-		autoplay: true,
-        infinite: true
-      });
-    });
-</script>
+
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
 <!-- Initialize Swiper -->
@@ -357,84 +348,5 @@ alesunix@gmail.com<br>
       }
     });
   </script>
-<script>
-$(document).ready(function(){
-			$('#button_contacts').click(function(){
-				// собираем данные с формы
-				var form_name 	 = $('#form_name').val();
-				var form_email 	 = $('#form_email').val();
-				var form_message = $('#form_message').val();
-				// отправляем данные
-				$.ajax({
-					url: "feedback.php", // куда отправляем
-					type: "post", // метод передачи
-					dataType: "json", // тип передачи данных
-					data: { // что отправляем
-						"form_name": 	form_name,
-						"form_email": 	form_email,
-						"form_message": form_message
-					},
-					// после получения ответа сервера
-					success: function(data){
-						$('.messages').html(data.result); // выводим ответ сервера
-					}
-				});
-			});
-		});
-</script>
-<script>
-	$(".mail-btn").on("click touchstart", function () {
-    $(this).addClass("fly");
-    that = this
-    setTimeout(function() {
-        $(that).removeClass("fly");
-    }, 5400)
-});
-</script>
-
-<!-- Top100 (Kraken) Counter -->
-<script>
-    (function (w, d, c) {
-    (w[c] = w[c] || []).push(function() {
-        var options = {
-            project: 7008826,
-        };
-        try {
-            w.top100Counter = new top100(options);
-        } catch(e) { }
-    });
-    var n = d.getElementsByTagName("script")[0],
-    s = d.createElement("script"),
-    f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src =
-    (d.location.protocol == "https:" ? "https:" : "http:") +
-    "//st.top100.ru/top100/top100.js";
-
-    if (w.opera == "[object Opera]") {
-    d.addEventListener("DOMContentLoaded", f, false);
-} else { f(); }
-})(window, document, "_top100q");
-</script>
-<noscript>
-  <img src="http://counter.rambler.ru/top100.cnt?pid=7008826" alt="Топ-100" />
-</noscript>
-<!-- END Top100 (Kraken) Counter -->
-<!-- Rating Mail.ru counter -->
-<script type="text/javascript">
-var _tmr = window._tmr || (window._tmr = []);
-_tmr.push({id: "3166597", type: "pageView", start: (new Date()).getTime()});
-(function (d, w, id) {
-  if (d.getElementById(id)) return;
-  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
-  ts.src = "https://top-fwz1.mail.ru/js/code.js";
-  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
-  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
-})(document, window, "topmailru-code");
-</script><noscript><div>
-<img src="https://top-fwz1.mail.ru/counter?id=3166597;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
-</div></noscript>
-<!-- //Rating Mail.ru counter -->
 </body>
 </html>
