@@ -45,7 +45,7 @@ left: 2px;
   width: 270px;
   height: 450px;
   float: left;
-  margin: 6% 0% 0% -45%;
+  margin: 4% 0% 0% -45%;
   transform: skew(-45deg, 0deg);
 }
  
@@ -53,7 +53,7 @@ left: 2px;
   width: 350px;
   height: 300px;
   float: left;
-  margin: -3% 0% 0% -15%;
+  margin: -5% 0% 0% -15%;
   transform: skew(-45deg, 0deg);
 }
 .mylayer1 {
