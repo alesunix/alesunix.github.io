@@ -419,26 +419,6 @@ alesunix@gmail.com<br>
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="js/gsap.min.js"></script>
-<script src="js/ScrollTrigger.min.js"></script>
-<script type="text/javascript">
-		gsap.timeline({
-scrollTrigger: {
-trigger: ".box",
-start: "center center",
-end: "bottom top",
-markers: false,
-scrub: true,
-pin: true
-}
-})
-.from(".text1", {y:innerHeight * 1})
-.from(".text2", {x:innerWidth * -1})
-.from(".text3", {x:innerWidth * 1})
-</script>
-
-	
-<!--Animated-Background-->
 <script type="text/javascript">
 {
 var isMobile = {
@@ -450,16 +430,62 @@ var isMobile = {
 };
   
 if ( !isMobile.any() ) {
-    // Код не для телефонов
+    // ScrollTrigger
+	document.write ('<script src="js/gsap.min.js" ></sc' + 'ript>');
+	document.write ('<script src="js/ScrollTrigger.min.js" ></sc' + 'ript>');
+	<!--Animated-Background-->
 	document.write ('<script src="js/TweenLite.min.js" ></sc' + 'ript>');
 	document.write ('<script src="js/EasePack.min.js"" ></sc' + 'ript>');
 	document.write ('<script src="js/demo.js" ></sc' + 'ript>');
-if (screen.width > 1440) document.write ('<script src="js/TweenLite.min.js" ></sc' + 'ript>');
-if (screen.width > 1440) document.write ('<script src="js/EasePack.min.js"" ></sc' + 'ript>');
-if (screen.width > 1440) document.write ('<script src="js/demo.js" ></sc' + 'ript>');
+if (screen.width > 1900) document.write ('<script src="js/TweenLite.min.js" ></sc' + 'ript>');
+if (screen.width > 1900) document.write ('<script src="js/EasePack.min.js"" ></sc' + 'ript>');
+if (screen.width > 1900) document.write ('<script src="js/demo.js" ></sc' + 'ript>');
+// ScrollTrigger
+if (screen.width > 1900) document.write ('<script src="js/gsap.min.js" ></sc' + 'ript>');
+if (screen.width > 1900) document.write ('<script src="js/ScrollTrigger.min.js" ></sc' + 'ript>');
 }
 }
 </script>
+<script type="text/javascript"><!--ScrollTrigger-->
+		gsap.timeline({
+scrollTrigger: {
+trigger: ".box",
+start: "center center",
+end: "bottom top",
+markers: false,
+scrub: true,
+pin: true,
+}
+})
+	.from(".text1", {y:innerHeight * 1})
+	.from(".text2", {x:innerWidth * -1})
+	.from(".text3", {x:innerWidth * 1})
+</script>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  </script>
+	
+
 	
 <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
