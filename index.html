@@ -104,7 +104,6 @@ alesunix@gmail.com <br>
 
 </small>
 </div></div>
-
 </h2>
 <div class="row-fluid">
 <article class="span9 well well-large well-inverse">
@@ -169,6 +168,9 @@ alesunix@gmail.com <br>
     </div>
 </div>
 
+
+
+<!-- Cлайдер ---------------------------------------------------------------------------------------------------------------->
 <center>
 <!-- Swiper -->
   <div class="swiper-container gallery-top">
@@ -186,6 +188,7 @@ alesunix@gmail.com <br>
     <div class="swiper-button-prev swiper-button-white"></div>
   </div>
 </center>
+<!-- Cлайдер ---------------------------------------------------------------------------------------------------------------->
 
 </article><!--/span-->
 <!--/Установка новостей-->
@@ -271,8 +274,9 @@ alesunix@gmail.com <br>
 				</ul><!-- Конец .portfolio-items -->
 			</section><!-- Конец .portfolio-container -->
 			<div class="clear"></div>
-
+			
 </div class='diwell'>
+
 </aside><!--/span-->
 </div><!--/row-->
 </section>
@@ -284,7 +288,6 @@ alesunix@gmail.com <br>
 <nav class="navbar-inner">
 <ul class="nav-pills" style="margin:5px 0 0 0;">
 <li class="active"><a href="index.html" title="">ГЛАВНАЯ</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li><a href="Contacts.html" title="">КОНТАКТЫ</a></li></ul>
-</ul>
 </nav>
 </div>
 <div class="footer">
@@ -294,7 +297,7 @@ alesunix@gmail.com <br>
 без письменного согласия<br>
 и ссылки на источник запрещено.<br>
 
-<!--LiveInternet counter--><a href="//www.liveinternet.ru/click"
+<!--LiveInternet counter--><a href="http://www.liveinternet.ru/click"
 target="_blank"><img id="licnt9390" width="88" height="31" style="border:0"
 title="LiveInternet: показано число просмотров и посетителей за 24 часа"
 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
@@ -341,10 +344,13 @@ alesunix@gmail.com<br>
 	 <link rel="stylesheet" type="text/css" href="css/stylebutton3.css" />
 	 <link rel="stylesheet" type="text/css" href="css/stylebutton4.css" />
 	 <link rel="stylesheet" href="css/styleModal.css">	 
-	 <link rel="stylesheet" href="css/fonts.css">
+	 <link rel="stylesheet" href="css/fonts.css"> 
+	 <link rel="stylesheet" href="css/card.css"> 
 	 <link rel="stylesheet" href="css/about-me.css">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+ 
 	 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
@@ -438,5 +444,43 @@ $('.swiper-slide').on('mouseout', function() {
     });
   </script>
 <!-- Swiper JS -->
+	
+
+<script>
+$(document).ready(function(){
+			$('#button_contacts').click(function(){
+				// собираем данные с формы
+				var form_name 	 = $('#form_name').val();
+				var form_email 	 = $('#form_email').val();
+				var form_message = $('#form_message').val();
+				// отправляем данные
+				$.ajax({
+					url: "feedback.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_name": 	form_name,
+						"form_email": 	form_email,
+						"form_message": form_message
+					},
+					// после получения ответа сервера
+					success: function(data){
+						$('.messages').html(data.result); // выводим ответ сервера
+					}
+				});
+			});
+		});
+</script>
+<script>
+	$(".mail-btn").on("click touchstart", function () {
+    $(this).addClass("fly");
+    that = this
+    setTimeout(function() {
+        $(that).removeClass("fly");
+    }, 5400)
+});
+</script>
+
+
 </body>
 </html>
