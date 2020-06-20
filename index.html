@@ -139,10 +139,11 @@ var isMobile = {
   
 if ( !isMobile.any() ) {
 var as = document.getElementById("html-1").innerHTML;
+var as = $("html-1").html();
 }
 }
 </script>
-<script id="html-1" type="text/template">   // заметьте, что это НЕ javascript!
+<script id="html-1" type="text/template">  // заметьте, что это НЕ javascript!
     <div class="butFrame">
       <div class="butTextWrap">
         <div class="butHeading">
