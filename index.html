@@ -138,40 +138,38 @@ var isMobile = {
 };
   
 if ( !isMobile.any() ) {
-var as = document.getElementById("html-1").innerHTML;
-var as = $("html-1").html();
+document.write (
+   '<div class="butFrame">
+      '<div class="butTextWrap">
+        '<div class="butHeading">
+          '<br />
+           '<div class="butText">Администрирование серверов: <br>
+		  'Active Directory, Web, Virtualization, VPN, Mail, Database, Firewall, DHCP. <br>        
+		  'Операционные системы: <br>
+		  'Linux, Free BSD, Windows.
+				'</div>
+			'</div>
+        '<p>         </p>
+      '</div>
+    '</div>
+    '<div class="butFrame">
+      '<div class="butTextWrap">
+        '<div class="butHeading">
+          '<br />
+          '<div class="butText">Языки программирования: <br>
+		  'С# ASP.NET, Windows, Web, Android, IOS<br>
+		  'Языки запросов:<br>  
+		  'SQL (СУБД MS SQL)<br>
+		  'Верстка: HTML, CSS
+		  '</div>
+        '</div>
+        '<p>         </p>
+      '</div>
+    '</div>
+);
 }
 }
-</script>
-<script id="html-1" type="text/template">  // заметьте, что это НЕ javascript!
-    <div class="butFrame">
-      <div class="butTextWrap">
-        <div class="butHeading">
-          <br />
-           <div class="butText">Администрирование серверов: <br>
-		  Active Directory, Web, Virtualization, VPN, Mail, Database, Firewall, DHCP. <br>        
-		  Операционные системы: <br>
-		  Linux, Free BSD, Windows.
-				</div>
-			</div>
-        <p>         </p>
-      </div>
-    </div>
-    <div class="butFrame">
-      <div class="butTextWrap">
-        <div class="butHeading">
-          <br />
-          <div class="butText">Языки программирования: <br>
-		  С# ASP.NET, Windows, Web, Android, IOS<br>
-		  Языки запросов:<br>  
-		  SQL (СУБД MS SQL)<br>
-		  Верстка: HTML, CSS
-		  </div>
-        </div>
-        <p>         </p>
-      </div>
-    </div>
-</script>     
+</script>   
 <!-- Отображать эти два блока только на ПК --> 
     <div class="butFrame">
       <div class="butTextWrap">
