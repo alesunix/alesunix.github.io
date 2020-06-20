@@ -126,16 +126,33 @@ alesunix@gmail.com <br>
         <p>          </p>
       </div>
     </div>
+<script type="text/javascript">
+{
+var isMobile = {
+    Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
+    BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
+    iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
+    Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
+    any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
+};
+  
+if ( !isMobile.any() ) {
+var as = document.getElementById("html-1").innerHTML;
+
+}
+}
+</script>
+<script id="html-1" type="text/template">   // заметьте, что это НЕ javascript!
     <div class="butFrame">
       <div class="butTextWrap">
         <div class="butHeading">
           <br />
-                    <div class="butText">Администрирование серверов: <br>
+           <div class="butText">Администрирование серверов: <br>
 		  Active Directory, Web, Virtualization, VPN, Mail, Database, Firewall, DHCP. <br>        
 		  Операционные системы: <br>
 		  Linux, Free BSD, Windows.
-</div>
-        </div>
+				</div>
+			</div>
         <p>         </p>
       </div>
     </div>
@@ -153,6 +170,8 @@ alesunix@gmail.com <br>
         <p>         </p>
       </div>
     </div>
+</script>     
+    
     <div class="butFrame">
       <div class="butTextWrap">
         <div class="butHeading">
