@@ -1,6 +1,6 @@
 User-agent: *
+Allow: / 
 Disallow: /projects/
-Allow: /projects/plb/
 Crawl-delay: 1
 Host: https://alesunix.ru/
 Sitemap: https://alesunix.ru/sitemap.xml
