@@ -19,14 +19,18 @@ font-size: 12px;
 .footer .footer-content .footer-silection-left
 {
 	text-align: start;
+	width: 30%;
 }
 .footer .footer-content .footer-silection-center
 {
 	text-align: center;
+	display: flex;
+	align-self: center;
 }
 .footer .footer-content .footer-silection-right
 {
 	text-align: end;
+	width: 30%;
 }
 .footer .footer-bottom{
 	border-top: 1px solid;
@@ -44,7 +48,7 @@ font-size: 12px;
 	body {
 		padding-top: 0;
 		padding-bottom: 0;
-	}	
+	}
 }
 
 /*
@@ -70,14 +74,29 @@ font-size: 12px;
 
 .well-inverse {
 	background-color: #17232B;
-	background-image: url(../i/fon.html);
+	background-image: url(/i/fon.png);
 	background-size: cover;
 	background: repeating-linear-gradient(50deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
 }
 @media all and (max-width: 700px) and (min-width: 0px){
+.footer .footer-content .footer-silection-left
+{
+	width: 58%;
+}
+.footer .footer-content .footer-silection-center
+{
+	position: absolute;
+	top: 53%;
+	right: 0px;
+}
+.footer .footer-content .footer-silection-right
+{
+	width: 40%;
+}	
+
 	.well-inverse {
 	background-size: cover;
-	#background-image: url(../i/fonmini.html);
+	#background-image: url(/i/fonmini.png);
 	background: repeating-linear-gradient(50deg, #63869540, #63869540 10px, #1e2529 10px, #1e2529 90px);
 }
 }
