@@ -115,21 +115,28 @@ align-items: flex-start;
 }
 .footer .footer-content .footer-silection-left
 {
-	#width: 100%;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	display: flex;
 }
 .footer .footer-content .footer-silection-center
 {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	width: 100%;
 	position: absolute;
 	top: 65%;
-	right: 5px;
-	display: flex;
 }
 .footer .footer-content .footer-silection-right
 {
 	width: 100%;
 	position: relative;
 	top: 10px;
-	text-align: start;
+	text-align: center;
+	justify-content: center;
+	display: flex;
 }	
 
 	.well-inverse {
