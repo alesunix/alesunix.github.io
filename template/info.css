@@ -9,17 +9,17 @@ body {
 	height:170px;
 	position: relative;
 }
-.footer a {
+.footer-silection-center a {
   color: #bbc5ba;
   font-size: 30px;
   padding: 10px;
   #border-right: 1px solid #70726F;
   transition: all .5s ease;
 }
-.footer a:first-child {
+.footer-silection-center a:first-child {
   #border-left: 1px solid #70726F;
 }
-.footer a:hover {
+.footer-silection-center a:hover {
   color: white;
 }
 
