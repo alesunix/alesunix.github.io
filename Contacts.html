@@ -173,17 +173,29 @@ alesunix@gmail.com <br>
 <div class="navbar centered-pills">
 <nav class="navbar-inner">
 <ul class="nav-pills" style="margin:5px 0 0 0;">
-<li><a href="index.html" title="">ГЛАВНАЯ</a></li><li><a href="About_me.html" title="">ОБО МНЕ</a></li><li><a href="Blog.html" title="">БЛОГ</a></li><li class="active"><a href="Contacts.html" title="">КОНТАКТЫ</a></li>
+<?=GetMenuItems($this_page, $footmenu, $category)?>
 </ul>
 </nav>
 </div>
 <div class="footer">
 		<div class="footer-content">
 		<div class="footer-silection-left">
-Использование материалов <br>
-без письменного согласия<br>
-и ссылки на источник запрещено.<br>
+"Самое инновационное решение сложной <br>
+проблемы часто бывает самым простым. <br>
+Но любой, кто посвятил свое время <br>
+большим идеям, знает, что простое и легкое <br>
+ - это две очень разные вещи."
 
+
+</div>
+<div class="footer-silection-center">
+<a href="https://api.whatsapp.com/send?phone=996559101255" target="_blank"><img src="i/social/Whatsapp.svg" width="25" hspace="5" alt="WhatsApp"></a> 
+<a href="tg://resolve?domain=@alesunix" target="_blank"><img src="i/social/Telegram.svg" width="25" hspace="5" alt="Telegram"></a> 
+<a href="mailto:alesunix@gmail.com" target="_blank"><img src="i/social/Mail.svg" width="25" hspace="5" alt="Mail"></a> 
+<a href="https://www.facebook.com/alesunix" target="_blank"><img src="i/social/Facebook.svg" width="25" hspace="5" alt="facebook"></a> 
+<a href="https://twitter.com/alesunix" target="_blank"><img src="i/social/Twitter.svg" width="25" hspace="5" alt="twitter"></a> 
+<a href="https://github.com/alesunix" target="_blank"><img src="i/social/Github.svg" width="25" hspace="5" alt="Github"></a>
+<br><br>
 <!--LiveInternet counter--><a href="//www.liveinternet.ru/click"
 target="_blank"><img id="licnt9390" width="88" height="31" style="border:0"
 title="LiveInternet: показано число просмотров и посетителей за 24 часа"
@@ -195,14 +207,6 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt9390").src=
 ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
 (document,screen)</script><!--/LiveInternet-->
 </div>
-<div class="footer-silection-center">
-<a href="https://api.whatsapp.com/send?phone=996559101255" target="_blank"><img src="i/social/Whatsapp.svg" width="25" hspace="10" alt="WhatsApp"></a> 
-<a href="tg://resolve?domain=@alesunix" target="_blank"><img src="i/social/Telegram.svg" width="25" hspace="10" alt="Telegram"></a> 
-<a href="mailto:alesunix@gmail.com" target="_blank"><img src="i/social/Mail.svg" width="25" hspace="10" alt="Mail"></a> 
-<a href="https://www.facebook.com/alesunix" target="_blank"><img src="i/social/Facebook.svg" width="25" hspace="10" alt="facebook"></a> 
-<a href="https://twitter.com/alesunix" target="_blank"><img src="i/social/Twitter.svg" width="25" hspace="10" alt="twitter"></a> 
-<a href="https://github.com/alesunix" target="_blank"><img src="i/social/Github.svg" width="25" hspace="10" alt="Github"></a> 
-</div>
 <div class="footer-silection-right">
 Контакты:<br>
 Адрес: г. Бишкек<br>
@@ -211,7 +215,8 @@ alesunix@gmail.com<br>
 </div>
 </div>
 <div class="footer-bottom">
-&copy; <script type="text/javascript">dt = new Date();document.write(dt.getFullYear());</script> alesunix.github.io | Designed by Alesunix 
+<span>Copyright &copy; <script type="text/javascript">dt = new Date();document.write(dt.getFullYear());</script> alesunix.github.io | Designed by Alesunix </span>
+<br>Использование материалов без письменного согласия и ссылки на источник запрещено.
 </div>
 </div>
 </footer>

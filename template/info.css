@@ -3,6 +3,13 @@ body {
 	#padding-top: 30px;
 	#padding-bottom: 40px;
 }
+svg {
+  width: 70px;
+  height: 70px;
+}
+svg:hover {
+  fill: red;
+}
 .footer{
 	background: #1e2529;
 	color: #fff;
@@ -19,18 +26,21 @@ font-size: 12px;
 .footer .footer-content .footer-silection-left
 {
 	text-align: start;
-	width: 30%;
+	width: 300px;
+	margin: 5px;
 }
 .footer .footer-content .footer-silection-center
 {
 	text-align: center;
-	display: flex;
+	display: block;
 	align-self: center;
+	margin: 5px;
 }
 .footer .footer-content .footer-silection-right
 {
 	text-align: end;
-	width: 30%;
+	width: 300px;
+	margin: 5px;
 }
 .footer .footer-bottom{
 	border-top: 1px solid;
@@ -43,6 +53,7 @@ font-size: 12px;
 	bottom: 0px;
 	left: 0px;
 	padding-top: 20px;
+	font-size: 12px;
 }
 @media screen and (max-width: 768px) {
 	body {
@@ -78,20 +89,37 @@ font-size: 12px;
 	background-size: cover;
 	background: repeating-linear-gradient(50deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
 }
+@media screen and (max-width: 900px) {
+	.footer .footer-content .footer-silection-left
+{
+	width: 300px;
+}
+.footer .footer-content .footer-silection-right
+{
+	width: 200px;
+}	
+}
 @media all and (max-width: 700px) and (min-width: 0px){
+.footer{
+	height:270px;
+}
 .footer .footer-content .footer-silection-left
 {
-	width: 58%;
+	#width: 100%;
 }
 .footer .footer-content .footer-silection-center
 {
 	position: absolute;
-	top: 53%;
+	#top: 53%;
 	right: 0px;
+	display: grid;
 }
 .footer .footer-content .footer-silection-right
 {
-	width: 40%;
+	#width: 40%;
+	position: relative;
+	top: 10px;
+	text-align: start;
 }	
 
 	.well-inverse {
