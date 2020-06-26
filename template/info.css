@@ -95,17 +95,7 @@ align-items: flex-start;
 	background-size: cover;
 	background: repeating-linear-gradient(50deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
 }
-@media screen and (max-width: 900px) {
-	.footer .footer-content .footer-silection-left
-{
-	width: 300px;
-}
-.footer .footer-content .footer-silection-right
-{
-	width: 15%;
-}	
-}
-@media all and (max-width: 700px) and (min-width: 0px){
+@media all and (max-width: 950px) and (min-width: 0px){
 .footer{
 	height:270px;
 }
