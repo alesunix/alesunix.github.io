@@ -8,6 +8,8 @@ body {
 	color: #fff;
 	height:170px;
 	position: relative;
+	line-height: 16px;
+	font-size: 12px;
 }
 .footer-silection-center a {
   color: #bbc5ba;
@@ -28,7 +30,6 @@ justify-content: space-between;
 flex-wrap: wrap;
 display: flex;
 align-items: flex-start;
-font-size: 12px;
 }
 .footer .footer-content .footer-silection-left
 {
@@ -60,7 +61,6 @@ font-size: 12px;
 	bottom: 0px;
 	left: 0px;
 	padding-top: 20px;
-	font-size: 12px;
 }
 @media screen and (max-width: 768px) {
 	body {
@@ -120,9 +120,9 @@ font-size: 12px;
 .footer .footer-content .footer-silection-center
 {
 	position: absolute;
-	top: 48%;
+	top: 67%;
 	right: 5px;
-	#display: grid;
+	display: block ruby;
 }
 .footer .footer-content .footer-silection-right
 {
