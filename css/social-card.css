@@ -44,16 +44,6 @@ justify-content: center;
     color: #fff;
 }
 
-i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-}
-
 .social-container .card .face {
     width: 300px;
     height: 200px;
