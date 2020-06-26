@@ -122,7 +122,7 @@ align-items: flex-start;
 	position: absolute;
 	top: 67%;
 	right: 5px;
-	display: block ruby;
+	display: flex;
 }
 .footer .footer-content .footer-silection-right
 {
