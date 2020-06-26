@@ -257,7 +257,7 @@ background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%
     background-size: auto, auto, auto;
 background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
 color:#fff;
-text-shadow:0 -1px 0 rgba(0,0,0,.3)}
+text-shadow:0 1px 0 rgba(0,0,0,.3)}
 .pcv_button.gray:hover{
 background: #bbc5ba;
 color: #000;
