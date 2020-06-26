@@ -106,8 +106,6 @@ align-items: flex-start;
 {
 	width: 100%;
 	text-align: center;
-	justify-content: center;
-	display: flex;
 }
 .footer .footer-content .footer-silection-center
 {
@@ -122,8 +120,6 @@ align-items: flex-start;
 {
 	width: 100%;
 	text-align: center;
-	justify-content: center;
-	display: flex;
 }	
 
 	.well-inverse {
