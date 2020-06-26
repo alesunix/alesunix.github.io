@@ -132,8 +132,6 @@ align-items: flex-start;
 .footer .footer-content .footer-silection-right
 {
 	width: 100%;
-	position: relative;
-	top: 10px;
 	text-align: center;
 	justify-content: center;
 	display: flex;
