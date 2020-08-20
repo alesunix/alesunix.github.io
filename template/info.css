@@ -143,7 +143,7 @@ section {
 	text-align: center;
 }	
 .paralax-0 {
-	background: repeating-linear-gradient(50deg, #378baa1a , #378baa1a 80px, #1e2529 80px, #1e2529 90px);
+	background-image: url(/i/fon_about_me_mini.jpg);
 }
 	.well-inverse {
 	#background-image: url(/i/fonmini.png);
