@@ -1,26 +1,3 @@
-/* Paralax */
-section {
-	position: relative;
-	#height: 100vh;
-	#display: flex;
-	justify-content: center;
-	align-items: center;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-.paralax-0 {
-	background-image: url(/i/fon_about_me.jpg);
-}
-
-.section-0 {
-	#background-color: #1e2529;
-	#background-image: url(/i/fon.png);
-	background-size: cover;
-	background: repeating-linear-gradient(50deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
-}
-
 .textales {
 position: relative;
 overflow: hidden;
