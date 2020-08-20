@@ -103,7 +103,9 @@ section {
 .paralax-0 {
 	background-image: url(/i/fon_about_me.jpg);
 }
-
+.paralax-1 {
+	background-image: url(/i/para.jpg);
+}
 .section-0 {
 	#background-color: #1e2529;
 	#background-image: url(/i/fon.png);
@@ -143,8 +145,8 @@ section {
 	text-align: center;
 }	
 .paralax-0 {
-	background-image: url(/i/fon_about_me_mini.jpg);
-	background-size: initial;
+	#background-image: url(/i/fon_about_me_mini.jpg);
+	#background-size: initial;
 }
 	.well-inverse {
 	#background-image: url(/i/fonmini.png);
