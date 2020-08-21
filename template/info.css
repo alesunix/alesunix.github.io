@@ -143,12 +143,15 @@ section {
 {
 	width: 100%;
 	text-align: center;
+}
+.section-0 {
+	background: repeating-linear-gradient(50deg, #63869540, #5b8090 20px, #4b6874 20px, #1e2529 130px);
 }	
 .paralax-0 {
-	background-size: initial;
+	background: repeating-linear-gradient(50deg, #63869540, #5b8090 60px, #517180 60px, #1e2529 350px);
 }
 .paralax-1 {
-	background-size: initial;
+	background: repeating-linear-gradient(50deg, #63869540, #5b8090 40px, #4b6874 40px, #1e2529 250px);
 }
 	.well-inverse {
 	#background-image: url(/i/fonmini.png);
