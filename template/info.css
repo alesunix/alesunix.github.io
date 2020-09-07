@@ -144,14 +144,16 @@ section {
 	width: 100%;
 	text-align: center;
 }
+section {
+	background-attachment: inherit;
+}
 .section-0 {
 	background: repeating-linear-gradient(50deg, #63869540, #5b8090 20px, #4b6874 20px, #1e2529 130px);
 }	
-.paralax-0 {
-	background: repeating-linear-gradient(50deg, #63869540, #5b8090 60px, #517180 60px, #1e2529 350px);
-}
 .paralax-1 {
-	background: repeating-linear-gradient(50deg, #63869540, #5b8090 40px, #4b6874 40px, #1e2529 250px);
+background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #484847, #090909);
+background-size: auto, auto, auto;
+background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
 }
 	.well-inverse {
 	#background-image: url(/i/fonmini.png);
