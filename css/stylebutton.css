@@ -705,7 +705,7 @@ a.button23:before {
 
 @media all and (max-width: 700px) and (min-width: 0px){
 	.butFrame .butTextWrap{
-		padding: 2em;
+		padding: 0.5em;
 	}
 .btn {
     #display: contents;
