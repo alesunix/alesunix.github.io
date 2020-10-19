@@ -2,5 +2,5 @@ User-agent: *
 Allow: / 
 Disallow: /projects/
 Crawl-delay: 1
-Host: https://alesunix.github.io/
-Sitemap: https://alesunix.github.io/sitemap.xml
+Host: https://alesunix.ru/
+Sitemap: https://alesunix.ru/sitemap.xml
