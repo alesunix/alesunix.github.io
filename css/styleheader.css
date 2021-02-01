@@ -30,7 +30,7 @@ display: -moz-box;
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
-align-items: center;
+align-items: end;
 }
 .tab {
 position: relative;
