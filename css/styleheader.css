@@ -56,7 +56,7 @@ text-align: left;
 	.tab {
     display: block;
     width:100%;
-	#text-align: center;
+	text-align: center;
 	padding: 10px;
   }
 .tabstyle {
