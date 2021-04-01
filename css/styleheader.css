@@ -35,7 +35,7 @@ align-items: flex-end;
 .tab {
 position: relative;
 overflow: hidden;
-width: 40%;
+width: 50%;
 font-family: inherit;
 font-size: 1em;
 text-align: left;
