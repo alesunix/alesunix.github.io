@@ -33,6 +33,7 @@ display: flex;
 align-items: flex-end;
 }
 .tab {
+padding: 0px 50px 0px 50px;	
 position: relative;
 overflow: hidden;
 width: 50%;
