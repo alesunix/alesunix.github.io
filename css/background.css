@@ -3,11 +3,12 @@ position: relative;
 overflow: hidden;
 #width: 40%;
 font-size: 16px;
-font-weight: bold;
+#font-weight: bold;
 text-align: left;
-#text-shadow: #000 1px 1px 1px;
+text-shadow: #000 1px 1px 1px;
 font-family: 'Montserrat-Medium';
 margin-left: 10px;
+color: #ffbd66;
 }
 
 .mainblock {
