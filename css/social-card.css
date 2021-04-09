@@ -385,7 +385,9 @@ color: #666565;
 	.social-panel-container.visible {
 		transform: translateX(0px);
 	}
-
+.course {
+	margin: 5px;
+}
 	.floating-btn {
 		right: 10px;
 	}
