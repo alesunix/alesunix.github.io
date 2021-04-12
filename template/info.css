@@ -120,7 +120,7 @@ section {
 }
 @media all and (max-width: 950px) and (min-width: 0px){
 .footer{
-	height:270px;
+	height:370px;
 }
 .footer a {
   padding: 5px;
