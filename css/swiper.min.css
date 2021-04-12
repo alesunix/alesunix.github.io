@@ -70,8 +70,8 @@ word-wrap: anywhere;
     }
 @media all and (max-width: 700px) and (min-width: 0px){
     .gallery-thumbs .swiper-slide {
-			height: 50px;
-				  font-size: 9px;
+			height: 35px;
+				  font-size: 1px;
 	  line-height: 10px;
 		}
 	}
