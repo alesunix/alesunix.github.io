@@ -61,12 +61,12 @@ h4 {
   #text-shadow: #000 1px 1px 1px;
 }
 h5 {
-  margin: 15px 0;
+  margin: 5px 0 0 0;
   font-size: 14px;
   text-align: center;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #c8c8c8;
+  #text-transform: uppercase;
+  color: #f7e9b4;
   #text-shadow: #000 1px 1px 1px;
 }
 h2 {
