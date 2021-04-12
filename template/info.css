@@ -125,6 +125,10 @@ section {
 .footer a {
   padding: 5px;
 }
+.footer .footer-bottom {
+	    bottom: 110px;
+	padding-top: 10px;
+}
 .footer .footer-content .footer-silection-left
 {
 	width: 100%;
