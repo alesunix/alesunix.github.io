@@ -62,9 +62,9 @@ h4 {
 }
 h5 {
   margin: 5px 0 0 0;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   #text-transform: uppercase;
   color: #f7e9b4;
   #text-shadow: #000 1px 1px 1px;
@@ -88,7 +88,7 @@ h1{
 margin-top: 70px;
 }
 h5 {
-  font-size: 9px;
+  font-size: 12px;
 }
 h8 {
   margin: 15px 0;
