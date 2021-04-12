@@ -35,6 +35,7 @@
     }
     .gallery-thumbs .swiper-slide {
       width: 25%;
+
 height: 200px;
 opacity: 0.4;
 background: #fff;
@@ -50,10 +51,7 @@ float: initial;
 overflow: hidden;
 background: #fff;
 display: inline-block;
-padding: 4px 4px;
 margin-bottom: 0;
-font-size: 14px;
-line-height: 20px;
 color: #333;
 text-align: center;
 cursor: pointer;
@@ -73,5 +71,7 @@ word-wrap: anywhere;
 @media all and (max-width: 700px) and (min-width: 0px){
     .gallery-thumbs .swiper-slide {
 			height: 50px;
+				  font-size: 9px;
+	  line-height: 10px;
 		}
 	}
