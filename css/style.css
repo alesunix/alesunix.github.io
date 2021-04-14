@@ -6,7 +6,7 @@ blockquote {
 margin: 0;
 background: #FFF4E0;
 color: #474C4F;
-padding: 30px;
+padding: 30px 20px 0 20px;
 position: relative;
 text-align: center;
 text-transform: uppercase;
@@ -21,7 +21,7 @@ left: 50%;
 transform: translateX(-50%);
 top: 14px;
 color: #474C4F;
-font-size: 20px;
+font-size: 14px;
 background: #FFF4E0;
 padding: 0 15px;
 }
