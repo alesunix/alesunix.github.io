@@ -46,9 +46,9 @@ font-style: normal;
 font-weight: 300;
 }
 .btnx {
-    display: inline-block;
-    padding: 0px 4px 0px;
-    margin-bottom: 0;
+    display: list-item;
+    padding: 0;
+    margin-bottom: -18px;
     line-height: 20px;
     color: #fff1ba;
     vertical-align: middle;
