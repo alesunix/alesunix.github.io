@@ -3,10 +3,10 @@
   box-sizing: border-box;
 }
 blockquote {
-margin: 0;
+margin: 12px 0 0 0;
 background: #FFF4E0;
 color: #474C4F;
-padding: 30px 20px 0 20px;
+padding: 30px 30px 18px 30px;
 position: relative;
 text-align: center;
 text-transform: uppercase;
