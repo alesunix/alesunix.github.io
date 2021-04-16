@@ -1,16 +1,12 @@
 .headerstyle {
--webkit-justify-content: center;
--ms-flex-pack: justify;
 justify-content: space-evenly;
--webkit-flex-wrap: wrap;
--ms-flex-wrap: wrap;
 flex-wrap: wrap;
-display: -webkit-flex;
+align-items: flex-end;
+display: -webkit-box;
+display: -moz-box;
 display: -ms-flexbox;
+display: -webkit-flex;
 display: flex;
--webkit-align-items: flex-start;
--ms-flex-align: start;
-align-items: center;
 }
 .tabstyle {
 position: relative;
@@ -21,19 +17,57 @@ overflow: visible;
 font-family: inherit;
 font-size: 1em;
 text-align: center;
-cursor: pointer;
 }
+
+.diwell {
+background: #1e2529; /* Цвет фона */
+}
+.tabl {
+justify-content: center;
+flex-wrap: wrap;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+align-items: flex-end;
+}
+.tab {
+padding: 0px 50px 0px 50px;	
+position: relative;
+overflow: hidden;
+width: 70%;
+font-family: inherit;
+font-size: 1em;
+text-align: left;
+z-index: 1;
+}
+
 /* MEDIA QUERIES */
 @media all and (max-width: 950px) and (min-width: 701px){
 .tabstyle {
     display:block;
     width:47%;
   }
+  .tab {
+    display:block;
+    width:47%;
+  }
 }
 @media all and (max-width: 700px) and (min-width: 0px){
+	.tab {
+    display: block;
+    width:100%;
+	text-align: center;
+	padding: 10px;
+  }
 .tabstyle {
     display: block;
     width:100%;
 	text-align: center;
+	padding-top: 13px;
   }
+  .headerstyle {
+position: absolute;
+}
 }

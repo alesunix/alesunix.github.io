@@ -1,32 +1,33 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&amp;subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
 #* {box-sizing: border-box;}
-body {margin: 0;}
 .post {
   width: 60%;
   margin: 30px auto 0;
 }
 img {
   #width: 100%;
-  max-width: 100%;
+  #max-width: 100%;
   height: auto;
 }
 .post-container {
   width: 100%;
   padding: 30px;
 }
+
 h8 {
   margin: 15px 0;
-  font-family: 'cambria', serif;
+  #font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 23px;
   #text-align: center;
   letter-spacing: 1px;
-  color: #fff;
+  color: #ff871d;
+  font-weight: 700;
+  text-transform: uppercase;
   #text-shadow: #000 1px 1px 1px;
 }
 h6 {
 font-size:20px;
 font-weight:700;
-font-family:'cambria', serif;
 color:#006;
 text-align:right;
 #text-transform:uppercase;
@@ -34,61 +35,86 @@ text-shadow:1px -1px 2px #fff;
 margin: revert;
 }
 h7 {
-font-size:18px;
-font-weight:700;
-font-family:'cambria', serif;
-color:#0d1d2f;
+font-size:16px;
+font-weight:300;
+color:#c8c8c8;
 #text-align:right;
 #text-transform:uppercase;
-text-shadow:1px -1px 2px #fff;
+#text-shadow:1px -1px 2px #000;
 margin: revert;
+}
+h3 {
+  font-size: 29px;
+  margin: 0;
+  color: #bbc5ba;
+  #font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
 }
 h4 {
   margin: 15px 0;
-  #font-family: 'cambria', serif;
-  font-size: 14px;
-  text-align: center;
+  font-size: 23px;
   letter-spacing: 1px;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #D71920;
+  color: #c8c8c8;
   #text-shadow: #000 1px 1px 1px;
 }
 h5 {
-  margin: 15px 0;
-  font-family: 'cambria', serif;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 18px;
   text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #006;
+  letter-spacing: 0.5px;
+  #text-transform: uppercase;
+  color: #f7e9b4;
   #text-shadow: #000 1px 1px 1px;
 }
 h2 {
-  margin: 15px 0;
-  font-family: 'cambria', serif;
-  font-size: 35px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #006;
-  #text-shadow: #000 1px 1px 1px;
+font-weight: normal;
+margin: 15px 0;
+font-size: 16px;
+text-align: left;
+letter-spacing: 0.5px;
+color: #ececec;
+text-shadow: #000 0px 0px 0px;
+line-height: 24px;
+}
+h1{
+
 }
 @media all and (max-width: 700px) and (min-width: 0px){
+h1{
+margin-top: 70px;
+}
+h5 {
+  font-size: 14px;
+}
+h8 {
+  margin: 15px 0;
+  font-size: 14px;
+  #text-align: center;
+  letter-spacing: 1px;
+  color: #ffc30f;
+  font-weight: 700;
+  text-transform: uppercase;
+  #text-shadow: #000 1px 1px 1px;
+}
 h2 {
-font-size: 20px;
+font-size: 14px;
+line-height: 20px;
 }
 h2 small{
-font-size: 14px;
-}
+font-size: 16px;
+line-height: 20px;
 }
 h3 {
   font-size: 25px;
-  margin: 0;
-  color: #b8c4a0;
-  font-family: 'cambria', serif;
-  #font-style: italic;
-  letter-spacing: 3.4px;
-  text-align: center;
 }
+h4 {
+  font-size: 15px;
+}
+}
+
 h3 a {
   color: #c2a77a;
 }
@@ -98,176 +124,37 @@ h3 a {
 }
 
 @font-face{
-font-family: 'cambria';
-src: url('../fonts/cambria.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Gill Sans Extra Condensed RUS B Bold';
-src: url('../fonts/Gill%20Sans%20Extra%20Condensed%20RUS%20B%20Bold.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'OPTIJake AntiqueBlack';
-src: url('../fonts/OPTIJake%20AntiqueBlack.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'LehmannC';
-src: url('../fonts/LehmannC.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Geometos';
-src: url('../fonts/Geometos.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Aetherius';
-src: url('../fonts/Aetherius.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Mga';
-src: url('../fonts/Mga.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Neighbor';
-src: url('../fonts/Neighbor.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Ethnocentric';
-src: url('../fonts/Ethnocentric.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'TypeHelvetica';
-src: url('../fonts/TypeHelvetica.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Kremlin Alexander';
-src: url('../fonts/Kremlin%20Alexander.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Electrolize';
-src: url('../fonts/Electrolize.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'DEAD SECRETARY Cyr';
-src: url('../fonts/DEAD%20SECRETARY%20Cyr.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Simpleness';
-src: url('../fonts/Simpleness.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Superheterodyne Regular';
-src: url('../fonts/Superheterodyne%20Regular.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'LIBRARY3AMsoft';
-src: url('../fonts/LIBRARY3AMsoft.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Newfont2';
-src: url('../fonts/Newfont2.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Thunderbird Becker XCND Cyrilli';
-src: url('../fonts/Thunderbird%20Becker%20XCND%20Cyrilli.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Tzimizce';
-src: url('../fonts/Tzimizce.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Dynamo';
-src: url('../fonts/Dynamo.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'AnnaITC';
-src: url('../fonts/AnnaITC.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'Augustus';
-src: url('../fonts/Augustus.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'FavoritTrafC';
-src: url('../fonts/FavoritTrafC.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'BebasNeue Bold';
-src: url('../fonts/BebasNeue%20Bold.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'BebasNeue Book';
-src: url('../fonts/BebasNeue%20Book.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'BebasNeue Light';
-src: url('../fonts/BebasNeue%20Light.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'BebasNeue Regular';
-src: url('../fonts/BebasNeue%20Regular.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
-font-family: 'BebasNeue Thin';
-src: url('../fonts/BebasNeue%20Thin.html');
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face{
 font-family: 'Montserrat-Regular';
-src: url('../fonts/Montserrat-Regular.html');
+src: url('../fonts/Montserrat-Regular.ttf');
 font-style: normal; 
 font-weight: normal; 
+font-display: swap;
+}
+@font-face{
+font-family: 'Montserrat-Bold';
+src: url('../fonts/Montserrat-Bold.ttf');
+font-style: normal; 
+font-weight: normal; 
+font-display: swap;
+}
+@font-face{
+font-family: 'Montserrat-Medium';
+src: url('../fonts/Montserrat-Medium.ttf');
+font-style: normal; 
+font-weight: normal; 
+font-display: swap;
+}
+@font-face{
+font-family: 'Montserrat-SemiBold';
+src: url('../fonts/Montserrat-SemiBold.ttf');
+font-style: normal; 
+font-weight: normal; 
+font-display: swap;
+}
+@font-face{
+font-family: 'Montserrat-Light';
+src: url('../fonts/Montserrat-Light.ttf');
+font-style: normal; 
+font-weight: normal; 
+font-display: swap;
 }

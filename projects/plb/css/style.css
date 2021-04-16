@@ -1,7 +1,78 @@
-
+#message{padding-top:5px;padding-bottom:70px;background-color:#f8f8f8;border-top:1px solid #e5e5e5}#message h2{margin-bottom:30px}#message h2 span{border-bottom:5px solid #ed1d25}#message label{color:#666;margin-bottom:10px;font-size:1.2em}#message #form_email,#message #form_message,#message #form_name{box-sizing:border-box;border:1px solid #fff;box-shadow:none}#message #form_email,#message #form_name{padding:25px;border:1px solid #ccc;font-size:1.1em}#message #form_message{height:249px;padding:25px;border:1px solid #ccc;font-size:1.2em}#message #button_contacts{background:#666;padding:15px 0;width:100%;border:2px solid #666;color:#fff;cursor:pointer;font-size:1.3em;text-transform:uppercase;transition:background .6s,color .6s}#message #button_contacts:hover{background:0 0;color:#666}
 * {
   box-sizing: border-box;
+}
+blockquote {
+margin: 12px 0 0 0;
+background: #FFF4E0;
+color: #474C4F;
+padding: 30px 0 0 0;
+position: relative;
+text-align: center;
+text-transform: uppercase;
+font-family: 'Lato', sans-serif;
+border-left: none;
+}
+blockquote:before {
+content: "\f10d";
+font-family: FontAwesome;
+position: absolute;
+z-index: 2;
+left: 50%;
+transform: translateX(-50%);
+top: 14px;
+color: #474C4F;
+font-size: 14px;
+background: #FFF4E0;
+padding: 0 15px;
+}
+blockquote:after {
+content: "";
+position: absolute;
+left: 15px;
+top: 20px;
+right: 15px;
+height: 4px;
+border-top: 1px dotted #474C4F;
+border-bottom: 1px dotted #474C4F;
+}
+blockquote p {
+font-size: 12px;
+letter-spacing: .05em;
+line-height: 1.4;
+}
+blockquote cite {
+font-style: normal;
+font-weight: 300;
+}
+.btnx {
+    display: list-item;
+    padding: 0;
+    margin-bottom: -18px;
+    line-height: 20px;
+    color: #fff1ba;
+    vertical-align: middle;
+}
 
+.language-link {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 5px;
+    font-weight: 600;
+    color: #BBC5BA;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	border: 1px solid #bbb;
+	border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
+	padding: 4px 12px 7px 24px;
+}
+.language-link::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 12px;
+    height: 15px;
+    background: url(../css/ico_download.svg) no-repeat;
 }
 
 .hover-fold {
@@ -70,13 +141,13 @@
   margin: -25px;
 }
 .hover-fold .front {
-  background: url(../i/music.jpg);
+  background: url(/i/portfolio.png);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom {
-  background:  url(../i/music.jpg) bottom;
+  background:  url(/i/portfolio.png) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -84,13 +155,13 @@
   z-index: 0;
 }
 .hover-fold .front1 {
-  background: url(../i/text.jpg);
+  background: url(/i/about_me.png);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom1 {
-  background:  url(../i/text.jpg) bottom;
+  background:  url(/i/about_me.png) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -98,26 +169,26 @@
   z-index: 0;
 }
 .hover-fold .front2 {
-  background: url(../i/biografi.jpg);
+  background: url(/i/Reviews.png);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom2 {
-  background:  url(../i/biografi.jpg) bottom;
+  background:  url(/i/Reviews.png) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
   width: 100%;
   z-index: 0;
 }.hover-fold .front3 {
-  background: url(../i/blog.jpg);
+  background: url(/i/blog.png);
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .bottom3 {
-  background:  url(../i/blog.jpg) bottom;
+  background:  url(/i/blog.png) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -169,4 +240,88 @@
 .form-search input[type="image"] {  /* картинка лупы */
   padding: 0;
   vertical-align: bottom;
+}
+
+
+
+/*Увеличение изображения при наведении курсора мыши на миниатюру*/
+.ienlarger {
+  float: left;
+  clear: none; /* Можно установить left или right по необходимости */
+  #padding-bottom: 5px; /* Расстояние между миниатюрами. Лучше не трогать данное поле */
+  #padding-right: 5px; /* Расстояние между миниатюрами и окружающим текстом */
+  margin: 20px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  border: 1px solid #FFC411;
+transition: transform .2s; /* Animation */
+}
+.ienlarger:hover {
+    transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.ienlarger a { 
+  display:block;
+  text-decoration: none;
+/* Если добавить правило cursor:default;, то отключится курсор в виде руки */
+}
+
+.ienlarger a:hover{ /* Не надо изменять тип позиционирования */
+   position:relative;
+}
+
+.ienlarger span img {
+  border: 1px solid #FFFFFF; /* Добавляем рамку вокруг изображения */
+  margin-bottom: 8px; /* /Сдвигаем текст вниз от изображения */
+}
+
+.ienlarger a span {  /* Для большого изображения и названия */
+  position: absolute;
+  display:none;
+  color: #1A1A1A; /* Текст названия */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px; /* Размер шрифта названия */
+  background-color: #ffe082;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 13px;
+  padding-left: 3px;  
+border-radius: 5px;
+border: 1px solid #ebebeb;
+box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.ienlarger img { /* Для IE, чтобы не было рамки вокруг ссылки */
+border-width: 0;
+}
+
+.ienlarger a:hover span { 
+  #display:block;
+  top: 50px; /* Большое изображение выскакивает вверх на 50px от миниатюры */
+  left: -80px; /* Большое изображение выскакивает влево на 90px от миниатюры */
+  z-index: 100;
+/* Если добавить правило cursor:default;, то отключится курсор в виде руки на большом изображении */
+}
+
+.resize_thumb {
+  width: 250px; /* Вводим нужный размер миниатюры здесь */
+  height : 200px;
+}
+
+/*-------------------- Мобильная версия -----------------------------*/
+
+@media all and (max-width: 700px) and (min-width: 0px){
+	.hover-fold h2 {
+margin-left: -80px;
+	.ienlarger {
+  margin: 3px;
+}
+	.resize_thumb {
+  width: 140px; /* Вводим нужный размер миниатюры здесь */
+  height : 100px;
+}
+.ienlarger a:hover span { 
+  display:none;
+}
 }
