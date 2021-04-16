@@ -1,9 +1,67 @@
 /*bootstrap navbar-fixed-top fix*/
 body {
-	padding-top: 30px;
-	padding-bottom: 40px;
+	#padding-top: 30px;
+	#padding-bottom: 40px;
+}
+.footer{
+	background: #1e2529;
+	color: #fff;
+	height:200px;
+	position: relative;
+	line-height: 16px;
+	font-size: 12px;
+}
+.footer-silection-center a {
+  color: #bbc5ba;
+  font-size: 30px;
+  padding: 10px;
+  #border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer-silection-center a:first-child {
+  #border-left: 1px solid #70726F;
+}
+.footer-silection-center a:hover {
+  color: white;
 }
 
+.footer .footer-content{
+justify-content: space-between;
+flex-wrap: wrap;
+display: flex;
+align-items: flex-start;
+}
+.footer .footer-content .footer-silection-left
+{
+	text-align: start;
+	width: 300px;
+	margin: 5px;
+}
+.footer .footer-content .footer-silection-center
+{
+	text-align: center;
+	display: block;
+	align-self: center;
+}
+.footer .footer-content .footer-silection-right
+{
+	text-align: end;
+	width: 300px;
+	margin: 5px;
+}
+.footer .footer-bottom{
+	border-top: 1px solid;
+	background: #1d2225;
+	color: #fff;
+	height:70px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+	margin-top: 20px;
+}
 @media screen and (max-width: 768px) {
 	body {
 		padding-top: 0;
@@ -31,15 +89,87 @@ body {
 	padding: 9px 0;
 	margin: 0 -19px;
 }
-
-.well-inverse {
-	background-color: #0d1d2f;
-	background-image: url(../i/fon1.jpg);
+/* Paralax */
+section {
+	position: relative;
+	#height: 100vh;
+	#display: flex;
+	justify-content: center;
+	align-items: center;
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
-
+.paralax-0 {
+	background-image: url(/i/fon_about_me.jpg);
+}
+.paralax-1 {
+	background-image: url(/i/para.jpg);
+}
+.section-0 {
+	#background-color: #1e2529;
+	#background-image: url(/i/fon.png);
+	background-size: cover;
+	background: repeating-linear-gradient(45deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
+}
+.well-inverse {
+	background-color: #1e2529;
+	#background-image: url(/i/fon.png);
+	#background-size: cover;
+	#background: repeating-linear-gradient(50deg, #63869540, #5b8090 10px, #1e2529 10px, #1e2529 90px);
+}
+@media all and (max-width: 950px) and (min-width: 0px){
+.footer{
+	height:450px;
+}
+.footer a {
+  padding: 5px;
+}
+.footer .footer-content .footer-silection-left
+{
+	width: 100%;
+	text-align: center;
+}
+.footer .footer-content .footer-silection-center
+{
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+}
+.footer .footer-content .footer-silection-right
+{
+	width: 100%;
+	text-align: center;
+}
+.footer .footer-bottom{
+	bottom: -90px;
+}
+section {
+	background-attachment: inherit;
+}
+.section-0 {
+	background: repeating-linear-gradient(50deg, #63869540, #5b8090 20px, #4b6874 20px, #1e2529 130px);
+}	
+.paralax-1 {
+background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #484847, #090909);
+background-size: auto, auto, auto;
+background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
+}
+	.well-inverse {
+	#background-image: url(/i/fonmini.png);
+	#background: repeating-linear-gradient(50deg, #63869540, #63869540 10px, #1e2529 10px, #1e2529 90px);
+}
+}
 .centered-pills { text-align:center; }
-.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills ul.nav-pills { 
+display:inline-block;
+justify-content: center;
+flex-wrap: wrap;
+display: flex;
+ }
 .centered-pills li { display:inline; }
 .centered-pills a { float:left; }
 * html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
