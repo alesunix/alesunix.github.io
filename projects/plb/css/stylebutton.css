@@ -1,6 +1,6 @@
 /* FOR CODEPEN PRESENTATION ONLY */
 
-body {margin: 60px auto;} .buttons {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
+.buttons {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
 
 /* PASTE BELOW IN CSS */
 
