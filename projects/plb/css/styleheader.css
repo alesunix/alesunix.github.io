@@ -20,8 +20,9 @@ text-align: center;
 }
 p {
     margin: 0 0 0px;
-    top: -30px;
-    left: 135px;
+    top: -25px;
+    padding: 0px 0px 0px 130px;
+    color: #616161;
     position: relative;
 }
 .diwell {
@@ -64,7 +65,7 @@ z-index: 1;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 	p {
-    left: 30px;
+padding: 0px 0px 0px 130px;
 }
 	.diwell {
     padding: 0px;
