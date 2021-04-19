@@ -316,7 +316,27 @@ Griffer. родился в г. Бишкек в 1989 г. Самый молодо�
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="/js/Audio.js"></script>
-</body>
-<!-- Mirrored from plb.kg/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2020 09:18:15 GMT -->
-</html>
+<script>
+        let audioNL = document.querySelectorAll('audio');
+        let audio = Array.apply(null, audioNL);
+
+        audio.forEach(t => {
+            let index = audio.indexOf(t);
+
+            t.addEventListener('play', ()=> {
+                audio.forEach(subT => {
+                    subT !== audio[index] ?
+                    (subT.pause(), subT.currentTime = 0) :
+                    subT.play()
+                })
+            })
+            t.addEventListener('ended', ()=> {
+                t.currentTime = 0;
+                index !== audio.length - 1 ?
+                    audio[index + 1].play() :
+                    null
+            })
+        });
+        
+    </script>
+</body></html>

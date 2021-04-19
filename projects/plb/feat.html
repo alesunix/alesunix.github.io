@@ -17,7 +17,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<script src="js/audio.js"></script>
+
 </head>
 <body>
 
@@ -230,6 +230,27 @@ background: #fff; /* Цвет фона */
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
-</body>
-<!-- Mirrored from plb.kg/feat.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2020 09:19:49 GMT -->
-</html>
+<script>
+        let audioNL = document.querySelectorAll('audio');
+        let audio = Array.apply(null, audioNL);
+
+        audio.forEach(t => {
+            let index = audio.indexOf(t);
+
+            t.addEventListener('play', ()=> {
+                audio.forEach(subT => {
+                    subT !== audio[index] ?
+                    (subT.pause(), subT.currentTime = 0) :
+                    subT.play()
+                })
+            })
+            t.addEventListener('ended', ()=> {
+                t.currentTime = 0;
+                index !== audio.length - 1 ?
+                    audio[index + 1].play() :
+                    null
+            })
+        });
+        
+    </script>
+</body></html>
