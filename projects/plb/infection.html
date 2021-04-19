@@ -218,15 +218,8 @@ background: #fff; /* Цвет фона */
 <!--/content-->
 <!--footer-->
 
-</footer>
 <!--/footer -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-45405429-7');
-</script>
 
 <!-- Le javascript
 ================================================== -->
@@ -250,5 +243,27 @@ background: #fff; /* Цвет фона */
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Audio HTML Запрет одновременного воспроизведения песен + последовательное воспроизведение.-->
-<script src="js/audio.js"></script>
+<script>
+        let audioNL = document.querySelectorAll('audio');
+        let audio = Array.apply(null, audioNL);
+
+        audio.forEach(t => {
+            let index = audio.indexOf(t);
+
+            t.addEventListener('play', ()=> {
+                audio.forEach(subT => {
+                    subT !== audio[index] ?
+                    (subT.pause(), subT.currentTime = 0) :
+                    subT.play()
+                })
+            })
+            t.addEventListener('ended', ()=> {
+                t.currentTime = 0;
+                index !== audio.length - 1 ?
+                    audio[index + 1].play() :
+                    null
+            })
+        });
+        
+    </script>
 </body></html>

@@ -169,8 +169,8 @@ background: #fff; /* Цвет фона */
 <!--/content-->
 <!--footer-->
 
-<!--/footer -->
 
+<!--/footer -->
 
 <!-- Le javascript
 ================================================== -->
@@ -192,7 +192,29 @@ background: #fff; /* Цвет фона */
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
-<!-- Audio HTML Запрет одновременного воспроизведения песен + последовательное воспроизведение.-->
-<script src="/projects/plb/js/audio.js"></script>
 
+<!-- Audio HTML Запрет одновременного воспроизведения песен + последовательное воспроизведение.-->
+<script>
+        let audioNL = document.querySelectorAll('audio');
+        let audio = Array.apply(null, audioNL);
+
+        audio.forEach(t => {
+            let index = audio.indexOf(t);
+
+            t.addEventListener('play', ()=> {
+                audio.forEach(subT => {
+                    subT !== audio[index] ?
+                    (subT.pause(), subT.currentTime = 0) :
+                    subT.play()
+                })
+            })
+            t.addEventListener('ended', ()=> {
+                t.currentTime = 0;
+                index !== audio.length - 1 ?
+                    audio[index + 1].play() :
+                    null
+            })
+        });
+        
+    </script>
 </body></html>

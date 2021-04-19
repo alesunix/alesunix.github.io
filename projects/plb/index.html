@@ -252,6 +252,7 @@ Griffer. родился в г. Бишкек в 1989 г. Самый молодо�
 </div><!--/row-->
 </section>
 <!--/content-->
+
 <!--footer-->
 <footer class="container-fluid">
 <div class="navbar centered-pills">
@@ -286,13 +287,7 @@ Griffer. родился в г. Бишкек в 1989 г. Самый молодо�
 </div>
 </footer>
 <!--/footer -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-45405429-7');
-</script>
 
 <!-- Le javascript
 ================================================== -->
@@ -316,5 +311,27 @@ Griffer. родился в г. Бишкек в 1989 г. Самый молодо�
 <script src="template/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Audio HTML Запрет одновременного воспроизведения песен + последовательное воспроизведение.-->
-<script src="js/audio.js"></script>
+<script>
+        let audioNL = document.querySelectorAll('audio');
+        let audio = Array.apply(null, audioNL);
+
+        audio.forEach(t => {
+            let index = audio.indexOf(t);
+
+            t.addEventListener('play', ()=> {
+                audio.forEach(subT => {
+                    subT !== audio[index] ?
+                    (subT.pause(), subT.currentTime = 0) :
+                    subT.play()
+                })
+            })
+            t.addEventListener('ended', ()=> {
+                t.currentTime = 0;
+                index !== audio.length - 1 ?
+                    audio[index + 1].play() :
+                    null
+            })
+        });
+        
+    </script>
 </body></html>
