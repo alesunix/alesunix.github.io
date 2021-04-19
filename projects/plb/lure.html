@@ -297,12 +297,31 @@ background: #fff; /* Цвет фона */
 Тег audio не поддерживается вашим браузером.  
 </audio>
 <p>30._=PLB= - =OUTRO=.mp3
-<a href="audio/%3dLURE%3d/30._%3dPLB%3d%20-%20%3dOUTRO%3d.mp3" download="30._=PLB= - =OUTRO=.mp3">Скачать</a></p>  
-  
-
-
-
+<a href="audio/%3dLURE%3d/30._%3dPLB%3d%20-%20%3dOUTRO%3d.mp3" download="30._=PLB= - =OUTRO=.mp3">Скачать</a></p>   
 </div>
+<script>
+        let audioNL = document.querySelectorAll('audio');
+        let audio = Array.apply(null, audioNL);
+
+        audio.forEach(t => {
+            let index = audio.indexOf(t);
+
+            t.addEventListener('play', ()=> {
+                audio.forEach(subT => {
+                    subT !== audio[index] ?
+                    (subT.pause(), subT.currentTime = 0) :
+                    subT.play()
+                })
+            })
+            t.addEventListener('ended', ()=> {
+                t.currentTime = 0;
+                index !== audio.length - 1 ?
+                    audio[index + 1].play() :
+                    null
+            })
+        });
+        
+    </script>
 
 </article><!--/span-->
 <!--/Установка новостей-->
