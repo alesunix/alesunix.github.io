@@ -18,7 +18,12 @@ font-family: inherit;
 font-size: 1em;
 text-align: center;
 }
-
+p {
+    margin: 0 0 0px;
+    top: -30px;
+    left: 135px;
+    position: relative;
+}
 .diwell {
 background-color: #040504cf;
     box-shadow: 1px 1px 10px #000;
@@ -58,6 +63,9 @@ z-index: 1;
   }
 }
 @media all and (max-width: 700px) and (min-width: 0px){
+	p {
+    left: 30px;
+}
 	.diwell {
     padding: 0px;
     border-radius: 0%;

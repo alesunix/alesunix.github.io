@@ -782,8 +782,8 @@
  .navbar-fixed-top,
  .navbar-fixed-bottom,
  .navbar-static-top {
-  margin-right:-20px;
-  margin-left:-20px;
+  /* margin-right:-20px; */
+  /* margin-left:-20px; */
  }
  .container-fluid {
   padding:0
@@ -939,7 +939,7 @@
  }
  .navbar-fixed-top .navbar-inner,
  .navbar-fixed-bottom .navbar-inner {
-  padding:5px
+  padding:5px;
  }
  .navbar .container {
   width:auto;
