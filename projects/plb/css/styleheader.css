@@ -23,7 +23,7 @@ text-align: center;
 background-color: #040504cf;
     box-shadow: 1px 1px 10px #000;
     padding: 0px 350px 0 350px;
-    border-radius: 50%;
+    border-radius: 1%;
 }
 .tabl {
 justify-content: center;
