@@ -134,8 +134,7 @@ section {
 	text-align: center;
 	justify-content: center;
 	width: 100%;
-	position: absolute;
-	top: 50%;
+	margin-bottom: -150px;
 }
 .footer .footer-content .footer-silection-right
 {
