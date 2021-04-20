@@ -60,7 +60,6 @@ align-items: flex-start;
 	bottom: 0px;
 	left: 0px;
 	padding-top: 20px;
-	margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
 	body {
@@ -134,15 +133,11 @@ section {
 	text-align: center;
 	justify-content: center;
 	width: 100%;
-	margin-bottom: -150px;
 }
 .footer .footer-content .footer-silection-right
 {
 	width: 100%;
 	text-align: center;
-}
-.footer .footer-bottom{
-	bottom: -90px;
 }
 section {
 	background-attachment: inherit;
