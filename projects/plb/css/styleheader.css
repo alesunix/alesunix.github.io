@@ -70,6 +70,9 @@ z-index: 1;
 @media all and (max-width: 700px) and (min-width: 0px){
 	p {
 padding: 0px 0px 0px 50px;
+top: -7px;
+    text-shadow: none;
+    color: aliceblue;
 }
 	.diwell {
     padding: 0px;
