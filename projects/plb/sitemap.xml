@@ -9,8 +9,34 @@
 
 <url>
   <loc>https://alesunix.github.io/projects/plb/index.html</loc>
-  <lastmod>2020-03-18T07:39:52+00:00</lastmod>
+  <lastmod>2021-04-20T10:44:05+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+<url>
+  <loc>https://alesunix.github.io/projects/plb/lure.html</loc>
+  <lastmod>2021-04-20T10:44:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alesunix.github.io/projects/plb/infection.html</loc>
+  <lastmod>2021-04-20T10:44:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alesunix.github.io/projects/plb/feat.html</loc>
+  <lastmod>2021-04-20T10:44:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alesunix.github.io/projects/plb/skit.html</loc>
+  <lastmod>2021-04-20T10:44:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alesunix.github.io/projects/plb/oz.html</loc>
+  <lastmod>2021-04-20T10:44:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 
 </urlset>
