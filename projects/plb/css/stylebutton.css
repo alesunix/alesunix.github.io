@@ -1,10 +1,7 @@
-
-.buttons * {
-  transition: all .5s ease;
-}
+/* FOR CODEPEN PRESENTATION ONLY */
 
 .buttons {
-    display: flex;
+display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -12,25 +9,11 @@
     align-items: center;
 }
 
-/* .butWrap {
-  position: relative;
-  list-style: none;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;  
-  -ms-flex-wrap: wrap;  
-  flex-wrap: wrap;
-  -webkit-align-content: flex-end;
-  -ms-align-content: end;
-  align-content: flex-end;
-  width: 100%;
-} */
+/* PASTE BELOW IN CSS */
+
+.buttons * {
+  transition: all .5s ease;
+}
 
 /* Common style */
 .butFrame {
@@ -68,7 +51,7 @@
 
 .butFrame .butTextWrap {
   font-family: inherit;
-  padding: 0 2em 2em 2em;
+  padding: 2em;
   color: #fff;
   #text-transform: uppercase;
   #font-size: 1.25em;
@@ -82,7 +65,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+}
 
 .butFrame .butTextWrap,
 .butFrame .butTextWrap > a {
@@ -162,7 +145,7 @@
   box-sizing: border-box;
 }
 .butFrame .butHeading {
-  padding-top: 5%;
+  padding-top: 3%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0, -20px, 0);
