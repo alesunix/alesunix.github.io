@@ -1,12 +1,9 @@
 .headerstyle {
 justify-content: space-evenly;
-flex-wrap: wrap;
-align-items: flex-end;
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 .tabstyle {
 position: relative;
@@ -92,5 +89,6 @@ top: -7px;
   }
   .headerstyle {
 position: relative;
+flex-direction: column;
 }
 }
