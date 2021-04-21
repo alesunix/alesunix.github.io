@@ -25,7 +25,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
 <meta name="apple-mobile-web-app-capable" content="yes">
-
+<script src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.1/dist/amplitude.min.js" integrity="sha256-Tfhq9AnEiNYa6shzL5Lnx4RP+sZ6HQOUtCt06dQvWag=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -86,7 +86,7 @@
 <div class='diwell'>
 Дэмо треки<br><br>
 <img src="i/maza2.gif" width=30% align=right>
-
+  <!--
 <audio controls preload="none" style="width:100%;max-width:600px;">  
     <source src="audio/oz/бэйби.mp3" type="audio/mp3">
     Тег audio не поддерживается вашим браузером.  
@@ -127,8 +127,195 @@
     <source src="audio/oz/зелёный запорожец.mp3" type="audio/mpeg">
     Тег audio не поддерживается вашим браузером.  
   </audio>
-  <p>Зелёный запорожец</p>
+  <p>Зелёный запорожец</p> -->
+  
+<div id="player"></div>
+    <!-- Blue Playlist Container -->
+    <div id="blue-playlist-container">
+
+      <!-- Amplitude Player -->
+      <div id="amplitude-player">
+
+        <!-- Left Side Player -->
+        <div id="amplitude-left">
+          <img data-amplitude-song-info="cover_art_url" class="album-art"/>
+          <div class="amplitude-visualization" id="large-visualization">
+
+            </div>
+          <div id="player-left-bottom">
+            <div id="time-container">
+              <span class="current-time">
+                <span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
+              </span>
+              <div id="progress-container">
+                <div class="amplitude-wave-form">
+
+                        </div>
+                <input type="range" class="amplitude-song-slider"/>
+                <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+                <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+              </div>
+              <span class="duration">
+                <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+              </span>
+            </div>
+
+            <div id="control-container">
+              <div id="repeat-container">
+                <div class="amplitude-repeat" id="repeat"></div>
+                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+              </div>
+
+              <div id="central-control-container">
+                <div id="central-controls">
+                  <div class="amplitude-prev" id="previous"></div>
+                  <div class="amplitude-play-pause" id="play-pause"></div>
+                  <div class="amplitude-next" id="next"></div>
+                </div>
+              </div>
+
+              <div id="volume-container">
+                <div class="volume-controls">
+                  <div class="amplitude-mute amplitude-not-muted"></div>
+                  <input type="range" class="amplitude-volume-slider"/>
+                  <div class="ms-range-fix"></div>
+                </div>
+                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+              </div>
+            </div>
+
+            <div id="meta-container">
+              <span data-amplitude-song-info="name" class="song-name"></span>
+
+              <div class="song-artist-album">
+                <span data-amplitude-song-info="artist"></span>
+                <span data-amplitude-song-info="album"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Left Side Player -->
+
+        <!-- Right Side Player -->
+        <div id="amplitude-right">
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Бэйби</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">3:30</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Между ангелом и бесом примерная тема слов</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>           
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">3:16</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Милая</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>           
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">3:32</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Моё вдохновение</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>           
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">3:30</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Рояль</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>           
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">5:12</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Джапан гёл</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>         
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">5:29</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+              <span class="song-title">Зелёный запорожец</span>
+              <span class="song-artist">Общий знакомый</span>
+            </div>
+              <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">5:29</span>
+          </div>
+          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
+            <div class="song-now-playing-icon-container">
+              <div class="play-button-container">
+
+              </div>
+             
+        <!-- End Right Side Player -->
+      </div>
+      <!-- End Amplitdue Player -->  
+  
 </div>
+
+
 
 </article><!--/span-->
 <!--/Установка новостей-->
@@ -225,6 +412,7 @@ alt=""/></a><script>(function(d,s){d.getElementById("licntF645").src=
 	 <link rel="stylesheet" type="text/css" href="css/stylebutton.css" />
 	 <link rel="stylesheet" type="text/css" href="css/stylebutton3.css" />
 	 <link rel="stylesheet" href="css/fonts.css"> 
+	 <link rel="stylesheet" href="css/player.css"> 
 	 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="template/bootstrap/js/bootstrap.min.js"></script>
@@ -254,4 +442,132 @@ alt=""/></a><script>(function(d,s){d.getElementById("licntF645").src=
         });
         
     </script>
+		<script>	
+/*
+  When the bandcamp link is pressed, stop all propagation so AmplitudeJS doesn't
+  play the song.
+*/
+let bandcampLinks = document.getElementsByClassName('bandcamp-link');
+
+for( var i = 0; i < bandcampLinks.length; i++ ){
+  bandcampLinks[i].addEventListener('click', function(e){
+    e.stopPropagation();
+  });
+}
+
+
+let songElements = document.getElementsByClassName('song');
+
+for( var i = 0; i < songElements.length; i++ ){
+  /*
+    Ensure that on mouseover, CSS styles don't get messed up for active songs.
+  */
+  songElements[i].addEventListener('mouseover', function(){
+    this.style.backgroundColor = '#00A0FF';
+
+    this.querySelectorAll('.song-meta-data .song-title')[0].style.color = '#FFFFFF';
+    this.querySelectorAll('.song-meta-data .song-artist')[0].style.color = '#FFFFFF';
+
+    if( !this.classList.contains('amplitude-active-song-container') ){
+      this.querySelectorAll('.play-button-container')[0].style.display = 'block';
+    }
+
+    this.querySelectorAll('img.bandcamp-grey')[0].style.display = 'none';
+    this.querySelectorAll('img.bandcamp-white')[0].style.display = 'block';
+    this.querySelectorAll('.song-duration')[0].style.color = '#FFFFFF';
+  });
+
+  /*
+    Ensure that on mouseout, CSS styles don't get messed up for active songs.
+  */
+  songElements[i].addEventListener('mouseout', function(){
+    this.style.backgroundColor = '#FFFFFF';
+    this.querySelectorAll('.song-meta-data .song-title')[0].style.color = '#272726';
+    this.querySelectorAll('.song-meta-data .song-artist')[0].style.color = '#607D8B';
+    this.querySelectorAll('.play-button-container')[0].style.display = 'none';
+    this.querySelectorAll('img.bandcamp-grey')[0].style.display = 'block';
+    this.querySelectorAll('img.bandcamp-white')[0].style.display = 'none';
+    this.querySelectorAll('.song-duration')[0].style.color = '#607D8B';
+  });
+
+  /*
+    Show and hide the play button container on the song when the song is clicked.
+  */
+  songElements[i].addEventListener('click', function(){
+    this.querySelectorAll('.play-button-container')[0].style.display = 'none';
+  });
+}
+
+/*
+  Initializes AmplitudeJS
+*/
+Amplitude.init({
+  "songs": [
+    {
+      "name": "Бэйби",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/бэйби.mp3",
+      "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+    },
+    {
+      "name": "Между ангелом и бесом примерная тема слов",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/между ангелом и бесом примерная тема слов.mp3",
+      "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/ask-the-dust.jpg"
+    },
+    {
+      "name": "Милая",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/милая.mp3",
+      "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/anvil.jpg"
+    },
+    {
+      "name": "Моё вдохновение",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/моё вдохновение.mp3",
+      "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+    },
+    {
+      "name": "Рояль",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/рояль.mp3",
+      "cover_art_url": "i/maza2.gif"
+    },
+    {
+      "name": "Джапан гёл",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/джапан гёл.mp3",
+      "cover_art_url": "i/maza2.gif"
+    },
+    {
+      "name": "Зелёный запорожец",
+      "artist": "Общий знакомый",
+      "album": "Дэмо",
+      "url": "https://alesunix.github.io/projects/plb/audio/oz/зелёный запорожец.mp3",
+      "cover_art_url": "i/maza2.gif"
+    }        
+  ],
+  "callbacks": {
+        'play': function(){
+            document.getElementById('album-art').style.visibility = 'hidden';
+            document.getElementById('large-visualization').style.visibility = 'visible';
+        },
+
+        'pause': function(){
+            document.getElementById('album-art').style.visibility = 'visible';
+            document.getElementById('large-visualization').style.visibility = 'hidden';
+        }
+    },
+  waveforms: {
+    sample_rate: 50
+  }
+});
+document.getElementById('large-visualization').style.height = document.getElementById('album-art').offsetWidth + 'px';	
+</script>
 </body></html>
