@@ -1,21 +1,15 @@
-/* FOR CODEPEN PRESENTATION ONLY */
-
-.buttons {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
-
-/* PASTE BELOW IN CSS */
 
 .buttons * {
   transition: all .5s ease;
 }
 
 .buttons {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: center;
 }
 
 /* .butWrap {
@@ -43,7 +37,7 @@
   position: relative;
   overflow: hidden;
   margin: 5px;
-  width: 24%;
+  #width: 24%;
   background: #1111119e;
   font-family: inherit;
   font-size: 1em;
@@ -74,7 +68,7 @@
 
 .butFrame .butTextWrap {
   font-family: inherit;
-  padding: 2em;
+  padding: 0 2em 2em 2em;
   color: #fff;
   #text-transform: uppercase;
   #font-size: 1.25em;
@@ -88,7 +82,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-}
+
 
 .butFrame .butTextWrap,
 .butFrame .butTextWrap > a {
