@@ -786,7 +786,8 @@
   /* margin-left:-20px; */
  }
  .container-fluid {
-  padding:0
+  padding:0;
+  margin-left: inherit;
  }
  .dl-horizontal dt {
   float:none;
@@ -1063,9 +1064,8 @@
   overflow:hidden;
  }
  .navbar .btn-navbar {
-  \#display:block;
-  width: 100%;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: block;
+  width: 60px;
  }
  .navbar-static .navbar-inner {
   padding-right:10px;
