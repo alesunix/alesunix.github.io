@@ -85,6 +85,8 @@ h1{
     font-size: 16px;
     position: relative;
     top: 35px;
+	padding: 20px 0 20px 0;
+
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 
