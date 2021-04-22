@@ -112,6 +112,7 @@ text-shadow: #000 0px 0px 0px;
 line-height: 24px;
 }
 h1{
+	cursor: default;
     font-size: 37px;
     position: relative;
     top: -90px;
