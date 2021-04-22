@@ -132,14 +132,14 @@ display: flex;
   transition: opacity 0.35s, transform 0.35s;
 }
 .butFrame .butTextWrap::before {
-  border-top: 1px solid #f89406;
-  border-bottom: 1px solid #f89406;
+  border-top: 1px solid #a9887c;
+  border-bottom: 1px solid #a9887c;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
 .butFrame .butTextWrap::after {
-  border-right: 1px solid #f89406;
-  border-left: 1px solid #f89406;
+  border-right: 1px solid #a9887c;
+  border-left: 1px solid #a9887c;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
   box-sizing: border-box;
