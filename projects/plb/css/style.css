@@ -2,13 +2,17 @@
 * {
   box-sizing: border-box;
 }
-#nudge{-webkit-transition-property:color,background-color,padding-left;-webkit-transition-duration:500ms,500ms,500ms}
+#nudge{
+	-webkit-transition-property:color,background-color,padding-left;
+	-webkit-transition-duration:500ms,500ms,500ms;
+	color: #ffffff;
+}
 #nudge:hover{
 	#background-color:#efefef;
 	color: #ff5722;
     padding-left: 50px;
     cursor: pointer;
-	}
+}
 blockquote {
 margin: 12px 0 0 0;
 background: #FFF4E0;
