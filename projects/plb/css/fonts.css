@@ -112,10 +112,10 @@ text-shadow: #000 0px 0px 0px;
 line-height: 24px;
 }
 h1{
-    font-size: 27px;
+    font-size: 37px;
     position: relative;
     top: -90px;
-    left: 350px;
+    left: -550px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
 	h1{
