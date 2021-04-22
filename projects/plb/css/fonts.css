@@ -1,4 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+/* туман */
+span {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s infinite;
+}
+span:nth-child(even) {
+  animation-name: smoky-2;
+}
+@keyframes smoky {
+  60% {text-shadow: 0 0 40px whitesmoke;}
+  to {
+    transform: translate3d(300px, -80px, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+@keyframes smoky-2 {
+  60% {text-shadow: 0 0 40px whitesmoke;}
+  to {
+    transform: translate3d(350px, -80px, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+span:nth-of-type(1) {animation-delay: .1s;}
+span:nth-of-type(2) {animation-delay: .2s;}
+span:nth-of-type(3) {animation-delay: .3s;}
+span:nth-of-type(4) {animation-delay: .4s;}
+span:nth-of-type(5) {animation-delay: .5s;}
+/* туман */
+
 #* {box-sizing: border-box;}
 .post {
   width: 60%;
@@ -80,9 +112,17 @@ text-shadow: #000 0px 0px 0px;
 line-height: 24px;
 }
 h1{
-
+    font-size: 27px;
+    position: relative;
+    top: -90px;
+    left: 350px;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
+	h1{
+    font-size: 17px;
+    top: 0px;
+    left: 0px;
+}
 h5 {
   font-size: 14px;
 }
