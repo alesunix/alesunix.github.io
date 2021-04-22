@@ -66,6 +66,7 @@ align-items: flex-start;
 	body {
 		padding-top: 0;
 		padding-bottom: 0;
+		margin-top: 0px;
 	}
 }
 
