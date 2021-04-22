@@ -86,10 +86,13 @@ h1{
     position: relative;
     top: 35px;
 	padding: 20px 0 20px 0;
-
+font-weight: normal;
 }
 @media all and (max-width: 700px) and (min-width: 0px){
-
+h1{
+    top: -20px;
+	padding: 0px;
+}
 h5 {
   font-size: 14px;
 }
