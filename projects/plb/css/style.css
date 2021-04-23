@@ -25,6 +25,9 @@ svg{
   overflow: hidden; 
   margin: 0 auto;
   #background-color: #1e2529;
+  position: absolute;
+    top: 170px;
+    z-index: 9999;
 }
 #nudge{
 	-webkit-transition-property:color,background-color,padding-left;
@@ -347,6 +350,9 @@ border-width: 0;
 /*-------------------- Мобильная версия -----------------------------*/
 
 @media all and (max-width: 700px) and (min-width: 0px){
+	svg{
+  top: 220px;
+}
 	.hover-fold h2 {
 margin-left: -80px;
 	.ienlarger {
