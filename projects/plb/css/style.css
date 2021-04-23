@@ -24,7 +24,7 @@ svg{
   position: relative;
   overflow: hidden; 
   margin: 0 auto;
-  background-color: #1e2529;
+  #background-color: #1e2529;
 }
 #nudge{
 	-webkit-transition-property:color,background-color,padding-left;
