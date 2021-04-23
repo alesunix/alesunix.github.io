@@ -2,6 +2,30 @@
 * {
   box-sizing: border-box;
 }
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+
+.info {
+  color: white;
+  font:1em/1 sans-serif;
+  text-align: center;
+}
+
+.info a{
+  color: white;
+}
+
+svg{
+  width: 600px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background-color: #1e2529;
+}
 #nudge{
 	-webkit-transition-property:color,background-color,padding-left;
 	-webkit-transition-duration:500ms,500ms,500ms;
