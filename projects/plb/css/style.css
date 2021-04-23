@@ -44,8 +44,9 @@ svg{
 
 .slashed {
   position: absolute;
-  top: -1360px;
-  left: 850px;
+  padding: 40px;
+  top: 0px;
+  left: 1000px;
   right: 0;
   bottom: 0;
   text-shadow: 3px 3px 3px rgb(105 105 105 / 50%);
@@ -57,7 +58,7 @@ svg{
   text-transform: uppercase;
   text-align: center;
   overflow: hidden;
-  #color: #f89406;
+  color: #ccc;
 }
 .slashed .top:before,
 .slashed .bot:before {
