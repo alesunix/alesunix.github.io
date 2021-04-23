@@ -7,7 +7,7 @@ body {
 .footer{
 	background: #1e2529;
 	color: #fff;
-	height:200px;
+	#height:200px;
 	position: relative;
 	line-height: 16px;
 	font-size: 12px;
@@ -120,7 +120,7 @@ section {
 }
 @media all and (max-width: 950px) and (min-width: 0px){
 .footer{
-	height:450px;
+	#height:450px;
 }
 .footer a {
   padding: 5px;
