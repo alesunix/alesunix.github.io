@@ -49,10 +49,7 @@ font-size: 1em;
 text-align: left;
 z-index: 1;
 }
-.center {
-    width: 100%;  
-    text-align: center;  	
-}
+
 /* MEDIA QUERIES */
 @media all and (max-width: 950px) and (min-width: 701px){
 .tabstyle {
