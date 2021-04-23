@@ -407,7 +407,8 @@ border-width: 0;
 
 @media all and (max-width: 700px) and (min-width: 0px){
 	svg{
-  top: 220px;
+width: 0;
+top: 220px;
 }
 	.hover-fold h2 {
 margin-left: -80px;
