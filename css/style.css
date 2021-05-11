@@ -9,7 +9,7 @@ color: #474C4F;
 padding: 30px 0 0 0;
 position: relative;
 text-align: center;
-text-transform: uppercase;
+text-transform: none;
 font-family: 'Lato', sans-serif;
 border-left: none;
 }
