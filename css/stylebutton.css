@@ -706,27 +706,27 @@ a.button23:before {
 	.buttons {
 display: block; 
 }
-	.butFrame .butTextWrap{
-		padding: 0.5em;
-	}
-.btn {
-    #display: contents;
+.butFrame .butTextWrap{
+padding: 0.5em;
 }
-	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
-	align-content: center;
+.btn {
+#display: contents;
+}
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
+align-content: center;
 display: block;
 #background-image: url(/i/minifon.png);
 background: repeating-linear-gradient(50deg, #63869540, #63869540 5px, #1e2529 5px, #1e2529 10px);
 background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #484847, #090909);
-    background-size: auto, auto, auto;
+background-size: auto, auto, auto;
 background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
 }
-  .butFrame {
-    display:block;
-    width:100%;
-  }
-    a.button22 {
-	right: -11%;
+.butFrame {
+display:block;
+width:98%;
+}
+a.button22 {
+right: -11%;
 top: -10px;
 #width: 180px;
 }
