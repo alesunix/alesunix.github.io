@@ -28,7 +28,7 @@
 <div class="tab">
 
 <input id="adres" type="text" placeholder=" Введите адрес "></input>
-<input id="button" type="button" value="Отправить"/>
+<input id="button" type="button" class="btn" value="Отправить"/>
 </br></br>
 
 <script type="text/javascript">
@@ -40,13 +40,14 @@ var addres = document.getElementById('adres').value;
 
 $.get( "https://chain.so/api/v2/get_address_received/BTC/" + addres, function( response ) {
   $( "body" )
-    .append( "Сеть: " + response.data.network + "<br/>" ) // 
-    .append( "Адрес: " + response.data.address + "<br/>" ) // 
-    .append( "Баланс: " + response.data.confirmed_received_value + "</br>"); //  
+    .append( "<div class='tabl'><div class='tab'>Сеть: " + response.data.network + "</div></div><br/>" ) // 
+    .append( "<div class='tabl'><div class='tab'>Адрес: " + response.data.address + "</div></div><br/>" ) // 
+    .append( "<div class='tabl'><div class='tab'>Баланс: " + response.data.confirmed_received_value + "</div></div></br>"); //  
 }, "json" );
 
 }
 </script>
+</div></div>
 </head>
 </body>
 </html>
