@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
-<link rel="stylesheet" href="template/bootstrap/css/bootstrap.min.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="template/info.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="template/bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen, projection">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-     <link rel="stylesheet" type="text/css" href="css/background.css" />
-	 <link rel="stylesheet" type="text/css" href="css/Animated-Background.css" />
-	 <link rel="stylesheet" type="text/css" href="css/style.css" />
-	 <link rel="stylesheet" type="text/css" href="css/blockbutton.css" />	 
-	 <link rel="stylesheet" type="text/css" href="css/styleheader.css" />
-	 <link rel="stylesheet" type="text/css" href="css/stylebutton.css" />	 
-	 <link rel="stylesheet" href="css/fonts.css">
-	 <link rel="stylesheet" href="css/swiper.min.css">
-	 <link rel="stylesheet" href="css/about-me.css">
-	 <link rel="stylesheet" href="css/social-card.css">
-	 
+<link rel="stylesheet" href="css/search.css">	 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-<script src="template/bootstrap/js/bootstrap.min.js"></script>
 <meta charset="utf-8" /> 
 <head>
 <body>
-</br></br>
-<h1>Проверка баланса(BTC) на кошельке</h1>
-</br></br>
-<div class='tabl'>
-<div class="tab">
+<br/><br/>
+<div class="Card">
+  <div class="CardInner">
+  <label>Проверка баланса bitcoin</label>
+  <div class="container">
+    <div class="Icon" id="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#657789" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
+    <div class="InputContainer">
+      <input id="search" type="search" placeholder="Введите bitcoin адрес..."/>
+    </div>
+  </div>
+ </div>
+</div>
 
-<input id="adres" type="text" placeholder=" Введите адрес Биткоина"></input>
-<input id="button" type="button" class="btn" value="Отправить"/>
-</br></br>
+<br/><br/><br/><br/>
 
 <script type="text/javascript">
 button.onclick = function(){
     
-alert(document.getElementById('adres').value);
+alert(document.getElementById('search').value);
 //var addres = "1DEP8i3QJCsomS4BSMY2RpU1upv62aGvhD";
-var addres = document.getElementById('adres').value;
+var addres = document.getElementById('search').value;
 
 $.get( "https://chain.so/api/v2/get_address_received/BTC/" + addres, function( response ) {
   $( "body" )
-    .append( "<div class='tabl'><div class='tab'>Сеть: " + response.data.network + "</div></div><br/>" ) // 
-    .append( "<div class='tabl'><div class='tab'>Адрес: " + response.data.address + "</div></div><br/>" ) // 
-    .append( "<div class='tabl'><div class='tab'>Баланс: " + response.data.confirmed_received_value + "</div></div></br>"); //  
+    .append( "Сеть: " + response.data.network + "<br/>" ) // 
+    .append( "Адрес: " + response.data.address + "<br/>" ) // 
+    .append( "Баланс: " + response.data.confirmed_received_value + "</br>"); //  
 }, "json" );
 
 }
 </script>
-</div></div>
+
 </head>
 </body>
 </html>
