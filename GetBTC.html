@@ -24,14 +24,14 @@
 
 <script type="text/javascript">
 button.onclick = function(){
-var addres = document.getElementById('adres').value;
+var addres = document.getElementById('search').value;
 
 $.ajax({
 	url: 'https://chain.so/api/v2/get_address_received/BTC/' + addres,
 	method: 'get',
 	dataType: 'json',
 	success: function(response){
-		$( "body" )
+	$( "body" )
     .append( "Сеть: " + response.data.network + "<br/>" ) // 
     .append( "Адрес: " + response.data.address + "<br/>" ) // 
     .append( "Баланс: " + response.data.confirmed_received_value + "</br>"); // 
@@ -40,7 +40,7 @@ $.ajax({
 		if (response.statusCode !== 200) {
 			alert( "Ошибка, такого адреса не существует!" );
 		} 
-    else {
+        else {
 			alert( "Ошибка, такого адреса не существует!" );
 		}
 	}
