@@ -38,7 +38,7 @@ $(document).on('click','#button',function(e){
         	   "Адрес: " + response.data.address + "<br>" +
                "Баланс: " + response.data.confirmed_received_value;
         						
-				$("#result").append(text + "<br>") 
+				$("#result").append(text + "<hr>") 
 		},
 		error: function (response) {
 			if (response.statusCode !== 200) {
