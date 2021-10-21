@@ -24,18 +24,27 @@
 
 <script type="text/javascript">
 button.onclick = function(){
-    
-//alert(document.getElementById('search').value);
-//var addres = "1DEP8i3QJCsomS4BSMY2RpU1upv62aGvhD";
-var addres = document.getElementById('search').value;
+var addres = document.getElementById('adres').value;
 
-$.get( "https://chain.so/api/v2/get_address_received/BTC/" + addres, function( response ) {
-  $( "body" )
+$.ajax({
+	url: 'https://chain.so/api/v2/get_address_received/BTC/' + addres,
+	method: 'get',
+	dataType: 'json',
+	success: function(response){
+		$( "body" )
     .append( "Сеть: " + response.data.network + "<br/>" ) // 
     .append( "Адрес: " + response.data.address + "<br/>" ) // 
-    .append( "Баланс: " + response.data.confirmed_received_value + "</br>"); //  
-}, "json" );
-
+    .append( "Баланс: " + response.data.confirmed_received_value + "</br>"); // 
+	},
+	error: function ( response) {
+		if (response.statusCode !== 200) {
+			alert( "Ошибка, такого адреса не существует!" );
+		} 
+    else {
+			alert( "Ошибка, такого адреса не существует!" );
+		}
+	}
+});
 }
 </script>
 
