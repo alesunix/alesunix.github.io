@@ -17,35 +17,38 @@
       <input id="search" type="search" placeholder="Введите bitcoin адрес..."/>
     </div>
   </div>
+  <div id="result">
+    </div>
  </div>
 </div>
 
 <br><br><br><br>
 
 <script type="text/javascript">
-button.onclick = function(){
-var addres = document.getElementById('search').value;
+$(document).on('click','#button',function(e){
+ 
+	let addres = $('#search').val();
 
-$.ajax({
+	$.ajax({
 	url: 'https://chain.so/api/v2/get_address_received/BTC/' + addres,
-	method: 'get',
+    method: 'get',
 	dataType: 'json',
 	success: function(response){
-	$( "body" )
-    .append( "Сеть: " + response.data.network + "<br/>" ) // 
-    .append( "Адрес: " + response.data.address + "<br/>" ) // 
-    .append( "Баланс: " + response.data.confirmed_received_value + "</br>"); // 
-	},
-	error: function ( response) {
-		if (response.statusCode !== 200) {
-			alert( "Ошибка, такого адреса не существует!" );
-		} 
-        else {
-			alert( "Ошибка, такого адреса не существует!" );
+    let text = "Сеть: " + response.data.network + "<br>" +
+        	   "Адрес: " + response.data.address + "<br>" +
+               "Баланс: " + response.data.confirmed_received_value;
+        						
+				$("#result").append(text + "<br>") 
+		},
+		error: function (response) {
+			if (response.statusCode !== 200) {
+				alert( "Ошибка, такого адреса не существует!" );
+			} else {
+				alert( "Ошибка, такого адреса не существует!" );
+			}
 		}
-	}
+	});
 });
-}
 </script>
 
 </head>
