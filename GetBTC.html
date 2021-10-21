@@ -34,9 +34,9 @@ $(document).on('click','#button',function(e){
     method: 'get',
 	dataType: 'json',
 	success: function(response){
-    let text = "Сеть: " + response.data.network + "<br>" +
-        	   "Адрес: " + response.data.address + "<br>" +
-               "Баланс: " + response.data.confirmed_received_value;
+    let text = "<hr>Сеть: " + response.data.network + "<br>" +
+        	      "Адрес: " + response.data.address + "<br>" +
+                 "Баланс: " + response.data.confirmed_received_value;
         						
 				$("#result").append(text + "<hr>") 
 		},
