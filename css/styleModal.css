@@ -1,0 +1,111 @@
+	
+.btnm {
+background-color: #f5f5f5;
+background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+background-repeat: repeat-x;
+min-height: 230px;
+width: 360px;
+float: initial;
+overflow: hidden;
+opacity: 1;
+display: inline-block;
+padding: 4px 4px;
+margin-bottom: 0;
+font-size: 14px;
+line-height: 20px;
+color: #333;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid #bbb;
+border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+border-bottom-color: #a2a2a2;
+border-radius: 4px;	 
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+font-weight: 400;
+word-wrap: anywhere;
+}
+.btnm:hover {
+    filter: alpha (Opacity=100);
+    opacity: 1;
+	-webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.46);
+box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.46);
+
+
+   }
+	.modalDialog {
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		display: none;
+		pointer-events: none;
+		text-align: left;
+	}
+ 
+	.modalDialog:target {
+		display: block;
+		pointer-events: auto;
+	}
+ 
+	.modalDialog > div {
+		display: flex;
+		width: 90%;
+		position: relative;
+		margin: 10% auto;
+		padding: 30px 80px 10px 0px;
+		border-radius: 10px;
+		color: #000;
+		font-size: 16px;
+		background: #fff;
+		#background: -moz-linear-gradient(#fff, #999);
+		#background: -webkit-linear-gradient(#fff, #999);
+		#background: -o-linear-gradient(#fff, #999);
+	}
+ 
+	.close {
+
+margin: 0 0 50px 0;
+font-size: 14px;
+text-shadow: 1px -1px 2px #fff;
+		
+		background: #f90000;
+		color: #FFFFFF;
+		line-height: 35px;
+		position: absolute;
+		right: -1px;
+		text-align: center;
+		top: 0px;
+		width: 84px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+ 
+	.close:hover { background: #ff3c00; }
+	@media all and (max-width: 700px) and (min-width: 0px){
+.btnm {
+	width: 100%;
+}
+  .butFrame {
+    display:block;
+    width:100%;
+  }
+  .modalDialog > div {
+		width: 98%;
+	}
+
+}
