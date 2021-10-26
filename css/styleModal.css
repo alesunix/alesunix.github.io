@@ -99,6 +99,7 @@ text-shadow: 1px -1px 2px #fff;
 	@media all and (max-width: 700px) and (min-width: 0px){
 .btnm {
 	width: 100%;
+	min-height: 200px;
 }
   .butFrame {
     display:block;
