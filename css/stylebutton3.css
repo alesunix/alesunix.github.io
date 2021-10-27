@@ -1,21 +1,13 @@
-/* FOR CODEPEN PRESENTATION ONLY */
-
-.buttons3 {display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
-
-/* PASTE BELOW IN CSS */
-
 .buttons3 * {
   transition: all .5s ease;
 }
 
 .buttons3 {
-  -webkit-justify-content: center;
-  -ms-flex-pack: justify;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 10px 0 10px 0;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
 }
 
 /* .butWrap {

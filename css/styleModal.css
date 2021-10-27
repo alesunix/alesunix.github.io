@@ -101,10 +101,6 @@ text-shadow: 1px -1px 2px #fff;
 	width: 100%;
 	min-height: 200px;
 }
-  .butFrame {
-    display:block;
-    width:100%;
-  }
   .modalDialog > div {
 		width: 98%;
 	}
