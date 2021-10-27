@@ -455,7 +455,7 @@ align-items: flex-start;
 .butFrame {
   position: relative;
   overflow: hidden;
-  margin: 0px 2px 5px 2px;
+  margin: 5px;
   width: 100%;
   background: #1111119e;
   #font-family: inherit;
@@ -723,6 +723,7 @@ background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
 }
 .butFrame {
 display:block;
+margin: 0px 0px 5px 0px;
 #width:98%;
 }
 a.button22 {
