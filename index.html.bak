@@ -286,7 +286,7 @@ title="Нажмите здесь, чтобы открыть документ">
 		  
 <p class="btnx"><b>Языки программирования, фреймворки: </b></p><br>
 		  С#  (ASP.NET Core, Web Blazor, Windows Forms, Xamarin Forms, Entity Framework)<br>
-		  Язык запросов: SQL, LINQ (СУБД - MSSQL, Oracle, MySQL, PostgreSQL)<br>
+		  Язык запросов: SQL (СУБД - MSSQL, Oracle, MySQL, PostgreSQL)<br>
 		  Системы управления версиями: TFS и Git
 <br><br>
 		  
@@ -306,7 +306,7 @@ title="Нажмите здесь, чтобы открыть документ">
 <h2 id="portfolio"></h2>
 <h3 id="portfo">Портфолио</h3>
 <center><br>
-Мои разработки / Программы / Сайты
+Мои разработки: Программы / Сайты
 <br><br>
 
 <div class="buttons3">
