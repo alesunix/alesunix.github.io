@@ -373,6 +373,11 @@ color: #666565;
 	color: #ff7500;
 	text-decoration: none;
 }
+@media (max-width: 768px) {
+    .courses-container {
+        display: none;
+    }
+}
 @media all and (max-width: 700px) and (min-width: 0px){
 	.course-preview {
 	background-color: #2a265f;
