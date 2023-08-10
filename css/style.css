@@ -48,7 +48,7 @@ font-weight: 300;
 .btnx {
     display: list-item;
     padding: 0;
-    margin-bottom: -18px;
+    margin-bottom: 0px;
     line-height: 20px;
     color: #fff1ba;
     vertical-align: middle;
