@@ -463,16 +463,8 @@ align-items: flex-start;
   text-align: center;
   cursor: pointer;
 }
-.butFrameHide {
-  position: relative;
-  overflow: hidden;
-  margin: 5px;
-  width: 100%;
-  background: #1111119e;
-  #font-family: inherit;
-  font-size: 1em;
-  text-align: center;
-  cursor: pointer;
+.Hide {
+
 }
 .butFrame img {
   #position: relative;
@@ -702,7 +694,7 @@ a.button23:before {
 }
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
-    .butFrameHide {
+    .Hide {
         display: none;
     }
 }
