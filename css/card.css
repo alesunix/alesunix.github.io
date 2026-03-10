@@ -484,3 +484,101 @@
         margin-bottom: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.expertise-section {
+    padding: 50px 0;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.expertise-card {
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.expertise-card h3 {
+    color: #0078d4;
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+.expertise-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Иконки */
+.expertise-icon {
+    font-size: 2rem;
+    color: #0078d4;
+}
+
+/* Метки и списки */
+.sub-skills span, .os-tags span {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 3px;
+    font-size: 0.75rem;
+    background: rgba(0, 120, 212, 0.1);
+    border: 1px solid rgba(0, 120, 212, 0.3);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.tech-list, .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ddd;
+}
+
+.tech-list li {
+    margin-bottom: 8px;
+}
+
+.check-list li {
+    color: #25d366; /* Зеленый для галочек */
+    margin-bottom: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .expertise-card {
+        padding: 20px;
+    }
+}
