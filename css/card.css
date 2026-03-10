@@ -960,3 +960,125 @@
         display: flex; /* Показываем при клике */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Основная панель */
+.main-nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Брендинг */
+.nav-brand {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-brand span {
+    color: #0078d4;
+}
+
+/* Группа справа */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.nav-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: #0078d4;
+}
+
+/* Переключатель языков */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn {
+    font-size: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.lang-btn.active, .lang-btn:hover {
+    opacity: 1;
+    color: #0078d4;
+    font-weight: bold;
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 992px) {
+    .nav-right-group {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Логика открытия через JS как в прошлом шаге */
+    }
+    .lang-switcher {
+        margin-right: 50px; /* Чтобы не мешал кнопке гамбургера */
+    }
+}
