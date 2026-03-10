@@ -392,3 +392,95 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.process-section {
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.step {
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border-left: 2px solid rgba(0, 120, 212, 0.3);
+    transition: 0.3s;
+}
+
+.step:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-left-color: #0078d4;
+    transform: translateX(5px);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(0, 120, 212, 0.2);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #0078d4;
+    position: relative;
+    z-index: 1;
+}
+
+.step-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Выделение активного этапа (Кодирование) */
+.step.active {
+    border-left-color: #0078d4;
+    box-shadow: inset 0 0 15px rgba(0, 120, 212, 0.1);
+}
+
+.step.active .step-number {
+    color: rgba(0, 120, 212, 0.5);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    .step {
+        margin-bottom: 10px;
+    }
+}
