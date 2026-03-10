@@ -233,3 +233,162 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Контейнер */
+.courses-container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Карточка-стекло */
+.course-card {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Левая часть (Превью) */
+.course-preview {
+    background-color: #0078d4; /* Фирменный синий Microsoft */
+    background-image: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+    padding: 40px;
+    width: 35%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-preview h6 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.course-preview h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tech-stack span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Правая часть (Инфо) */
+.course-info {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 65%;
+    color: #fff;
+    position: relative;
+}
+
+/* Прогресс-бар */
+.progress-wrapper {
+    margin-bottom: 25px;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #25d366; /* Зеленый - успех */
+    border-radius: 4px;
+    box-shadow: 0 0 10px #25d366;
+}
+
+.progress-text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #25d366;
+}
+
+/* Список услуг */
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.service-item {
+    padding: 5px 0;
+}
+
+.course-description p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.highlight {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+    color: #0078d4 !important;
+    font-weight: 600;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .course-card {
+        flex-direction: column;
+    }
+    .course-preview, .course-info {
+        width: 100%;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
