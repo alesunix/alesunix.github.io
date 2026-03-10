@@ -694,3 +694,175 @@
         justify-content: center;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-footer {
+    padding: 60px 0 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Навигация */
+.footer-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0078d4;
+}
+
+/* Сетка контента */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.quote-text {
+    font-style: italic;
+    color: #aaa;
+    line-height: 1.6;
+    border-left: 3px solid #0078d4;
+    padding-left: 20px;
+}
+
+/* Соцсети */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    color: #0078d4;
+    transform: translateY(-3px);
+}
+
+/* Блок Биткоина */
+.bitcoin-block {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bitcoin-block blockquote p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.blockquote-footer {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.fa-bitcoin {
+    color: #df8613;
+}
+
+.bitcoin-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-btc {
+    background: #df8613;
+    padding: 8px 25px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Подвал */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .quote-text {
+        border-left: none;
+        border-top: 2px solid #0078d4;
+        padding: 15px 0 0;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
