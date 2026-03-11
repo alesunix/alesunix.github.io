@@ -111,7 +111,7 @@
 /* Адаптивность для мобилок */
 @media (max-width: 768px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .portfolio-grid {
         grid-template-columns: 1fr; /* На мобильных в одну колонку */
@@ -712,7 +712,6 @@
 
 .main-footer {
     padding: 60px 0 20px;
-    margin-top: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
