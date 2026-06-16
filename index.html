@@ -1,488 +1,554 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработчик Full-Stack программного обеспечения, баз данных и сайтов | Бишкек</title>
+    
+    <meta name="google-site-verification" content="w7y79Te-JGi8lnpsFJlcQvZy5Zxo1CHjJohaTJU2lS0" />
+    <meta name="yandex-verification" content="058d18e1faa5d134" />
+    <meta name="keywords" content="Разработка программного обеспечения баз данных сайтов">
+    <meta name="description" content="Разработчик Full-Stack информационных систем серверной части Backend и пользовательского интерфейса Frontend">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="theme-color" content="#000000">
 
-<meta name="google-site-verification" content="w7y79Te-JGi8lnpsFJlcQvZy5Zxo1CHjJohaTJU2lS0" />
-<meta name="yandex-verification" content="058d18e1faa5d134" />
-<meta charset="utf-8" />
-<title>Разработчик Full-Stack программного обеспечения, баз данных и сайтов | Бишкек</title>
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Разработчик Full-Stack программного обеспечения, баз данных и сайтов | Бишкек">
+    <meta property="og:site_name" content="Ильяс_Алиевич">
+    <meta property="og:url" content="https://alesunix.github.io">
+    <meta property="og:description" content="Разработчик Full-Stack информационных систем серверной части Backend и пользовательского интерфейса Frontend">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://alesunix.ru/i/Logo.svg">
+    <link rel="canonical" href="https://alesunix.github.io/" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Разработка программного обеспечения баз данных сайтов">
-<meta name="description" content="Разработчик Full-Stack информационных систем серверной части Backend и пользовательского интерфейса Frontend">
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<!-- Favicon -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "url": "https://alesunix.github.io/",
-  "name": "Ильяс Алиевич",
-  "address": {
-  "@type": "PostalAddress",
-  "name": "Bishkek"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+996500335633",
-    "contactType": "Customer service"
-  }
-}
-</script>
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="Разработчик Full-Stack программного обеспечения, баз данных и сайтов | Бишкек">
-<meta property="og:site_name" content="Ильяс_Алиевич">
-<meta property="og:url" content="https://alesunix.github.io">
-<meta property="og:description" content="Разработчик Full-Stack информационных систем серверной части Backend и пользовательского интерфейса Frontend">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://alesunix.ru/i/Logo.svg">
-<!-- OPEN GRAPH -->
-<link rel="image_src" href="https://alesunix.github.io/i/Logo.svg">
-<link rel="canonical" href="https://alesunix.github.io/" />
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "url": "https://alesunix.github.io/",
+      "name": "Ильяс Алиевич",
+      "address": {
+        "@type": "PostalAddress",
+        "name": "Bishkek"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+996500335633",
+        "contactType": "Customer service"
+      }
+    }
+    </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SN4VYGQ2Y1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN4VYGQ2Y1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SN4VYGQ2Y1');
+    </script>
 
-  gtag('config', 'G-SN4VYGQ2Y1');
-</script>
+    <style>
+        :root {
+            --matrix-green: #00ff00;
+            --matrix-dark-green: #003300;
+            --matrix-bg: #000000;
+            --matrix-glow: rgba(0, 255, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--matrix-bg);
+            color: var(--matrix-green);
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        #matrix-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header.main-nav-bar {
+            background: rgba(0, 0, 0, 0.85);
+            border-bottom: 1px solid var(--matrix-green);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .nav-brand {
+            color: var(--matrix-green);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-shadow: 0 0 8px var(--matrix-glow);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: var(--matrix-green);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: var(--matrix-green);
+            color: var(--matrix-bg);
+            box-shadow: 0 0 10px var(--matrix-green);
+        }
+
+        /* Main Profile Section */
+        .profile-hero {
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px dashed var(--matrix-green);
+        }
+
+        .logo-img {
+            max-width: 200px;
+            filter: drop-shadow(0 0 8px var(--matrix-green));
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--matrix-glow);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #fff;
+            text-shadow: 0 0 5px var(--matrix-green);
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            border: 1px solid var(--matrix-green);
+            padding: 15px;
+            background: rgba(0, 51, 0, 0.2);
+            backdrop-filter: blur(2px);
+        }
+
+        .info-card a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Sections General */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px dashed var(--matrix-green);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px var(--matrix-glow);
+        }
+
+        .section-subtitle {
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        /* Process Steps */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .step-box {
+            border: 1px solid var(--matrix-green);
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .step-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px var(--matrix-glow);
+        }
+
+        .step-num {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            opacity: 0.4;
+        }
+
+        .step-box h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* Portfolio */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .portfolio-card {
+            border: 1px solid var(--matrix-green);
+            background: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            filter: grayscale(100%) sepia(100%) hue-rotate(100deg) saturate(300%);
+            border-bottom: 1px solid var(--matrix-green);
+            transition: filter 0.3s;
+        }
+
+        .portfolio-card:hover .card-image img {
+            filter: grayscale(0%) sepia(0%);
+        }
+
+        .card-content {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .tech-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .tech-tags span {
+            font-size: 0.75rem;
+            border: 1px solid var(--matrix-green);
+            padding: 2px 6px;
+            background: var(--matrix-dark-green);
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 40px 0;
+            font-size: 0.85rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            color: #888;
+        }
+
+        .social-links a {
+            color: var(--matrix-green);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-shadow: 0 0 8px var(--matrix-green);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid var(--matrix-dark-green);
+            padding-top: 20px;
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 15px; }
+            .nav-menu { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
 </head>
 <body>
-<!--Animated-Background-->
-      <div id="large-header" class="large-header">
-         <canvas id="demo-canvas"></canvas>
-      </div>
-<!--Animated-Background-->
-<!--header-->
-<header class="main-nav-bar fixed-top glass">
+
+<!-- Эффект Матрицы -->
+<canvas id="matrix-canvas"></canvas>
+
+<header class="main-nav-bar">
     <div class="container nav-container">
-        <a href="index.html" class="nav-brand">ALES<span>UNIX</span></a>
-
-        <button class="menu-toggle" id="mobile-menu" aria-label="Открыть меню">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <div class="nav-right-group">
+        <a href="index.html" class="nav-brand">ALESUNIX</a>
+        <nav>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">ГЛАВНАЯ</a></li>
-                <li><a href="#about_me" class="nav-link">ОБО МНЕ</a></li>
-                <li><a href="#portfolio" class="nav-link">ПОРТФОЛИО</a></li>
-                <li><a href="#expertise" class="nav-link">НАВЫКИ</a></li>
-                <li><a href="#contacts" class="nav-link">КОНТАКТЫ</a></li>
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="#process" class="nav-link">Процесс</a></li>
+                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
             </ul>
-
-            <div class="lang-switcher">
-                <a href="#" class="lang-btn active" data-google-lang="ru">RU</a>
-                <span class="lang-divider">|</span>
-                <a href="#" class="lang-btn" data-google-lang="en">EN</a>
-            </div>
-        </div>
-    </div>
-</header>
-<!--/header-->
-<!--content-->
-<section class="content container-fluid">
-
-<header class="main-header glass">
-    <div class="container header-flex">
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="i/Logo.svg" width="250" alt="alesunix" oncontextmenu="return false;" onerror="this.onerror=null; this.src='i/Logo.png'"/>
-            </a>
-            <span class="tagline">Software Developer</span>
-        </div>
-
-        <div class="header-info-group">
-            <div class="info-item">
-                <i class="fa fa-github"></i>
-                <div class="info-text">
-                    <small>Version Control</small>
-                    <a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <i class="fa fa-envelope-o"></i>
-                <div class="info-text">
-                    <small>Email & Phone</small>
-                    <a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
-                    <span>+996 (500) 335-633</span>
-                </div>
-            </div>
-
-            <div class="info-item hide-mobile">
-                <i class="fa fa-map-marker"></i>
-                <div class="info-text">
-                    <small>Location</small>
-                    <span>г. Бишкек</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="share42init" data-url="https://alesunix.github.io/index.html" data-title="Алиев Ильяс Алиевич | Разработчик"></div>
+        </nav>
     </div>
 </header>
 
-<div class="row-fluid">
-<article class="span9 well well-large well-inverse">
-<section class="section-0">	
-<h1>Ильяс Алиевич | Разработчик Full-Stack информационных систем</h1> 
+<div class="container">
+    <!-- Главная карточка -->
+    <section class="profile-hero">
+        <img src="i/Logo.svg" alt="alesunix" class="logo-img" onerror="this.onerror=null; this.src='i/Logo.png'"/>
+        <h1>Ильяс Алиевич</h1>
+        <span class="tagline">Full-Stack Software Developer</span>
 
+        <div class="info-grid">
+            <div class="info-card">
+                <strong>GitHub:</strong><br>
+                <a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
+            </div>
+            <div class="info-card">
+                <strong>Email:</strong><br>
+                <a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
+            </div>
+            <div class="info-card">
+                <strong>Контакты:</strong><br>
+                <span>+996 (500) 335-633</span>
+            </div>
+        </div>
+    </section>
 
-<center>
-<!-- Swiper -->
-  <div class="swiper-slide">
-    <div class="swiper-wrapper">	
-      <div class="swiper-slide"><img src="/i/slide/start.webp" oncontextmenu="return false;" alt="Порядок разработки"/></div>
-      <div class="swiper-slide"><img src="/i/slide/1.webp" oncontextmenu="return false;" alt="Подготовка"/></div>
-      <div class="swiper-slide"><img src="/i/slide/2.webp" oncontextmenu="return false;" alt="Проектирование"/></div>
-      <div class="swiper-slide"><img src="/i/slide/3.webp" oncontextmenu="return false;" alt="Дизайн"/></div>
-      <div class="swiper-slide"><img src="/i/slide/4.webp" oncontextmenu="return false;" alt="Кодирование"/></div>
-      <div class="swiper-slide"><img src="/i/slide/5.webp" oncontextmenu="return false;" alt="Тестирование"/></div>
-      <div class="swiper-slide"><img src="/i/slide/6.webp" oncontextmenu="return false;" alt="Внедрение"/></div>
-    </div>
-  </div>
-</center>
-</section>
-
-<section id="process" class="process-section glass">
-    <div class="container">
+    <!-- Процесс разработки -->
+    <section id="process">
         <h2 class="section-title">Процесс разработки</h2>
-        <p class="section-subtitle">Как я превращаю идею в работающий продукт</p>
+        <p class="section-subtitle">Алгоритм превращения идеи в работающий продукт</p>
 
-        <div class="process-steps">
-            <div class="step">
-                <div class="step-number">01</div>
-                <div class="step-content">
-                    <h3 class="btnx">Подготовка</h3>
-                    <p>Сбор и анализ требований, определение целей, оценка сроков и бюджета проекта.</p>
-                </div>
+        <div class="process-grid">
+            <div class="step-box">
+                <div class="step-num">01</div>
+                <h3>Подготовка</h3>
+                <p>Сбор и анализ требований, определение целей, оценка сроков и бюджета проекта.</p>
             </div>
-
-            <div class="step">
-                <div class="step-number">02</div>
-                <div class="step-content">
-                    <h3 class="btnx">Проектирование</h3>
-                    <p>Разработка ТЗ, архитектуры БД (MSSQL/Oracle) и логики взаимодействия модулей.</p>
-                </div>
+            <div class="step-box">
+                <div class="step-num">02</div>
+                <h3>Проектирование</h3>
+                <p>Разработка ТЗ, архитектуры БД (MSSQL/Oracle) и логики взаимодействия модулей.</p>
             </div>
-
-            <div class="step">
-                <div class="step-number">03</div>
-                <div class="step-content">
-                    <h3 class="btnx">Дизайн & UX</h3>
-                    <p>Создание интерфейсов, которые удобны пользователю и соответствуют современным стандартам.</p>
-                </div>
+            <div class="step-box">
+                <div class="step-num">03</div>
+                <h3>Дизайн & UX</h3>
+                <p>Создание интерфейсов, которые удобны пользователю и соответствуют современным стандартам.</p>
             </div>
-
-            <div class="step active">
-                <div class="step-number">04</div>
-                <div class="step-content">
-                    <h3 class="btnx">Кодирование</h3>
-                    <p>Написание чистого кода на C# (.NET/Blazor). Реализация функционала и интеграция API.</p>
-                </div>
+            <div class="step-box">
+                <div class="step-num">04</div>
+                <h3>Кодирование</h3>
+                <p>Написание чистого кода на C# (.NET/Blazor). Реализация функционала и интеграция API.</p>
             </div>
-
-            <div class="step">
-                <div class="step-number">05</div>
-                <div class="step-content">
-                    <h3 class="btnx">Тестирование</h3>
-                    <p>Отладка, поиск багов, проверка безопасности и нагрузочное тестирование систем.</p>
-                </div>
+            <div class="step-box">
+                <div class="step-num">05</div>
+                <h3>Тестирование</h3>
+                <p>Отладка, поиск багов, проверка безопасности и нагрузочное тестирование систем.</p>
             </div>
-
-            <div class="step">
-                <div class="step-number">06</div>
-                <div class="step-content">
-                    <h3 class="btnx">Внедрение</h3>
-                    <p>Релиз, установка на сервер, обучение персонала и последующая техподдержка.</p>
-                </div>
+            <div class="step-box">
+                <div class="step-num">06</div>
+                <h3>Внедрение</h3>
+                <p>Релиз, установка на сервер, обучение персонала и последующая техподдержка.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-<section id="portfolio" class="portfolio-section">
-    <div class="container">
+    <!-- Портфолио -->
+    <section id="portfolio">
         <h2 class="section-title">Портфолио</h2>
         <p class="section-subtitle">Избранные проекты: CRM-системы и веб-сервисы</p>
 
         <div class="portfolio-grid">
             <article class="portfolio-card">
-                <div class="card-image">
-                    <img src="i/specialfit.png" alt="CRM SpecialFit">
-                </div>
+                <div class="card-image"><img src="i/specialfit.png" alt="CRM SpecialFit"></div>
                 <div class="card-content">
                     <h3>CRM SpecialFit</h3>
                     <p class="project-desc">Автоматизация спортивного комплекса: учет посещений, абонементов и отчетность.</p>
                     <div class="tech-tags">
-                        <span>C#</span>
-                        <span>MSSQL</span>
-                        <span>.NET</span>
+                        <span>C#</span><span>MSSQL</span><span>.NET</span>
                     </div>
                 </div>
             </article>
 
             <article class="portfolio-card">
-                <div class="card-image">
-                    <img src="i/gisal2.webp" alt="CRM GISAL">
-                </div>
+                <div class="card-image"><img src="i/gisal2.webp" alt="CRM GISAL"></div>
                 <div class="card-content">
                     <h3>CRM Gisal</h3>
                     <p class="project-desc">Система взаимодействия между заказчиком и поставщиком с модулем аналитики.</p>
                     <div class="tech-tags">
-                        <span>C#</span>
-                        <span>Oracle</span>
-                        <span>.NET</span>
+                        <span>C#</span><span>Oracle</span><span>.NET</span>
                     </div>
                 </div>
             </article>
 
             <article class="portfolio-card">
-                <div class="card-image">
-                    <img src="i/control2.webp" alt="Система проверки">
-                </div>
+                <div class="card-image"><img src="i/control2.webp" alt="Система проверки"></div>
                 <div class="card-content">
                     <h3>Проверка лояльности</h3>
                     <p class="project-desc">Анализ трудовой истории кандидатов и выявление рисков при найме.</p>
                     <div class="tech-tags">
-                        <span>C#</span>
-                        <span>Oracle</span>
-                        <span>.NET</span>
+                        <span>C#</span><span>Oracle</span><span>.NET</span>
                     </div>
                 </div>
             </article>
 
             <article class="portfolio-card">
-                <div class="card-image">
-                    <img src="i/www1.png" alt="Сайт ФС МВД">
-                </div>
+                <div class="card-image"><img src="i/www1.png" alt="Сайт ФС МВД"></div>
                 <div class="card-content">
                     <h3>Сайт ГП ССС МВД КР</h3>
                     <p class="project-desc">Официальный информационный ресурс службы специальной связи.</p>
                     <div class="tech-tags">
-						<span>C#</span>
-                        <span>HTML5/CSS3</span>
-                        <span>JS</span>
+                        <span>C#</span><span>HTML5/CSS3</span><span>JS</span>
                     </div>
                 </div>
             </article>
         </div>
-    </div>
-</section>
-	
-</article>
+    </section>
 </div>
-<!--/content-->
 
-<h2 id="сontacts"></h2>
-<!--footer-->
-<footer class="main-footer glass">
+<!-- Футер / Контакты -->
+<footer id="contacts">
     <div class="container">
-        <nav class="footer-nav">
-            <ul class="nav-links">
-                <li><a href="index.html">ГЛАВНАЯ</a></li>
-                <li><a href="#about_me">ОБО МНЕ</a></li>
-                <li><a href="#portfolio">ПОРТФОЛИО</a></li>
-                <li><a href="#сontacts">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-
         <div class="footer-grid">
-            <div class="footer-col philosophy">
+            <div class="footer-col">
                 <p class="quote-text">
                     «Самое инновационное решение сложной задачи часто бывает самым простым. 
                     Но простое и легкое — это две очень разные вещи».
                 </p>
             </div>
 
-            <div class="footer-col social-analytics">
-                <div class="social-icons">
-                    <a href="https://api.whatsapp.com/send?phone=996500335633" target="_blank" rel="nofollow"><i class="fa fa-whatsapp"></i></a>
-                    <a href="tg://resolve?domain=@alesunix" target="_blank" rel="nofollow"><i class="fa fa-telegram"></i></a>
-                    <a href="mailto:alesunix@gmail.com" target="_blank" rel="nofollow"><i class="fa fa-envelope"></i></a>
-                    <a href="https://github.com/alesunix" target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
-                    <a href="https://www.facebook.com/alesunix" target="_blank" rel="nofollow"><i class="fa fa-facebook-official"></i></a>
-                </div>               
+            <div class="footer-col social-links">
+                <h4>Связь в сети</h4>
+                <a href="https://api.whatsapp.com/send?phone=996500335633" target="_blank" rel="nofollow">WhatsApp</a>
+                <a href="https://t.me/alesunix" target="_blank" rel="nofollow">Telegram</a>
+                <a href="https://github.com/alesunix" target="_blank" rel="nofollow">GitHub</a>
             </div>
 
-            <div class="footer-col contacts">
+            <div class="footer-col">
                 <h4>Контакты</h4>
                 <p>г. Бишкек</p>
-                <p><a href="tel:+996500335633">+996 (500) 335-633</a></p>
-                <p><a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a></p>
+                <p><a href="tel:+996500335633" style="color:#00ff00;">+996 (500) 335-633</a></p>
+                <p><a href="mailto:alesunix@gmail.com" style="color:#00ff00;">alesunix@gmail.com</a></p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>Copyright &copy; 2016 — <span id="current-year"></span> alesunix.github.io | Designed by Alesunix</p>
-            <small>Использование материалов без письменного согласия и ссылки на источник запрещено.</small>
+            <p>Copyright &copy; 2016 — <span id="current-year"></span> alesunix.github.io</p>
         </div>
     </div>
 </footer>
 
+<!-- Скрипт эффекта "Цифровой дождь" -->
 <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*+-=';
+    const alphabet = letters.split('');
+
+    const fontSize = 14;
+    let columns = canvas.width / fontSize;
+
+    const rainDrops = [];
+    for (let x = 0; x < columns; x++) {
+        rainDrops[x] = 1;
+    }
+
+    function draw() {
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = '#00ff00';
+        ctx.font = fontSize + 'px monospace';
+
+        for (let i = 0; i < rainDrops.length; i++) {
+            const text = alphabet[Math.floor(Math.random() * alphabet.length)];
+            ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+            if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                rainDrops[i] = 0;
+            }
+            rainDrops[i]++;
+        }
+    }
+
+    setInterval(draw, 30);
 </script>
-<!--/footer -->
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<link rel="stylesheet" href="template/bootstrap/css/bootstrap.min.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="template/info.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="template/bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen, projection">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-     <link rel="stylesheet" type="text/css" href="css/background.css" />
-	 <link rel="stylesheet" type="text/css" href="css/Animated-Background.css" />
-	 <link rel="stylesheet" type="text/css" href="css/style.css" />
-	 <link rel="stylesheet" type="text/css" href="css/card.css" />
-	 <link rel="stylesheet" type="text/css" href="css/blockbutton.css" />	 
-	 <link rel="stylesheet" type="text/css" href="css/styleheader.css" />
-	 <link rel="stylesheet" type="text/css" href="css/stylebutton.css" />	 
-	 <link rel="stylesheet" type="text/css" href="css/stylebutton3.css" />	 
-	 <link rel="stylesheet" type="text/css" href="css/styleModal.css" />	
-	 <link rel="stylesheet" href="css/fonts.css">
-	 <link rel="stylesheet" href="css/swiper.min.css">
-	 <link rel="stylesheet" href="css/about-me.css">
-	 <link rel="stylesheet" href="css/social-card.css">
-	 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-<script src="template/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- google-translate -->
-<link rel="stylesheet" href="/css/translate.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="/js/google-translate.js"></script>
-<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
-<!-- google-translate -->
-
-<script type="text/javascript">
-{
-var isMobile = {
-    Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
-    BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
-    iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
-    Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
-    any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
-};
-  
-if ( !isMobile.any() ) {
-    // ScrollTrigger
-	document.write ('<script src="js/gsap.min.js" ></sc' + 'ript>');
-	document.write ('<script src="js/ScrollTrigger.min.js" ></sc' + 'ript>');
-	<!--Animated-Background-->
-	document.write ('<script src="js/TweenLite.min.js" ></sc' + 'ript>');
-	document.write ('<script src="js/EasePack.min.js"" ></sc' + 'ript>');
-	document.write ('<script src="js/demo.js" ></sc' + 'ript>');
-if (screen.width > 1900) document.write ('<script src="js/TweenLite.min.js" ></sc' + 'ript>');
-if (screen.width > 1900) document.write ('<script src="js/EasePack.min.js"" ></sc' + 'ript>');
-if (screen.width > 1900) document.write ('<script src="js/demo.js" ></sc' + 'ript>');
-// ScrollTrigger
-if (screen.width > 1900) document.write ('<script src="js/gsap.min.js" ></sc' + 'ript>');
-if (screen.width > 1900) document.write ('<script src="js/ScrollTrigger.min.js" ></sc' + 'ript>');
-}
-}
-</script>
-<script type="text/javascript"><!--ScrollTrigger-->
-		gsap.timeline({
-scrollTrigger: {
-trigger: ".box",
-start: "center center",
-end: "bottom top",
-markers: false,
-scrub: true,
-pin: true,
-}
-})
-	.from(".text1", {y:innerHeight * 1})
-	.from(".text2", {x:innerWidth * -1})
-	.from(".text3", {x:innerWidth * 1})
-</script>
-
-<!-- Swiper JS -->
-<script src="js/swiper.min.js"></script>
-<!-- Initialize Swiper -->
-  <script>
-  var swiper = new Swiper('.gallery-top', {
-  spaceBetween: 10,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-// now add mouseover and mouse out events on '.swiper-slide' elemnts to pause and resume the autoplay;
-$('.swiper-slide').on('mouseover', function() {
-  swiper.autoplay.stop();
-});
-
-$('.swiper-slide').on('mouseout', function() {
-  swiper.autoplay.start();
-});
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 7,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
-  </script>
-  
-  <!-- Для главного слайда - эффект появления -->
-  <script>
-    var swiper2 = new Swiper('.swiper-slide', {
-      spaceBetween: 30,
-      effect: 'fade',
-	  autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-<!-- Swiper JS -->
 </body>
 </html>
