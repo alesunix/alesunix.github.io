@@ -524,7 +524,7 @@
         </div>
 		
 		<p class="portfolio-summary-text">
-			За <strong id="experience-years"> </strong> практики мной реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong>. Архитектура проектов варьируется от фоновых Windows-служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
+			Более <strong id="total-it-years">19 лет</strong> в IT-сфере (с 2007 г. - системное администрирование и инфраструктура) и <strong id="dev-years">10 лет</strong> в профессиональной разработке ПО (с 2016 г.). За это время реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong> - от инфраструктурных служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
 		</p>
     </section>
 	
@@ -564,29 +564,31 @@
 
 
 <script>
-const startYear = 2016;
-const currentYear = new Date().getFullYear();
-const years = currentYear - startYear;
+    // Даты начала работы
+    const startItYear = 2007;   // Старт в Системном администрировании
+    const startDevYear = 2016;  // Старт в Разработке ПО
+    const currentYear = new Date().getFullYear();
 
-// Функция для правильного склонения слова "год / года / лет"
-function getYearsString(num) {
-    const lastDigit = num % 10;
-    const lastTwoDigits = num % 100;
-    
-    if (lastTwoDigits >= 11 && lastTwoDigits <= 19) return `${num} лет`;
-    if (lastDigit === 1) return `${num} год`;
-    if (lastDigit >= 2 && lastDigit <= 4) return `${num} года`;
-    return `${num} лет`;
-}
+    const totalItYears = currentYear - startItYear;
+    const devYears = currentYear - startDevYear;
 
-document.getElementById('experience-years').textContent = getYearsString(years);
-</script>
+    // Функция правильного склонения слов (год/года/лет)
+    function getYearsString(num) {
+        const lastDigit = num % 10;
+        const lastTwoDigits = num % 100;
+        
+        if (lastTwoDigits >= 11 && lastTwoDigits <= 19) return `${num} лет`;
+        if (lastDigit === 1) return `${num} год`;
+        if (lastDigit >= 2 && lastDigit <= 4) return `${num} года`;
+        return `${num} лет`;
+    }
 
+    // Подставляем значения в элементы HTML
+    document.getElementById('total-it-years').textContent = getYearsString(totalItYears);
+    document.getElementById('dev-years').textContent = getYearsString(devYears);
+    document.getElementById('current-year').textContent = currentYear;
 
-<!-- Скрипт эффекта "Цифровой дождь" -->
-<script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
+    // Скрипт эффекта "Матрица"
     const canvas = document.getElementById('matrix-canvas');
     const ctx = canvas.getContext('2d');
 
@@ -599,7 +601,6 @@ document.getElementById('experience-years').textContent = getYearsString(years);
 
     const letters = 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890*+-<>:';
     const alphabet = letters.split('');
-
     const fontSize = 14;
     let columns = canvas.width / fontSize;
 
