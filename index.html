@@ -486,7 +486,7 @@
         </div>
 		
 		<p class="portfolio-summary-text">
-			За годы практики мной реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong>. Архитектура проектов варьируется от фоновых Windows-служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
+			За <strong id="experience-years"> </strong> практики мной реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong>. Архитектура проектов варьируется от фоновых Windows-служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
 		</p>
     </section>
 	
@@ -523,6 +523,27 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+const startYear = 2016;
+const currentYear = new Date().getFullYear();
+const years = currentYear - startYear;
+
+// Функция для правильного склонения слова "год / года / лет"
+function getYearsString(num) {
+    const lastDigit = num % 10;
+    const lastTwoDigits = num % 100;
+    
+    if (lastTwoDigits >= 11 && lastTwoDigits <= 19) return `${num} лет`;
+    if (lastDigit === 1) return `${num} год`;
+    if (lastDigit >= 2 && lastDigit <= 4) return `${num} года`;
+    return `${num} лет`;
+}
+
+document.getElementById('experience-years').textContent = getYearsString(years);
+</script>
+
 
 <!-- Скрипт эффекта "Цифровой дождь" -->
 <script>
