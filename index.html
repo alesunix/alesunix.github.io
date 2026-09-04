@@ -238,6 +238,32 @@
             color: #4CAF50;
         }
 
+.status-banner {
+    margin: 30px auto 0 auto;
+    max-width: 800px;
+    padding: 15px 20px;
+    border: 1px solid var(--matrix-green);
+    background: rgba(0, 30, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff00;
+    flex-shrink: 0;
+}
+
+.status-text strong {
+    color: #fff;
+}
+
         /* Portfolio */
         .portfolio-grid {
             display: grid;
@@ -377,22 +403,26 @@
     <section class="profile-hero">
         <img src="i/Logo.svg" alt="alesunix" class="logo-img" onerror="this.onerror=null; this.src='i/Logo.png'"/>
         <h1>Ильяс Алиевич</h1>
-        <span class="tagline">Full-Stack Software Developer</span>
+        <span class="tagline">Начальник ОИТ ГП «Спецсвязь» | Lead / Full-Stack Developer</span>
 
-        <div class="info-grid">
-            <div class="info-card">
-                <strong>GitHub:</strong><br>
-                <a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
-            </div>
-            <div class="info-card">
-                <strong>Email:</strong><br>
-                <a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
-            </div>
-            <div class="info-card">
-                <strong>Phone:</strong><br>
-                <a href="tel:+996500335633">+996(500)335-633</a>
-            </div>
-        </div>
+		<div class="info-grid">
+			<div class="info-card">
+				<strong>Должность:</strong><br>
+				<span>Начальник ОИТ ГП «Спецсвязь»</span>
+			</div>
+			<div class="info-card">
+				<strong>Профиль:</strong><br>
+				<span>IT-Management, Dev & SysAdmin</span>
+			</div>
+			<div class="info-card">
+				<strong>GitHub:</strong><br>
+				<a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
+			</div>
+			<div class="info-card">
+				<strong>Email & Тел:</strong><br>
+				<a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
+			</div>
+		</div>
     </section>
 
     <!-- Процесс разработки -->
@@ -433,6 +463,14 @@
             </div>
         </div>
     </section>
+
+
+<div class="status-banner">
+    <div class="status-indicator"></div>
+    <div class="status-text">
+        <strong>Текущий статус:</strong> Руководство IT-департаментом ГП «Спецсвязь». Реализация комплексных проектов: от проектирования инфраструктуры и администрирования до разработки ПО и баз данных.
+    </div>
+</div>
 
     <!-- Портфолио -->
     <section id="portfolio">
