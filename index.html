@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://alesunix.ru/i/Logo.svg">
     <link rel="canonical" href="https://alesunix.github.io/" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -53,331 +53,6 @@
       gtag('config', 'G-SN4VYGQ2Y1');
     </script>
 
-    <style>
-        :root {
-            --matrix-green: #607d8b;
-            --matrix-dark-green: #1a2428;
-            --matrix-bg: #111211;
-            --matrix-glow: rgb(0 161 255 / 50%);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--matrix-bg);
-            color: var(--matrix-green);
-            font-family: 'Courier New', Courier, monospace;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        #matrix-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.15;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header & Navigation */
-        header.main-nav-bar {
-            background: rgba(0, 0, 0, 0.85);
-            border-bottom: 1px solid var(--matrix-green);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(5px);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-
-        .nav-brand {
-            color: var(--matrix-green);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.5rem;
-            text-shadow: 0 0 8px var(--matrix-glow);
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        .nav-link {
-            color: var(--matrix-green);
-            text-decoration: none;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            padding: 5px 10px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-link:hover, .nav-link.active {
-            background: var(--matrix-green);
-            color: var(--matrix-bg);
-            box-shadow: 0 0 10px var(--matrix-green);
-        }
-
-        /* Main Profile Section */
-        .profile-hero {
-            padding: 60px 0;
-            text-align: center;
-            border-bottom: 1px dashed var(--matrix-green);
-        }
-
-        .logo-img {
-            max-width: 200px;
-            filter: drop-shadow(0 0 8px var(--matrix-green));
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px var(--matrix-glow);
-        }
-
-        .tagline {
-            font-size: 1.2rem;
-            color: #fff;
-            text-shadow: 0 0 5px var(--matrix-green);
-            display: block;
-            margin-bottom: 30px;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .info-card {
-            border: 1px solid var(--matrix-green);
-            padding: 15px;
-            background: rgba(0, 51, 0, 0.2);
-            backdrop-filter: blur(2px);
-        }
-
-        a {
-            color: #e1e1e1;
-            text-decoration: none;
-        }
-		a:hover {
-			text-decoration: underline; /* Подчеркивание при наведении */
-        }
-
-        /* Sections General */
-        section {
-            padding: 60px 0;
-            border-bottom: 1px dashed var(--matrix-green);
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            text-shadow: 0 0 5px var(--matrix-glow);
-        }
-
-        .section-subtitle {
-            color: #888;
-            margin-bottom: 40px;
-        }
-
-        /* Process Steps */
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .step-box {
-            border: 1px solid var(--matrix-green);
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            position: relative;
-            transition: transform 0.3s;
-        }
-
-        .step-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px var(--matrix-glow);
-        }
-
-        .step-num {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            opacity: 0.4;
-        }
-
-        .step-box h3 {
-            margin-bottom: 10px;
-            color: #4CAF50;
-        }
-
-.status-banner {
-    margin: 30px auto 0 auto;
-    max-width: 800px;
-    padding: 15px 20px;
-    border: 1px solid var(--matrix-green);
-    background: rgba(0, 30, 0, 0.4);
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-align: left;
-    font-size: 0.9rem;
-}
-
-.status-indicator {
-    width: 12px;
-    height: 12px;
-    background-color: #00ff00;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00ff00;
-    flex-shrink: 0;
-}
-
-.status-text strong {
-    color: #fff;
-}
-
-        /* Portfolio */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 25px;
-        }
-
-        .portfolio-card {
-            border: 1px solid var(--matrix-green);
-            background: rgba(0, 0, 0, 0.8);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card-image img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            filter: grayscale(100%) sepia(0%) hue-rotate(100deg) saturate(300%);
-            border-bottom: 1px solid var(--matrix-green);
-            transition: filter 0.3s;
-        }
-
-        .portfolio-card:hover .card-image img {
-            filter: grayscale(0%) sepia(0%);
-        }
-
-        .card-content {
-            padding: 15px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card-content h3 {
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-
-        .project-desc {
-            font-size: 0.85rem;
-            color: #aaa;
-            margin-bottom: 15px;
-        }
-
-        .tech-tags {
-            display: flex;
-            gap: 5px;
-            flex-wrap: wrap;
-        }
-
-        .tech-tags span {
-            font-size: 0.75rem;
-            border: 1px solid var(--matrix-green);
-            padding: 2px 6px;
-            background: var(--matrix-dark-green);
-        }
-		
-		.portfolio-summary-text {
-			margin-top: 32px;
-			text-align: center;
-			color: #6c757d;
-			font-size: 0.95rem;
-			line-height: 1.6;
-			max-width: 800px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-        /* Footer */
-        footer {
-            background: #000;
-            padding: 40px 0;
-            font-size: 0.85rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-
-        .quote-text {
-            font-style: italic;
-            color: #888;
-        }
-
-        .social-links a {
-            color: var(--matrix-green);
-            font-size: 1.2rem;
-            margin-right: 15px;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            text-shadow: 0 0 8px var(--matrix-green);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            border-top: 1px solid var(--matrix-dark-green);
-            padding-top: 20px;
-            color: #555;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; }
-            .nav-menu { flex-wrap: wrap; justify-content: center; gap: 0px; }
-        }
-    </style>
 </head>
 <body>
 
@@ -391,8 +66,9 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Главная</a></li>
                 <li><a href="#process" class="nav-link">Процесс</a></li>
+                <li><a href="#skills" class="nav-link">Стек</a></li>
                 <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
-                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="#contacts" class="nav-link nav-cta-btn">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -403,26 +79,26 @@
     <section class="profile-hero">
         <img src="i/Logo.svg" alt="alesunix" class="logo-img" onerror="this.onerror=null; this.src='i/Logo.png'"/>
         <h1>Ильяс Алиевич</h1>
-        <span class="tagline">Начальник ОИТ ГП «Спецсвязь» | Lead / Full-Stack Developer</span>
+        <span class="tagline">Lead / Full-Stack Developer</span>
 
-		<div class="info-grid">
-			<div class="info-card">
-				<strong>Должность:</strong><br>
-				<span>Начальник ОИТ ГП «Спецсвязь»</span>
-			</div>
-			<div class="info-card">
-				<strong>Профиль:</strong><br>
-				<span>IT-Management, Dev & SysAdmin</span>
-			</div>
-			<div class="info-card">
-				<strong>GitHub:</strong><br>
-				<a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
-			</div>
-			<div class="info-card">
-				<strong>Email:</strong><br>
-				<a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
-			</div>
-		</div>
+        <div class="info-grid">
+            <div class="info-card">
+                <strong>Должность:</strong><br>
+                <span>Начальник ОИТ</span>
+            </div>
+            <div class="info-card">
+                <strong>Профиль:</strong><br>
+                <span>IT, Dev & SysAdmin</span>
+            </div>
+            <div class="info-card">
+                <strong>GitHub:</strong><br>
+                <a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
+            </div>
+            <div class="info-card">
+                <strong>Email:</strong><br>
+                <a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
+            </div>
+        </div>
     </section>
 
     <!-- Процесс разработки -->
@@ -464,13 +140,30 @@
         </div>
     </section>
 
+    <!-- Технологический стек -->
+	<section id="skills">
+		<h2 class="section-title">Технологический стек</h2>
+		<p class="section-subtitle">Инструменты и технологии, используемые в разработке и инфраструктуре</p>
 
-<div class="status-banner">
-    <div class="status-indicator"></div>
-    <div class="status-text">
-        <strong>Текущий статус:</strong> Руководство IT-департаментом ГП «Спецсвязь». Реализация комплексных проектов: от проектирования инфраструктуры и администрирования до разработки ПО и баз данных.
-    </div>
-</div>
+		<div class="skills-grid">
+			<div class="skills-card">
+				<h3>Backend & ПО</h3>
+				<p>C#, .NET (.NET Core / Framework), ASP.NET Web API, Blazor, Entity Framework, LINQ</p>
+			</div>
+			<div class="skills-card">
+				<h3>Базы данных</h3>
+				<p>MS SQL Server, Oracle DB, T-SQL, PL/SQL, проектирование и оптимизация сложных запросов</p>
+			</div>
+			<div class="skills-card">
+				<h3>Frontend & GUI</h3>
+				<p>HTML5, CSS3, JavaScript, WPF, WinForms, адаптированные интерфейсы под Android и iOS</p>
+			</div>
+			<div class="skills-card">
+				<h3>Инфраструктура</h3>
+				<p>Администрирование Windows Server / Linux, сетевая безопасность, развертывание и поддержка B2B/B2G систем</p>
+			</div>
+		</div>
+	</section>
 
     <!-- Портфолио -->
     <section id="portfolio">
@@ -482,7 +175,7 @@
                 <div class="card-image"><img src="i/specialfit.png" alt="CRM SpecialFit"></div>
                 <div class="card-content">
                     <h3>CRM SpecialFit</h3>
-                    <p class="project-desc">Автоматизация спортивного комплекса: учет посещений, абонементов и отчетность.</p>
+                    <p class="project-desc">Комплексная автоматизация спортивного комплекса: учет клиентской базы, клубных карт и разовых посещений, учет продаж, аналитика и финансовая отчетность.</p>
                     <div class="tech-tags">
                         <span>C#</span><span>MSSQL</span><span>.NET</span>
                     </div>
@@ -493,7 +186,7 @@
                 <div class="card-image"><img src="i/gisal2.webp" alt="CRM GISAL"></div>
                 <div class="card-content">
                     <h3>CRM Gisal</h3>
-                    <p class="project-desc">Система взаимодействия между заказчиком и поставщиком.</p>
+                    <p class="project-desc">B2B-система взаимодействия между заказчиком и поставщиками: автоматизация документооборота, обработка заявок, контроль поставок и интеграция с базой данных Oracle.</p>
                     <div class="tech-tags">
                         <span>C#</span><span>Oracle</span><span>.NET</span>
                     </div>
@@ -504,7 +197,7 @@
                 <div class="card-image"><img src="i/control2.webp" alt="Система проверки"></div>
                 <div class="card-content">
                     <h3>Проверка лояльности</h3>
-                    <p class="project-desc">Анализ трудовой истории кандидатов и выявление рисков при найме.</p>
+                    <p class="project-desc">Аналитическая система безопасности для HR и СБ: автоматизированный анализ трудовой истории кандидатов, скоринг и оперативное выявление рисков при найме.</p>
                     <div class="tech-tags">
                         <span>C#</span><span>Oracle</span><span>.NET</span>
                     </div>
@@ -515,19 +208,19 @@
                 <div class="card-image"><img src="i/www1.png" alt="Сайт Спецсвязь"></div>
                 <div class="card-content">
                     <h3>Сайт ГП «Спецсвязь»</h3>
-                    <p class="project-desc">Официальный информационный ресурс службы специальной связи.</p>
+                    <p class="project-desc">Официальный веб-ресурс государственного предприятия: личный кабинет, прием заявок, форма обратной связи и защита персональных данных.</p>
                     <div class="tech-tags">
-                       <span>C#</span><span>MSSQL</span><span>.NET</span>
+                        <span>C#</span><span>MSSQL</span><span>.NET</span>
                     </div>
                 </div>
             </article>
         </div>
-		
-		<p class="portfolio-summary-text">
-			Более <strong id="total-it-years">19 лет</strong> в IT-сфере (с 2007 г. - системное администрирование и инфраструктура) и <strong id="dev-years">10 лет</strong> в профессиональной разработке ПО (с 2016 г.). За это время реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong> - от инфраструктурных служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
-		</p>
+        
+        <p class="portfolio-summary-text">
+            Более <strong id="total-it-years">19 лет</strong> в IT-сфере (с 2007 г. - системное администрирование и инфраструктура) и <strong id="dev-years">10 лет</strong> в профессиональной разработке ПО (с 2016 г.). За это время реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong> - от инфраструктурных служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
+        </p>
     </section>
-	
+    
 </div>
 
 <!-- Футер / Контакты -->
