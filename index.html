@@ -26,6 +26,7 @@
     <meta property="og:image" content="https://alesunix.ru/i/Logo.svg">
     <link rel="canonical" href="https://alesunix.github.io/" />
     <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/code.css" />
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -33,9 +34,10 @@
       "url": "https://alesunix.github.io/",
       "name": "Ильяс Алиевич",
       "address": {
-        "@type": "PostalAddress",
-        "name": "Bishkek"
-      },
+	  "@type": "PostalAddress",
+	  "addressLocality": "Bishkek",
+	  "addressCountry": "KG"
+	  },
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+996500335633",
@@ -64,11 +66,11 @@
         <a href="index.html" class="nav-brand">ALESUNIX</a>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="index.html" class="nav-link">Профиль</a></li>
                 <li><a href="#process" class="nav-link">Процесс</a></li>
                 <li><a href="#skills" class="nav-link">Стек</a></li>
                 <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
-                <li><a href="#contacts" class="nav-link nav-cta-btn">Контакты</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -78,27 +80,35 @@
     <!-- Главная карточка -->
     <section class="profile-hero">
         <img src="i/Logo.svg" alt="alesunix" class="logo-img" onerror="this.onerror=null; this.src='i/Logo.png'"/>
-        <h1>Ильяс Алиевич</h1>
+        <h1>Алиев Ильяс Алиевич</h1>
         <span class="tagline">Lead / Full-Stack Developer</span>
 
-        <div class="info-grid">
-            <div class="info-card">
-                <strong>Должность:</strong><br>
-                <span>Начальник ОИТ</span>
-            </div>
-            <div class="info-card">
-                <strong>Профиль:</strong><br>
-                <span>IT, Dev & SysAdmin</span>
-            </div>
-            <div class="info-card">
-                <strong>GitHub:</strong><br>
-                <a href="https://github.com/alesunix" target="_blank" rel="nofollow">github.com/alesunix</a>
-            </div>
-            <div class="info-card">
-                <strong>Email:</strong><br>
-                <a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a>
-            </div>
+      <div class="vs-code-window">
+    <div class="vs-tab-bar">
+        <div class="vs-tab active">
+            <span class="cs-icon">C#</span>
+            <span class="tab-filename">DeveloperProfile.cs</span>
+            <span class="tab-close">×</span>
         </div>
+    </div>
+    <div class="vs-code-body">
+        <pre><code><span class="kw">public class</span> <span class="type">DeveloperProfile</span>
+{
+    <span class="kw">public string</span> <span class="prop">Name</span> => <span class="str">"Алиев Ильяс Алиевич"</span>;
+    <span class="kw">public string</span> <span class="prop">Role</span> => <span class="str">"Lead / Full-Stack Developer"</span>;
+    <span class="kw">public string</span> <span class="prop">Location</span> => <span class="str">"Бишкек"</span>;
+    <span class="kw">public string</span> <span class="prop">Email</span> => <a href="mailto:alesunix@gmail.com" class="str">"alesunix@gmail.com"</a>;
+    <span class="kw">public string</span> <span class="prop">Phone</span> => <a href="tel:+996500335633" class="str">"+996 (500) 335-633"</a>;
+    <span class="kw">public string</span>[] <span class="prop">Stack</span> => [<span class="str">"C#"</span>, <span class="str">".NET Core"</span>, <span class="str">"MSSQL"</span>, <span class="str">"Oracle"</span>];
+
+    <span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">SystemResult</span>&gt; <span class="method">ExecuteProjectAsync</span>(<span class="type">Requirements</span> <span class="param">req</span>)
+    {
+        <span class="kw">var</span> <span class="param">architecture</span> = <span class="kw">await</span> <span class="method">DesignArchitectureAsync</span>(<span class="param">req</span>);
+        <span class="kw">return await</span> <span class="method">DeployProductionReadySystemAsync</span>(<span class="param">architecture</span>);
+    }
+}</code></pre>
+    </div>
+</div>
     </section>
 
     <!-- Процесс разработки -->
@@ -137,33 +147,35 @@
                 <h3>Внедрение</h3>
                 <p>Релиз, установка на сервер, обучение персонала и последующая техподдержка.</p>
             </div>
-        </div>
+        </div>		
+	
     </section>
 
-    <!-- Технологический стек -->
-	<section id="skills">
-		<h2 class="section-title">Технологический стек</h2>
-		<p class="section-subtitle">Инструменты и технологии, используемые в разработке и инфраструктуре</p>
+<!-- Технологический стек -->
+<section id="skills">
+    <h2 class="section-title">Технологический стек</h2>
+    <p class="section-subtitle">Инструменты и технологии, используемые в разработке и инфраструктуре</p>
 
-		<div class="skills-grid">
-			<div class="skills-card">
-				<h3>Backend & ПО</h3>
-				<p>C#, .NET (.NET Core / Framework), ASP.NET Web API, Blazor, Entity Framework, LINQ</p>
-			</div>
-			<div class="skills-card">
-				<h3>Базы данных</h3>
-				<p>MS SQL Server, Oracle DB, T-SQL, PL/SQL, проектирование и оптимизация сложных запросов</p>
-			</div>
-			<div class="skills-card">
-				<h3>Frontend & GUI</h3>
-				<p>HTML5, CSS3, JavaScript, WPF, WinForms, адаптированные интерфейсы под Android и iOS</p>
-			</div>
-			<div class="skills-card">
-				<h3>Инфраструктура</h3>
-				<p>Администрирование Windows Server / Linux, сетевая безопасность, развертывание и поддержка B2B/B2G систем</p>
-			</div>
-		</div>
-	</section>
+    <!-- Сетка карточек (2x2 на ПК) -->
+    <div class="skills-grid">
+        <div class="skills-card">
+            <h3>Backend & ПО</h3>
+            <p>C#, .NET (.NET Core / Framework), ASP.NET Web API, Blazor, Entity Framework, LINQ</p>
+        </div>
+        <div class="skills-card">
+            <h3>Базы данных</h3>
+            <p>MS SQL Server, Oracle DB, T-SQL, PL/SQL, проектирование и оптимизация сложных запросов</p>
+        </div>
+        <div class="skills-card">
+            <h3>Frontend & GUI</h3>
+            <p>HTML5, CSS3, JavaScript, WPF, WinForms, адаптированные интерфейсы под Android и iOS</p>
+        </div>
+        <div class="skills-card">
+            <h3>Инфраструктура</h3>
+            <p>Администрирование Windows Server / Linux, сетевая безопасность, развертывание и поддержка B2B/B2G систем</p>
+        </div>
+    </div>
+</section>
 
     <!-- Портфолио -->
     <section id="portfolio">
@@ -186,7 +198,7 @@
                 <div class="card-image"><img src="i/gisal2.webp" alt="CRM GISAL"></div>
                 <div class="card-content">
                     <h3>CRM Gisal</h3>
-                    <p class="project-desc">B2B-система взаимодействия между заказчиком и поставщиками: автоматизация документооборота, обработка заявок, контроль поставок и интеграция с базой данных Oracle.</p>
+                    <p class="project-desc">B2B-система взаимодействия между заказчиком и поставщиками: автоматизация документооборота, обработка заявок, контроль поставок.</p>
                     <div class="tech-tags">
                         <span>C#</span><span>Oracle</span><span>.NET</span>
                     </div>
@@ -243,14 +255,13 @@
 
             <div class="footer-col">
                 <h4>Контакты</h4>
-                <p>г. Бишкек</p>
                 <p><a href="tel:+996500335633">+996(500)335-633</a></p>
                 <p><a href="mailto:alesunix@gmail.com">alesunix@gmail.com</a></p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>Copyright &copy; 2016 — <span id="current-year"></span> alesunix.github.io</p>
+            <p>Copyright &copy; 2016 - <span id="current-year"></span> Alesunix</p>
         </div>
     </div>
 </footer>
@@ -282,45 +293,48 @@
     document.getElementById('current-year').textContent = currentYear;
 
     // Скрипт эффекта "Матрица"
-    const canvas = document.getElementById('matrix-canvas');
-    const ctx = canvas.getContext('2d');
+	const canvas = document.getElementById('matrix-canvas');
+	const ctx = canvas.getContext('2d');
 
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
+	const letters = 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890*+-<>:';
+	const alphabet = letters.split('');
+	const fontSize = 14;
+	let rainDrops = [];
 
-    const letters = 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ1234567890*+-<>:';
-    const alphabet = letters.split('');
-    const fontSize = 14;
-    let columns = canvas.width / fontSize;
+	function resizeCanvas() {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		
+		// Пересчитываем колонки и капли при изменении размера экрана
+		const columns = Math.floor(canvas.width / fontSize);
+		rainDrops = [];
+		for (let x = 0; x < columns; x++) {
+			rainDrops[x] = Math.floor(Math.random() * -50); // Разброс по высоте для плавного старта
+		}
+	}
 
-    const rainDrops = [];
-    for (let x = 0; x < columns; x++) {
-        rainDrops[x] = 1;
-    }
+	resizeCanvas();
+	window.addEventListener('resize', resizeCanvas);
 
-    function draw() {
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+	function draw() {
+		ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        ctx.fillStyle = '#00ff00';
-        ctx.font = fontSize + 'px monospace';
+		ctx.fillStyle = '#00ff00';
+		ctx.font = fontSize + 'px monospace';
 
-        for (let i = 0; i < rainDrops.length; i++) {
-            const text = alphabet[Math.floor(Math.random() * alphabet.length)];
-            ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+		for (let i = 0; i < rainDrops.length; i++) {
+			const text = alphabet[Math.floor(Math.random() * alphabet.length)];
+			ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
 
-            if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                rainDrops[i] = 0;
-            }
-            rainDrops[i]++;
-        }
-    }
+			if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+				rainDrops[i] = 0;
+			}
+			rainDrops[i]++;
+		}
+	}
 
-    setInterval(draw, 30);
+	setInterval(draw, 30);
 </script>
 </body>
 </html>
