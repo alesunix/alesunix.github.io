@@ -68,7 +68,6 @@
             <ul class="nav-menu">
                 <li><a href="#process" class="nav-link">Процесс</a></li>
                 <li><a href="#skills" class="nav-link">Стек</a></li>
-                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
                 <li><a href="#contacts" class="nav-link">Контакты</a></li>
             </ul>
         </nav>
@@ -82,28 +81,25 @@
         <h1>Алиев Ильяс Алиевич</h1>
         <span class="tagline">Lead / Full-Stack Developer</span>
 
-      <div class="vs-code-window">
+<div class="vs-code-window">
     <div class="vs-tab-bar">
         <div class="vs-tab active">
             <span class="cs-icon">C#</span>
-            <span class="tab-filename">DeveloperProfile.cs</span>
+            <span class="tab-filename">SystemArchitect.cs</span>
             <span class="tab-close">×</span>
         </div>
     </div>
     <div class="vs-code-body">
-        <pre><code><span class="kw">public class</span> <span class="type">DeveloperProfile</span>
+        <pre><code><span class="kw">public class</span> <span class="type">SystemArchitect</span>
 {
-    <span class="kw">public string</span> <span class="prop">Name</span> => <span class="str">"Алиев Ильяс Алиевич"</span>;
-    <span class="kw">public string</span> <span class="prop">Role</span> => <span class="str">"Lead / Full-Stack Developer"</span>;
-    <span class="kw">public string</span> <span class="prop">Location</span> => <span class="str">"Бишкек"</span>;
-    <span class="kw">public string</span> <span class="prop">Email</span> => <a href="mailto:alesunix@gmail.com" class="str">"alesunix@gmail.com"</a>;
-    <span class="kw">public string</span> <span class="prop">Phone</span> => <a href="tel:+996500335633" class="str">"+996 (500) 335-633"</a>;
-    <span class="kw">public string</span>[] <span class="prop">Stack</span> => [<span class="str">"C#"</span>, <span class="str">".NET Core"</span>, <span class="str">"MSSQL"</span>, <span class="str">"Oracle"</span>];
+    <span class="kw">private readonly</span> <span class="type">ILogger</span> <span class="prop">_logger</span>;
 
-    <span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">SystemResult</span>&gt; <span class="method">ExecuteProjectAsync</span>(<span class="type">Requirements</span> <span class="param">req</span>)
+    <span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">Solution</span>&gt; <span class="method">SolveComplexProblemAsync</span>(<span class="type">BusinessNeed</span> <span class="param">need</span>)
     {
-        <span class="kw">var</span> <span class="param">architecture</span> = <span class="kw">await</span> <span class="method">DesignArchitectureAsync</span>(<span class="param">req</span>);
-        <span class="kw">return await</span> <span class="method">DeployProductionReadySystemAsync</span>(<span class="param">architecture</span>);
+        <span class="kw">var</span> <span class="param">spec</span> = <span class="kw">await</span> <span class="method">AnalyzeRequirementsAsync</span>(<span class="param">need</span>);
+        <span class="kw">var</span> <span class="param">architecture</span> = <span class="method">DesignCleanArchitecture</span>(<span class="param">spec</span>);
+
+        <span class="kw">return await</span> <span class="method">BuildScalableSystemAsync</span>(<span class="param">architecture</span>, <span class="param">securityLevel</span>: <span class="type">High</span>);
     }
 }</code></pre>
     </div>
@@ -153,9 +149,9 @@
 <!-- Технологический стек -->
 <section id="skills">
     <h2 class="section-title">Технологический стек</h2>
-    <p class="section-subtitle">Инструменты и технологии, используемые в разработке и инфраструктуре</p>
+    <p class="section-subtitle">Инструменты, технологии и инженерные практики</p>
 
-    <!-- Сетка карточек (2x2 на ПК) -->
+    <!-- Сетка карточек (3x2 на ПК / 1 колонка на мобильных) -->
     <div class="skills-grid">
         <div class="skills-card">
             <h3>Backend & ПО</h3>
@@ -170,68 +166,27 @@
             <p>HTML5, CSS3, JavaScript, WPF, WinForms, адаптированные интерфейсы под Android и iOS</p>
         </div>
         <div class="skills-card">
-            <h3>Инфраструктура</h3>
-            <p>Администрирование Windows Server / Linux, сетевая безопасность, развертывание и поддержка B2B/B2G систем</p>
+            <h3>Архитектура & Integration</h3>
+            <p>REST API, Microservices, JWT/OAuth2, интеграция B2B/B2G сервисов и платежных систем</p>
+        </div>
+        <div class="skills-card">
+            <h3>Инфраструктура & DevOps</h3>
+            <p>Администрирование Windows Server / Linux, IIS, CI/CD, сетевая безопасность</p>
+        </div>
+        <div class="skills-card">
+            <h3>Инженерия & Оптимизация</h3>
+            <p>Clean Code, SOLID, профилирование кода, отладка, аудит безопасности и нагрузочное тестирование</p>
         </div>
     </div>
 </section>
-
-    <!-- Портфолио -->
-    <section id="portfolio">
-        <h2 class="section-title">Портфолио</h2>
-        <p class="section-subtitle">Избранные проекты: CRM-системы и веб-сервисы</p>
-
-        <div class="portfolio-grid">
-            <article class="portfolio-card">
-                <div class="card-image"><img src="i/specialfit.png" alt="CRM SpecialFit"></div>
-                <div class="card-content">
-                    <h3>CRM SpecialFit</h3>
-                    <p class="project-desc">Комплексная автоматизация спортивного комплекса: учет клиентской базы, абонементов и зарплат тренеров, учет продаж, аналитика и финансовая отчетность.</p>
-                    <div class="tech-tags">
-                        <span>C#</span><span>MSSQL</span><span>.NET</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="portfolio-card">
-                <div class="card-image"><img src="i/gisal2.webp" alt="CRM GISAL"></div>
-                <div class="card-content">
-                    <h3>CRM Gisal</h3>
-                    <p class="project-desc">B2B-система взаимодействия между заказчиком и поставщиками: автоматизация документооборота, обработка заявок, контроль поставок.</p>
-                    <div class="tech-tags">
-                        <span>C#</span><span>Oracle</span><span>.NET</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="portfolio-card">
-                <div class="card-image"><img src="i/control2.webp" alt="Система проверки"></div>
-                <div class="card-content">
-                    <h3>Проверка лояльности</h3>
-                    <p class="project-desc">Аналитическая система безопасности для HR и СБ: автоматизированный анализ трудовой истории кандидатов, скоринг и оперативное выявление рисков при найме.</p>
-                    <div class="tech-tags">
-                        <span>C#</span><span>Oracle</span><span>.NET</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="portfolio-card">
-                <div class="card-image"><img src="i/www1.png" alt="Сайт Спецсвязь"></div>
-                <div class="card-content">
-                    <h3>Сайт ГП «Спецсвязь»</h3>
-                    <p class="project-desc">Официальный веб-ресурс государственного предприятия: личный кабинет, прием заявок, форма обратной связи и статистика посещаемости.</p>
-                    <div class="tech-tags">
-                        <span>C#</span><span>MSSQL</span><span>.NET</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <p class="portfolio-summary-text">
-            Более <strong id="total-it-years">19 лет</strong> в IT-сфере (с 2007 г. - системное администрирование и инфраструктура) и <strong id="dev-years">10 лет</strong> в профессиональной разработке ПО (с 2016 г.). За это время реализован широкий спектр решений как для <strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong> - от инфраструктурных служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
-        </p>
-    </section>
     
+<p class="portfolio-summary-text">
+Более <strong id="total-it-years">19 лет</strong> в IT-сфере (с 2007 г. - системное администрирование и инфраструктура) и 
+<strong id="dev-years">10 лет</strong> в профессиональной разработке ПО (с 2016 г.). За это время реализован широкий спектр решений как для 
+<strong>частного бизнеса (B2B)</strong>, так и для <strong>государственного сектора (B2G)</strong> 
+- от инфраструктурных служб и консольных утилит до крупных CRM-систем, GUI-приложений (WPF, WinForms, Android, iOS) и веб-сервисов.
+</p>
+<br>
 </div>
 
 <!-- Футер / Контакты -->
